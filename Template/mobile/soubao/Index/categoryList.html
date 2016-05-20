@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>商品分类</title>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="icon" href="__STATIC__/images/favicon.ico" type="image/x-icon" />
+    <link rel="bookmark" href="__STATIC__/images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="__STATIC__/images/favicon.ico" type="image/x-icon" />
+    <meta content=" width = device-width , initial-scale = 1.0 , maximum-scale = 1.0 , user-scalable = no " id="viewport" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+</head>
+<body>
+<!--改版后 com1-3.css可以去掉-->
+<link type="text/css" rel="stylesheet" href="__STATIC__/css/com1-3.css?2015091515" />
+<!--新改的-->
+<link type="text/css" rel="stylesheet" href="__STATIC__/css/com1-4.css?2015091515" />
+<link type="text/css" rel="stylesheet" href="__STATIC__/css/download.css?2015091515" />
+<link type="text/css" rel="stylesheet" href="__STATIC__/css/public-adaptation1-1.css?2015091515" />
+<script src="__STATIC__/js/jquery.js?2015091515"></script>
+<script src="__STATIC__/js/com.js?2015091515"></script>
+<script src="__STATIC__/js/px-verify.js?2015091515"></script>
+<script src="__STATIC__/js/template.js?2015091515"></script>
+<!--红包分享，临时添加-->
+<!-- uc 浏览器添加书签 start --->
+<!-- uc 浏览器添加书签 end   ---->
+<div class="com-content"> 
+    <div class="clearboth"></div>
+    <div class="com-content-area" id="__STATIC__/js-com-content-area">
+        <div class="mask hidden"></div>
+        <!--content-->
+        <style type="text/css">
+            .m_bg{background-image: url(images/base.png);background-size: 345px 350px;}
+            .holdspace{ height:50px;}
+            .com-title{ position:fixed; height:45px; left:0; z-index:3; top:0; width:100%; font-family:微软雅黑 !important;}
+            .com-title .home_menu{display: inline-block;vertical-align: middle; right:2%; top:-4%; width:10%;}
+            .com-title .home_menu span:after,
+            .com-title .home_menu span:before,
+            .com-title .home_menu span{display: inline-block;vertical-align: middle;width: 6px;height: 6px;border-radius: 3px;background: #ffffff;position: relative;}
+            .com-title .home_menu span:after{content: ' ';position: absolute;right:-10px;top:0;}
+            .com-title .home_menu span:before{content: ' ';position: absolute;left:-10px;top:0;}
+            .rotate45{ -webkit-transform:rotate(45deg) scale(1.00,1.00) translate(0px,0px) skew(0deg,0deg);transform:rotate(45deg) scale(1.00,1.00) translate(0px,0px) skew(0deg,0deg);}
+            .m_menu{z-index: 20;position: fixed;top:45px;right:5px;margin-left: -320px;}
+            .m_menu>div{position: absolute;right:0;width: 160px;background: #292c33;border-radius: 6px;}
+            .m_menu>div>i{width: 26px;height: 26px;position: absolute;right:15px;top:-12px;background: #292c33;}
+            .m_menu>div>a{color: #949599;text-decoration: none;display: block;height: 50px;line-height: 50px;border-bottom:2px solid #1f2126;padding-left:65px;position: relative;}
+            .m_menu>div>a:last-child{border-bottom:0;line-height: 50px;}
+            .m_menu>div>a>span{position: absolute;top:0;left:24px;}
+            .m_menu>div>a>span>i{width: 23px;height: 21px;display: inline-block;vertical-align: middle;}
+            .m_menu>div>a:nth-child(2)>span>i{background-position: 0 -251px;}
+            .m_menu>div>a:nth-child(3)>span>i{background-position: -25px -251px;}
+            .m_menu>div>a:nth-child(4)>span>i{background-position: -52px -251px;}
+            .m_menu>div>a:nth-child(5)>span>i{background-position: -78px -251px;}
+            .spaceholder{ height:45px;}
+            .hidden{ display:none;}
+            .mask{ background: #FFF; opacity: 0.01;z-index: 19; width: 100%;height: 100%; position: absolute;top: 0;left: 0;}
+        </style>
+ 
+        <link rel="stylesheet" type="text/css" href="__STATIC__/css/classify.1.1.css?4" />
+        
+        <!--头部开始-->
+         <assign name="title" value="商品分类" />
+         <include file="Public/menu" />
+        <!--头部结束-->
+        <div class="spaceholder"></div>
+        <div class="p-area">            
+            <!--<div class="p-tag"> <a href="cat.html" class="current">分类</a> <a href="brand.html">品牌</a> </div>-->
+            <div class="p-content">
+                <div class="p-conleft">
+                    <!--一级分类-->
+                    <ul class="classify-title" id="js-classify-title" style="overflow: auto">
+                        <foreach name="goods_category_tree" item="vo" key="k">
+	                        <if condition="$vo[level] eq 1">
+	                            <li class="">{$vo['name']}</li>
+                            </if>
+                        </foreach>
+                    </ul>
+                    <!--一级分类-->
+                </div>                
+                <div class="p-conright">
+				 <assign name="i" value="0"/>
+                   <foreach name="goods_category_tree" key="k" item="vo">
+                        <!--二级分类 -->
+                        <div class="js-con-{$i++}" <if condition="$i gt 1"> style="display: none" </if>>
+                            <!--二级分类单元-->
+                            <foreach name="vo.tmenu" item="v2" key="k2">
+	                            <div class="p-two-title">
+	                                <p style="color:#; ">{$v2['name']}</p>
+	                                <ul class="p-three-title">
+	                                   <foreach name="v2.sub_menu" item="v3">
+	                                        <li>
+	                                           <a href="{:U('Mobile/Goods/goodsList',array('id'=>$v3[id]))}">
+	                                              <img <if condition="$v3[image] neq ''">src="{$v3[image]}"<else/>src="__STATIC__/images/nopic.gif"</if> alt="" />
+	                                              <span style="color:#; ">{$v3['name']}</span>
+	                                           </a>
+	                                        </li>
+	                                    </foreach>
+	                                   <div class="clearboth"></div>
+	                                </ul>
+	                            </div>
+                            </foreach>
+                            <!--二级分类单元- end -->
+                        </div>
+                        <!--二级分类 end -->    
+                  </foreach>
+                </div>
+                <div class="clearboth"></div>
+            </div>
+        </div>
+        <!--content-end-->
+    </div>
+    <div class="com-footer-area" id="__STATIC__/js-com-footer-area">
+        <span class="top"></span>
+        <div class="footer">             
+         <include file="Public/copy" />
+        </div> 
+    </div>
+</div>
+
+<div style="display:none;"> </div>
+<script type="text/javascript">
+    top.ztetbdata = null;	 
+</script>
+<script src="__STATIC__/js/classify.1.1.js"></script>
+</body>
+</html>

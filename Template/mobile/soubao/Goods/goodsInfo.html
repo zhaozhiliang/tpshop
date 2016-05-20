@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{$goods.goods_name}</title>
+    <meta charset="utf-8" />
+    <link rel="icon" href="__STATIC__/images/favicon.ico" type="image/x-icon" />
+    <link rel="bookmark" href="__STATIC__/images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="__STATIC__/images/favicon.ico" type="image/x-icon" />
+    <meta content=" width = device-width , initial-scale = 1.0 , maximum-scale = 1.0 , user-scalable = no " id="viewport" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+</head>
+<body>
+<!--改版后 com1-3.css可以去掉-->
+<link type="text/css" rel="stylesheet" href="__STATIC__/css/com1-3.css?2015091516" />
+<!--新改的-->
+<link type="text/css" rel="stylesheet" href="__STATIC__/css/com1-4.css?2015091516" />
+<link type="text/css" rel="stylesheet" href="__STATIC__/css/download.css?2015091516" />
+<link type="text/css" rel="stylesheet" href="__STATIC__/css/public-adaptation1-1.css?2015091516" />
+<script src="__STATIC__/js/jquery.js?2015091516"></script>
+<script src="__STATIC__/js/com.js?2015091516"></script>
+<script src="__STATIC__/js/px-verify.js?2015091516"></script>
+<script src="__STATIC__/js/template.js?2015091516"></script>
+<script src="__STATIC__/js/common.js"></script>
+ 
+<div class="com-content">
+ 
+    <div class="clearboth"></div>
+    <div class="com-content-area" id="__STATIC__/js-com-content-area">
+        <div class="mask hidden"></div>
+        <!--content-->
+        <style type="text/css">
+            .m_bg{background-image: url(__STATIC__/images/base.png);background-size: 345px 350px;}
+            .holdspace{ height:50px;}
+            .com-title{ position:fixed; height:45px; left:0; z-index:3; top:0; width:100%; font-family:微软雅黑 !important;}
+            .com-title .home_menu{display: inline-block;vertical-align: middle; right:2%; top:-4%; width:10%;}
+            .com-title .home_menu span:after,
+            .com-title .home_menu span:before,
+            .com-title .home_menu span{display: inline-block;vertical-align: middle;width: 6px;height: 6px;border-radius: 3px;background: #ffffff;position: relative;}
+            .com-title .home_menu span:after{content: ' ';position: absolute;right:-10px;top:0;}
+            .com-title .home_menu span:before{content: ' ';position: absolute;left:-10px;top:0;}
+            .rotate45{ -webkit-transform:rotate(45deg) scale(1.00,1.00) translate(0px,0px) skew(0deg,0deg);transform:rotate(45deg) scale(1.00,1.00) translate(0px,0px) skew(0deg,0deg);}
+            .m_menu{z-index: 20;position: fixed;top:45px;right:5px;margin-left: -320px;}
+            .m_menu>div{ position:absolute; right:0;width: 160px;background: #292c33;border-radius: 6px;}
+            .m_menu>div>i{width: 26px;height: 26px;position: absolute;right:15px;top:-12px;background: #292c33;}
+            .m_menu>div>a{color: #949599;text-decoration: none;display: block;height: 50px;line-height: 50px;border-bottom:2px solid #1f2126;padding-left:65px;position: relative;}
+            .m_menu>div>a:last-child{border-bottom:0;line-height: 50px;}
+            .m_menu>div>a>span{position: absolute;top:0;left:24px;}
+            .m_menu>div>a>span>i{width: 23px;height: 21px;display: inline-block;vertical-align: middle;}
+            .m_menu>div>a:nth-child(2)>span>i{background-position: 0 -251px;}
+            .m_menu>div>a:nth-child(3)>span>i{background-position: -25px -251px;}
+            .m_menu>div>a:nth-child(4)>span>i{background-position: -52px -251px;}
+            .m_menu>div>a:nth-child(5)>span>i{background-position: -78px -251px;}
+            .spaceholder{ height:45px;}
+            .hidden{ display:none;}
+            .mask{ background: #FFF; opacity: 0.01;z-index: 19; width: 100%;height: 100%; position: absolute;top: 0;left: 0;}
+        </style>
+ 
+        <link type="text/css" rel="stylesheet" href="__STATIC__/css/index.2.0.css?14" />
+        <script>
+            //轮播图
+            $(document).ready(function(){
+                $(".touchslider").touchSlider({mouseTouch: true, autoplay: true});
+            })
+        </script>
+
+        <style>
+            body{ padding-bottom:60px;}
+        </style>
+        <script>
+
+            /*是否下线*/
+            var isDown =  false ;
+            var branddir = "nike";
+
+        </script>
+        <script src="__STATIC__/js/jquery.touchslider.min.js"></script>
+        <script type="text/javascript" src="__STATIC__/js/px-touch-bind.js?2"></script>
+        <!--<script src="__STATIC__/js/index.2.0.js?15"></script>-->
+        <!--头部开始-->
+         <assign name="title" value="商品详情" />
+         <include file="Public/menu" />
+        <!--头部结束-->
+        <div class="holdspace"></div>
+        <div class="touchslider">
+            <div class="touchslider-viewport" style="height:280px;overflow:hidden">
+                <div>
+                    <volist id="image" name="goods_images_list">
+                        <div class="touchslider-item">
+                            <a><img alt="" src="{$image.image_url}" width="280" height="280" /></a>
+                        </div>
+                    </volist>
+
+                </div>
+            </div>
+            <div class="touchslider-navtag">
+                <span class="touchslider-nav-item touchslider-nav-item-current"></span>
+                <span class="touchslider-nav-item "></span>
+                <span class="touchslider-nav-item "></span>
+                <span class="touchslider-nav-item "></span>
+                <span class="touchslider-nav-item "></span>
+            </div>
+        </div>
+        <div class="goodsinfo">
+            <h1><span class="tips"></span>{$goods['goods_name']}</h1>
+            <!--抢拍、限时促销-->
+            <div class="sellprice">
+                <i>价格</i>
+                <span class="oof">￥</span>
+                <b id="goods_price">{$goods[shop_price]}</b>
+            </div>
+            <div class="price">
+                市场价：
+                <del>
+                    <span class="oof">￥</span>{$goods.market_price}
+               </del>  <!--【4.9折 节省500元】-->
+                <br />
+                <!--抢拍、限时促销--> <!--搜豹价：
+                <del>
+                    <span class="oof">￥</span>579.00
+                </del>
+                <br />--> 运费：
+                <span>免运费 ,不支持货到付款</span>
+            </div>
+            <!--倒计时-->
+            <!--<div class="title time" id="__STATIC__/js-time" second="547176">-->
+                <!--距结束-->
+                <!--<span></span>-->
+            <!--</div>-->
+            <!--优惠信息-->
+            <!--<div class="offertitle" id="offer-title">-->
+                <!--<p><b>活动优惠:满500元减30元;满800元减50元</b></p>-->
+                <!--<i></i>-->
+            <!--</div>-->
+            <ul class="offer" id="offer">
+                <li> <b class="title">满500元减30元;满800元减50元</b> <i class="open"></i> <p>2015-09-06 00:00 到 2015-09-30 23:59 <br /><strong>&middot;</strong> 满500元减30元<br /><strong>&middot;</strong> 满800元减50元<br /> </p> </li>
+            </ul>
+            <!--规格帅选-->
+            <form name="buy_goods_form" method="post" id="buy_goods_form">
+                <div id="js-selectpro">
+                    <foreach name="filter_spec" item="v" key="k" >
+                        <div class="titlethree">
+                            {$k}
+                            <!--名字-->
+                        </div>
+
+                        <div class="size">
+                            <ul>
+                                <foreach name="v" item="v2" key="k2" >
+                                    <li><a onClick="switch_spec(this)">
+                                        <if condition="$v2[src] neq ''">
+                                            <img src="{$v2[src]}"  height="24" /><span style="vertical-align:middle">{$v2[item]}</span>
+                                            <else />
+                                            {$v2[item]}
+                                        </if>
+                                    </a>
+									<input type="radio" style="display:none;" name="goods_spec[{$k}]" value="{$v2[item_id]}"  <if condition="$k2 eq 0 ">checked="checked"</if>   />
+                                    </li>
+                                </foreach>
+                            </ul>
+                        </div>
+                    </foreach>
+                    <div class="numbox">
+                        <div>
+                            	数量
+                        </div>
+                        <div class="numselect">
+                            <a onClick="switch_num(-1);" class="del noclick" href="javascript:void(0)"></a>
+                            <input type="text" value="1" id="goods_num" name="goods_num" />
+                            <a onClick="switch_num(1);" class="add" href="javascript:void(0)"></a>
+                        </div>
+                    </div>
+                    <input type="hidden" name="goods_id" value="{$goods.goods_id}" />
+                </div>
+
+            </form>
+            <div class="title">
+                <a href="{:U('goods/goodsAttr',array('goods_id'=>$goods['goods_id']))}" class="dblock">商品属性<i></i></a>
+            </div>
+            <div class="title">
+                <a href="{:U('goods/detail',array('id'=>$goods['goods_id']))}" class="dblock">图文详情<i></i></a>
+            </div>
+            <div class="title">
+                <a href="{:U('goods/comment',array('goods_id'=>$goods['goods_id']))}" class="dblock">评价<span class="gray"><i></i></a>
+            </div>
+        </div>
+
+        <!--content-end-->
+    </div>
+    <div class="com-footer-area" id="__STATIC__/js-com-footer-area">
+        <span class="top"></span>
+        <div class="footer">
+ 
+            <include file="Public/copy" />
+        </div>
+       
+    </div>
+</div>
+
+<script>
+
+$(document).ready(function(){
+	
+	// 更新商品价格
+	get_goods_price();
+
+});
+
+    $(function(){
+        var input_obj = $('input[type="radio"]:checked');
+       $(input_obj).each(function(inde,ele){
+           $(this).parent().addClass('current');
+       });
+    })
+    /**
+     * 切换规格
+     */
+    function switch_spec(spec)
+    {
+        $(spec).parent().parent().find('li').removeClass('current');
+        $(spec).parent().addClass('current');
+
+        $(spec).siblings('input').trigger('click');	 // 让隐藏的 单选按钮选中
+
+
+        //  更新商品价格
+        get_goods_price();
+    }
+
+    /**
+     * 购买商品数量加加减减
+     */
+    function switch_num(num)
+    {
+        var num2 = parseInt($("#goods_num").val());
+        num2 += num;
+        if(num2 < 1) num2 = 1; // 保证购买数量不能少于 1
+        $("#goods_num").val(num2); // 修改商品购买数量
+
+        // 更新商品价格
+        get_goods_price();
+    }
+	// 用作 sort 排序用
+	function sortNumber(a,b) 
+	{ 
+		return a - b; 
+	} 
+    /***  提交表单 查询商品价格*/
+    function get_goods_price()
+    {
+			var goods_price = {$goods.shop_price}; // 商品起始价
+			var store_count = {$goods.store_count}; // 商品起始库存	
+
+			var spec_goods_price = {$spec_goods_price};  // 规格 对应 价格 库存表   //alert(spec_goods_price['28_100']['price']);	
+			// 如果有属性选择项
+			if(spec_goods_price != null)
+			{
+				goods_spec_arr = new Array();
+				$("input[name^='goods_spec']:checked").each(function(){
+					 goods_spec_arr.push($(this).val());
+				});    
+				var spec_key = goods_spec_arr.sort(sortNumber).join('_');  //排序后组合成 key			
+				goods_price = spec_goods_price[spec_key]['price']; // 找到对应规格的价格		
+				store_count = spec_goods_price[spec_key]['store_count']; // 找到对应规格的库存
+			}
+			
+			var goods_num = parseInt($("#goods_num").val()); 
+			// 库存不足的情况
+			if(goods_num > store_count)
+			{
+			   goods_num = store_count;
+			   alert('库存仅剩 '+store_count+' 件');
+			   $("#goods_num").val(goods_num);
+			}	
+			$("#goods_price").html(goods_price * goods_num); // 变动价格显示
+
+    }
+
+</script>
+<div style="display:none;">
+</div>
+<script type="text/javascript">
+    top.ztetbdata = null;
+</script>
+<a href="/cart" class="fixedcart" id="fixedcart"><i></i></a>
+<div id="__STATIC__/js-fixed-add-to-cart" class="fixed-addcart">
+    <i id="__STATIC__/js-fav"></i>
+    <!--<a href="tel:4008818283" class="__STATIC__/jstel"><i class="tel"></i></a>-->
+    <input type="button" onclick="javascript:AjaxAddCart({$goods.goods_id},1,1);" value="立即购买" class="buy" id="__STATIC__/js-buy" />
+    <input type="button" onclick="javascript:AjaxAddCart({$goods.goods_id},1,0);" value="加入购物车" class="addcart" id="__STATIC__/js-addcart" />
+</div>
+</body>
+</html>

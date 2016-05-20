@@ -1,0 +1,88 @@
+﻿@charset "utf-8";
+
+@media screen and (max-width:800px) {
+html {
+	font-size: 50px
+}
+}
+
+@media screen and (min-width:800px) {
+html {
+	font-size: 100px
+}
+}
+.pop_appdown {
+	left: 0;
+	position: fixed;
+	z-index: 666;
+	width: 100%;
+	background-color: rgba(0,0,0,.8)!important;
+	height: 1.1rem;
+	bottom: 0
+}
+.pop_appdown .mbox {
+	background: 0 0;
+	position: relative;
+	width: 100%;
+	max-width: 800px;
+	min-width: 320px;
+	overflow: hidden;
+	margin: 0 auto;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	align-items: center
+}
+.pop_appdown .mbox .appdown_logo {
+	padding-left: .2rem;
+	display: block;
+	height: .9rem;
+	width: auto;
+	margin-top: .1rem
+}
+.pop_appdown .mbox .appdown_logo img {
+	height: 100%
+}
+.pop_appdown .mbox .appdown_dsc {
+	height: .68rem;
+	margin-left: .24rem
+}
+.pop_appdown .mbox .appdown_dsc img {
+	height: 100%
+}
+.pop_appdown .mbox .appdown_close {
+	position: absolute;
+	background: #000;
+	width: 1.1rem;
+	height: 1.1rem;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	right: -.55rem;
+	top: -.55rem
+}
+.pop_appdown .mbox .appdown_close a {
+	display: block
+}
+.pop_appdown .mbox .appdown_close .iconfont {
+	display: block;
+	color: #fff;
+	position: absolute;
+	bottom: .17rem;
+	left: .17rem
+}
+.pop_appdown .mbox .appdown_close span {
+	display: block;
+	position: absolute;
+	bottom: .17rem;
+	left: .17rem
+}
+.pop_appdown .mbox .appdown_close span img {
+	width: .29rem;
+	height: auto
+}

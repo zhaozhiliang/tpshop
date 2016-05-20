@@ -1,0 +1,379 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>        <meta name="format-detection" content="email=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="applicable-device" content="mobile">
+    <meta name="apple-itunes-app" content="app-id=921839681">
+    <link rel="Shortcut Icon" type="images/x-icon" href="http://static01.m.fn-mart.com/static/img/favicon.ico?v=2016022917">
+    <link href="http://static01.m.fn-mart.com/static/img/icon114x114.png?v=2016022917" rel="apple-touch-icon-precomposed">
+    <link rel="stylesheet" type="text/css" href="http://static01.m.fn-mart.com/static/css-build/v2/common.css?v=2016022917" /><link rel="stylesheet" type="text/css" href="http://static01.m.fn-mart.com/static/css-build/v2/list/index_2.2.css?v=2016022917" /><link rel="stylesheet" type="text/css" href="http://static01.m.fn-mart.com/static/css-build/v2/appdown.css?v=2016022917" />
+    <link rel="canonical" href="http://www.feiniu.com/category/%7B%7Bvalue%5B">
+
+
+    <script>
+
+	    //清除之前域名为.m.feiniu.com下的cookie
+		(function (){
+	        var keys = document.cookie.match(/[^ =;]+(?=\=)/g);
+	        if (keys){
+	            var path = "/";
+	            var domain = "m.feiniu.com";
+	            for(var i = keys.length; i--;){
+	           		//document.cookie = keys[i]+'=0;expires=' + new Date(0).toUTCString();
+	            	document.cookie = keys[i] + "=;path=" + path + ";" + (domain ? ("domain=" + domain + ";") : '') + "expires="+ new Date(0).toUTCString();
+	            }
+	        }
+	    })();
+	    
+        if (/MSIE (6.0|7.0|8.0)/.test(navigator.userAgent)) {
+            location.href = location.protocol + "//" + location.hostname + '/nonsupport.html';
+        }
+
+    </script>
+
+        <script type="text/javascript" src="http://m.feiniu.com/Fetch/front?v=2016022917"></script>
+
+</head>
+
+
+<body>
+<!-- 头部 -->
+<div class="outbox">
+    <div id="J_topfloat">
+        <div class="top_box set">
+            <span class="top_back J_topback"></span>
+            <form class="set_ip" id="searchsub" method="get" action="http://m.feiniu.com/list/index">
+                <i class="iconfont J_srch_submit">&#xe60f;</i>
+                <input type="text" class="J_srch_kw" value="" placeholder="搜索商品" name="kw" id="kw">
+                <a class="J_srch_input_clear" style="display: none"> <i class="iconfont"> &#xe615;</i></a>
+            </form>
+            <div id="J_set_list" class="set_list ">
+                <div><i class="iconfont">&#xe611;</i>大图</div>
+                <div><i class="iconfont">&#xe612;</i>列表</div>
+            </div>
+        </div>
+        <!-- 列表导航 S-->
+        <div
+            class="list_nav hide_it">
+            <ul class="lv_ul">
+                                                            <li data-icon="" class="J_cs2 active" data-sorttype="1"
+                            data-issortorder="0"
+                            data-sortorder="2">
+                            <a>综合</a>
+                        </li>
+                                            <li data-icon="&#xe60b;" class="J_cs2 " data-sorttype="2"
+                            data-issortorder="1"
+                            data-sortorder="2">
+                            <a>价格</a>
+                        </li>
+                                            <li data-icon="" class="J_cs2 " data-sorttype="4"
+                            data-issortorder="0"
+                            data-sortorder="2">
+                            <a>销量</a>
+                        </li>
+                                                    <li id="J_sx" data-tab="sx"
+                    data-superman='{"filter":[{"form":3,"distribution":{"province":{"name":"上海","code":"CS000016"},"city":{"name":"上海市","code":"310100"},"area":{"name":"徐汇区","code":"310104"},"town":{"name":"虹梅街道","code":"3101040005"}}},{"form":4,"hasChildNodes":1,"children":[{"key":"is_proprietary","name":"飞牛自营","subform":6},{"key":"is_mall","name":"飞牛商城","subform":6},{"key":"is_global","name":"环球购","subform":6},{"key":"is_stock","name":"仅看有货","subform":6}]},{"form":2,"hasChildNodes":1,"children":[{"max":"0.00","min":"0.00","name":"价格","subform":2}]}],"rawBrand":{"brandSeq":null}}'><a>筛选<i
+                            class="iconfont">&#xe613;</i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 关键字搜索 || 结果非空 ==> 隐藏 -->
+    <div class="blank J_blank ">
+        <img src="http://static01.m.fn-mart.com/static/img/v2/default/blank_icon.png" class="blank_img"/>
+        <p class="blank_txt">很抱歉，没有找到您搜索的相关商品信息！</p>
+        <a href="http://m.feiniu.com/" class="blank_btn">去逛逛</a>
+    </div>
+
+    <!-- 分类搜索 || 结果非空 ==> 隐藏 -->
+    <div class="default hide">
+        <h3>对不起没有找到相应的商品</h3>
+        <div class="hr1"></div>
+
+        <!-- 类型1 -->
+        <div class="type1 hide">
+            <h4>热门推荐</h4>
+            <ul class="list_ul" id="J_product_commend">
+                <script id="tpl_nodtlist" type="text/html" data-insert-pos="before">
+                    {{each MerchandiseList as v}}
+                    <li class="J_goDetail" data-smseq="{{v.sm_seq}}">
+                        <div class="d_img">
+                            <a href='javascript:void(0);' id="addcart{{v.sm_seq}}">
+                                <img src='{{v.sm_pic}}' alt='{{v.sm_name}}' title='{{v.sm_name}}'
+                                     data-imgsrc="http://static01.m.fn-mart.com/static/img/imgerr/err400x400.jpg?v=2016022917">
+                            </a>
+                        </div>
+                        <div class="d_adc Btop">
+                            <a href='http://m.feiniu.com/item/{{v.sm_seq}}'>
+                                <div class="d_title prefix">
+                                    <!-- 自营/生鲜 -->
+                                    {{each v.type_tags as vts}}
+                                    {{if vts.rlink}}
+                                    <!-- 环球购 -->
+                                    <i><img src="{{vts.rlink}}"></i>
+                                    {{else}}
+                                    <!-- 自营 -->
+                                        <span
+                                            style="background-color:{{vts.bgcolor}};color:{{vts.color}};">{{vts.name}}</span>
+                                    {{/if}}
+                                    {{/each}}
+                                    <p>{{v.sm_name}}</p>
+                                </div>
+                            </a>
+                            <div class="d_mix">
+                                <div class="dm_1">
+                                    <div class="tg">
+                                        {{each v.tags as vt}}
+                                        <!-- 至多显示2个标签 -->
+                                        {{if $index < 2}}
+                                        <span
+                                            style="background-color:{{vt.bgcolor}};color:{{vt.color}};">{{vt.name}}</span>
+                                        {{/if}}
+                                        {{/each}}
+                                        {{if v.tip}}
+                                        <i class="yg">{{v.tip}}</i>
+                                        {{/if}}
+                                    </div>
+                                    <!-- 价格 S -->
+                                    {{if v['sm_price'] | is_numeric}}
+                                    <div class="d_price">&yen;{{v['sm_price'] | priceFormat}}<span>.{{v['sm_price'] | priceFormat:1}}</span>{{if +v['sm_price'] < +v['it_mprice'] }}<s>&yen;{{v['it_mprice']}}</s>{{/if}}</div>
+                                    {{else}}
+                                    <div class="d_price">{{v['sm_price']}}</div>
+                                    {{/if}}
+                                </div>
+                                <!-- 购物车情况 S -->
+                                <div class="cart_case">
+                                    {{if v.saleType==0 || v.saleType==2 || v.saleType==3}}
+                                    <a class="iconfont J_buyTo" data-smseq='{{v.sm_seq}}'
+                                       data-isorgiitem="{{v.is_orgi_item}}" data-ispre="{{v.isPreOrd}}"
+                                       data-ismall="{{v.is_mall}}" data-issen="{{v.isSensitive}}"
+                                       data-price="{{v.sm_price}}"
+                                       data-stype="{{v.saleType}}" data-islimit="{{v.isLimited}}"
+                                       data-url="{{if v.is_pop == 1}}http://m.feiniu.com/detail/attribute?sm_seq={{v.sm_seq}}{{/if}}">
+                                        &#xe603;</a>
+                                    {{else if v.saleType==1}}
+                                    <a class="btn btn_red J_buyTo" data-ispre="{{v.isPreOrd}}"
+                                       data-smseq="{{v.sm_seq}}"
+                                       data-url="http://m.feiniu.com/detail/attribute?sm_seq={{v.sm_seq}}">{{v.saleTypeName}}</a>
+                                    {{else if v.saleType==4 || v.saleType==5 || v.saleType==6 || v.saleType==7}}
+                                    <a class="J_buyTo"
+                                       data-url='http://m.feiniu.com/item/{{v.sm_seq}}'><span
+                                            class="mc3 fs4">{{v.saleTypeName}}</span></a>
+                                    {{else if v.saleType==9}}
+                                    <a class="btn btn_red J_buyTo"
+                                       data-url='http://m.feiniu.com/item/{{v.sm_seq}}'>{{v.saleTypeName}}</a>
+                                    {{/if}}
+                                </div>
+                            </div>
+                            <!-- 店铺信息 -->
+                            <p>{{if v["shop_info"]["name"]}}{{v["shop_info"]["name"]}}{{/if}}</p>
+                            <!-- 配送提示语 -->
+                            {{if v["distribution_tips"]}}
+                            <p class="J_delivery" data-code="{{v['distribution_tips']['code']}}">
+                                {{v['distribution_tips']['name']}}</p>
+                            {{/if}}
+                        </div>
+                    </li>
+                    {{/each}}
+                </script>
+                <div class="nomore"><span>没有更多商品</span></div>
+            </ul>
+
+        </div>
+        <!-- 类型2 -->
+        <div class="type2 ">
+            <div class="J_type2head hide">
+                <h4>以下是智能修正后为您提供的商品:</h4>
+                <div class="hr1"></div>
+            </div>
+            <!-- 猜你喜欢 S -->
+            <script id="J_love" type="text/html"></script>
+            <!-- 猜你喜欢 E -->
+        </div>
+    </div>
+
+    <!-- 列表导航 E-->
+    <ul class="list_ul " id="J_product_list">
+                                    <script id="tpl_MerchandiseList" type="text/html" data-insert-pos="before">
+            {{each MerchandiseList as value i}} {{if value["sm_name"]!=null}}
+            <li class="J_goDetail" data-smseq="{{value['sm_seq']}}">
+                <div class="d_img">
+                    <a href='javascript:void(0);' id="addcart{{value['sm_seq']}}">
+                    <img src='{{value["sm_pic"]}}' alt='{{value["sm_name"]}}'  title='{{value["sm_name"]}}' data-imgsrc="http://static01.m.fn-mart.com/static/img/imgerr/err400x400.jpg?v=2016022917">
+                    </a>
+                </div>
+                <div class="d_adc">
+                    <a href='http://m.feiniu.com/item/{{value["sm_seq"]}}'>
+                        <div class="d_title prefix">
+                            <!-- 自营/生鲜 -->
+                            {{each value.type_tags}}
+                            {{if $value.rlink}}
+                            <!-- 环球购 -->
+                            <i><img src="{{$value.rlink}}"></i>
+                            {{else}}
+                            <!-- 自营 -->
+                            <span
+                                style="background-color:{{$value.bgcolor}};color:{{$value.color}};">{{$value.name}}</span>
+                            {{/if}}
+                            {{/each}}
+                            <p>{{value['sm_name']}}</p>
+                        </div>
+                    </a>
+                    <div class="d_mix">
+                        <div class="dm_1">
+                            <div class="tg">
+                                {{each value.tags}}
+                                <!-- 至多显示2个标签 -->
+                                {{if $index < 2}}
+                                <span style="background-color:{{$value.bgcolor}};color:{{$value.color}};">{{$value.name}}</span>
+                                {{/if}}
+                                {{/each}}
+                                {{if value.tip}}
+                                <i class="yg">{{value.tip}}</i>
+                                {{/if}}
+                            </div>
+                            <!-- 价格 S -->
+                            {{if value['sm_price'] | is_numeric}}
+                            <div class="d_price">&yen;{{value['sm_price'] | priceFormat}}<span>.{{value['sm_price'] | priceFormat:1}}</span>
+                                {{if +value.sm_price < +value.it_mprice}}<s>&yen;{{value.it_mprice}}</s>{{/if}}
+                            </div>
+                            {{else}}
+                            <div class="d_price">{{value['sm_price']}}</div>
+                            {{/if}}
+                        </div>
+                        <!-- 购物车情况 S -->
+                        <div class="cart_case">
+                            {{if value["saleType"]==0 || value["saleType"]==2 || value["saleType"]==3}}
+                            <a class="iconfont J_buyTo" data-smseq='{{value["sm_seq"]}}'
+                               data-isorgiitem="{{value['is_orgi_item']}}" data-ispre="{{value['isPreOrd']}}"
+                               data-ismall="{{value['is_mall']}}" data-issen="{{value['isSensitive']}}"
+                               data-price="{{value['sm_price']}}"
+                               data-stype="{{value['saleType']}}" data-islimit="{{value['isLimited']}}"
+                               data-url="{{if value['is_pop'] == 1}}http://m.feiniu.com/detail/attribute?sm_seq={{value['sm_seq']}}{{/if}}">
+                                &#xe603;</a>
+                            {{else if value["saleType"]==1 || value["saleType"]==2 || value["saleType"]==9 ||
+                            value["saleType"]==11}}
+                            <a class="btn btn_red J_buyTo"
+                               data-url='http://m.feiniu.com/item/{{value["sm_seq"]}}'>{{value["saleTypeName"]}}</a>
+                            {{else if value["saleType"]==4 || value["saleType"]==5 || value["saleType"]==6 ||
+                            value["saleType"]==7 || value["saleType"]==8 || value["saleType"]==10}}
+                            <a class="J_buyTo" data-url='http://m.feiniu.com/item/{{value["sm_seq"]}}'>
+                                <span class="mc3 fs4">{{value["saleTypeName"]}}</span>
+                            </a>
+                            {{/if}}
+                        </div>
+                    </div>
+                    <!-- 店铺信息 -->
+                    <p>{{if value["shop_info"]["name"]}}{{value["shop_info"]["name"]}}{{/if}}</p>
+                    <!-- 配送提示语 -->
+                    {{if value["distribution_tips"]}}
+                    <p class="J_delivery" data-code="{{value['distribution_tips']['code']}}">
+                        {{value['distribution_tips']['name']}}</p>
+                    {{/if}}
+                </div>
+            </li>
+            {{/if}} {{/each}}
+        </script>
+    </ul>
+    <p class="loading_btm hide" id="J_ajaxing"><b></b><i>正在努力加载...</i></p>
+    <p class="nomoregoods"
+       style="display: none"       id="J_ajax_noMore"><span class="nombor"><i>没有更多商品</i></span></p>
+</div>
+<!-- 底部导航 -->
+<script src="http://m.feiniu.com/Fetch/footButton?v=2016022917"></script>
+<script>
+    //底部导航上报
+    var footNav = document.getElementById('footNav');
+    if( footNav ){
+        var footNavli = footNav.getElementsByTagName('li');
+        for(var i = 0; i < footNavli.length; i++){
+            var lia = footNavli[i].getElementsByTagName("a");
+            lia[0].addEventListener("click", function(){
+                var index = this.getAttribute('data-ind');
+                if(!index){
+                    return;
+                }
+                sbFootNav(index);
+            })
+        }
+    }
+    function sbFootNav(ind) {
+        var statData = {
+            'track_tag_name': '1009',
+            'result': '',
+            'page_content': ind,
+            'track_type': '2',
+            'message': ind
+        };
+        if (typeof(h5stat) == "object"){
+            h5stat.shangbao(statData);
+        }
+    }
+</script>    <div class="pop_appdown J_popAppdown" id="popAppdown" style='display: none;'>
+    <div class="mbox outbox">
+        <p class="appdown_logo">
+            <img src="http://static01.m.fn-mart.com/static/img/v2/index/app_logo.png" />
+        </p>
+        <p class="appdown_dsc J_appDown">
+            <img src="http://static01.m.fn-mart.com/static/img/v2/index/download.png" />
+        </p>
+        <p class="appdown_close"><a id="closeAppdown" class="J_appDownClose" href="javascript:;"><span> <img src="http://static01.m.fn-mart.com/static/img/v2/index/closen.png" /></span></a></p>
+    </div>
+    </div>
+<script type="text/javascript" src="http://static01.m.fn-mart.com/static/js-build/baiduJsPush.js?v=2016022917"></script>
+<script>
+    var kw = "";
+    var total = 0;
+    var totalPage = 0;
+</script>
+
+</body>
+</html>
+
+    <script src="http://static01.m.fn-mart.com/static/js-build/require.js"></script>
+    <script>
+        require(["http://static01.m.fn-mart.com/static/js-build/config.js"], function () {
+            require(['controller/list/index']);        });
+    </script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46390714-1', 'auto');
+  ga('send', 'pageview');
+</script><!-- uniclickTracking -->
+<script type="text/javascript">
+/*** UniclickTracking **/
+var _utaq = _utaq || [];
+_utaq.push(["trackPageView"]);
+_utaq.push(["enableLinkTracking"]);
+(function() {
+    var utu="http://sit.gentags.net/";
+    _utaq.push(["setTrackerUrl", utu+"site/unids.gif"]);
+    _utaq.push(["setSiteId", "927"]);
+    var utd=document, ut=utd.createElement("script"), s=utd.getElementsByTagName("script")[0]; ut.type="text/javascript";
+    ut.defer=true; ut.async=true; ut.src=utu+"adagent/js/uta.js"; s.parentNode.insertBefore(ut,s);
+})();
+/***End UniclickTracking Code**/
+</script>
+<noscript><p><img src="http://sit.gentags.net/site/img?site=927" style="border:0" alt="" /></p></noscript>
+<!-- End uniclickTracking Code -->
+
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?0cc0039daba323e398ba8e7b837dd702";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>

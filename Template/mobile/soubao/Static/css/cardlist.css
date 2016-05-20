@@ -1,0 +1,145 @@
+@charset "utf-8";
+li, li a {
+	width: 100%
+}
+.list_title, .new_coupon {
+	border-bottom: 1px solid #d5d5d5
+}
+body, html {
+	height: 100%
+}
+.top_paynow {
+	color: #333;
+	position: absolute;
+	right: .2rem;
+	top: 0;
+	line-height: .88rem
+}
+.top_box h1 {
+	font-weight: 700
+}
+li a {
+	display: table;
+	height: 1.37rem
+}
+li:not(:first-child) {
+	margin-top: .2rem
+}
+.left span, .pre_1, .pre_2 {
+	font-size: .36rem
+}
+.gold .left {
+	background: url(../../../img/v2/my/cards/bk_gold.jpg) top right repeat-y #f7a923;
+	background-size: .14rem auto
+}
+.voucher .left {
+	background: url(../../../img/v2/my/cards/bk_voucher.jpg) top right repeat-y #6ab53c;
+	background-size: .14rem auto
+}
+.coupon .left {
+	background: url(../../../img/v2/my/cards/bk_coupon.jpg) top right repeat-y #4fadd1;
+	background-size: .14rem auto
+}
+.red_packet .left {
+	background: url(../../../img/v2/my/cards/bk_redpacket.jpg) top right repeat-y #07bfb5;
+	background-size: .14rem auto
+}
+.gold .pre, .gold .pre_1 {
+	background-color: #f7a923
+}
+.voucher .pre, .voucher .pre_2 {
+	background-color: #6ab53c
+}
+.coupon .pre, .coupon .pre_1 {
+	background-color: #4fadd1
+}
+.red_packet .pre, .red_packet .pre_1 {
+	background-color: #07bfb5
+}
+.icon_cards, .right {
+	background-color: #fff
+}
+.icon_cards {
+	color: #db384c;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	font-size: .6rem;
+	width: .7rem;
+	height: .7rem;
+	text-align: center;
+	display: inline-block;
+	line-height: .7rem;
+}
+.icon_cards img{
+	margin-left: 0.12rem;
+	margin-top: 0.2rem;
+	width:.47rem;
+}
+.left, .right {
+	text-align: right
+}
+.left, .pre, .pre_1, .pre_2, .right {
+	display: table-cell;
+	vertical-align: middle
+}
+.pre, .pre_1, .pre_2 {
+	color: #fff;
+	padding-left: .24rem
+}
+.pre_1 {
+	width: 30%
+}
+.pre_1+.left {
+	width: 37%
+}
+.pre_2 {
+	width: 25%
+}
+.pre_2+.left {
+	width: 42%
+}
+.left {
+	padding-right: .48rem;
+	color: #fff
+}
+.right {
+	width: 25%;
+	padding-right: .24rem
+}
+.right div:first-child {
+	font-size: .38rem
+}
+.right span {
+	font-size: .28rem;
+	color: #888;
+	margin-bottom: .06rem;
+	margin-right: -.1rem
+}
+.right i {
+	font-size: .32rem;
+	color: #999;
+	background-image:url(../images/rig.png);
+	background-repeat:no-repeat;
+	background-size:.12rem;
+	background-position-y: .10rem;
+	width:.32rem;
+	height:.32rem;
+	display:inline-block;
+}
+.new_coupon {
+	position: relative;
+	padding-bottom: .3rem
+}
+.new_coupon .new_icon {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: .64rem
+}
+.list_title {
+	padding-left: .24rem;
+	height: .86rem;
+	line-height: .86rem;
+	background-color: #f9f9f9;
+	font-size: .32rem
+}

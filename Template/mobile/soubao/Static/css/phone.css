@@ -1,0 +1,122 @@
+@charset "utf-8";
+.btn {
+	font-size: .28rem;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	min-width: 1.67rem;
+	height: .54rem;
+	color: #333;
+	border: .02rem solid #d5d5d5;
+	-webkit-border-radius: .04rem;
+	border-radius: .04rem;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-moz-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center
+}
+.btn_de, .btn_red {
+	border: none;
+	color: #fff
+}
+.btn_lg {
+	font-size: .36rem;
+	min-width: 1.8rem;
+	height: .84rem
+}
+.btn_red {
+	background: #db384c
+}
+.btn_de {
+	background: #888
+}
+body, html {
+	height: 100%
+}
+.main_content {
+	min-height: 85%
+}
+.main_content .btn_box {
+	margin: 0 .24rem;
+	padding-bottom: .3rem
+}
+.step_list ul, .step_list>p:first-child {
+	border-bottom: 1px solid #d5d5d5;
+	padding: 0 .22rem
+}
+.main_content .btn_box .btn {
+	color: #fff;
+	font-size: .36rem
+}
+.step_list>p:first-child {
+	height: .76rem;
+	line-height: .76rem;
+	font-size: .28rem;
+	color: #888
+}
+.step_list ul {
+	background-color: #fff;
+	margin-bottom: .5rem
+}
+.step_list li p:first-child {
+	display: inline-block;
+	height: .84rem;
+	line-height: .84rem;
+	color: #666
+}
+.step_list li p:first-child span {
+	color: #333
+}
+.step_list input {
+	border: none
+}
+.step_identify .identify_get {
+	border-bottom: 1px solid #d5d5d5
+}
+.step_identify .identify_get:after {
+	clear: both;
+	content: "";
+	display: block;
+	height: 0;
+	overflow: hidden
+}
+.step_identify .identify_get p:first-child {
+	width: 68%;
+	float: left
+}
+.step_identify .identify_get input {
+	width: 56%
+}
+.step_identify .identify_get p:last-child {
+	display: inline-block;
+	width: 1.7rem;
+	float: right;
+	text-align: center;
+	margin-top: .1rem;
+	padding-left: .2rem;
+	border-left: 1px solid #d5d5d5
+}
+.step_identify .color_grey {
+	color: #888
+}
+.step_identify .color_red {
+	color: #db384c
+}
+.step_identify li:last-child p {
+	width: 100%
+}
+.step_identify li:last-child input {
+	width: 70%
+}
+.big_ma_t{
+	margin-top:.3rem;
+	width:.33rem;
+}

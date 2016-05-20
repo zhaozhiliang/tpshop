@@ -1,0 +1,40 @@
+<volist name="lists" id="list">
+  <div id="order_2015091516111878298" class="m_order">
+    <div class="m_order_title">
+      <span class="m_order_pay gray6">订单号：<a href="{:U('/Mobile/User/order_detail',array('id'=>$list['order_id']))}" class="gray6">{$list.order_sn}</a> </span>
+      <span class="m_order_static"> {$list.order_status_desc} </span>
+    </div>
+    <ul class="m_list m_list_top_line bg_white m_order_list">
+    <volist name="list.goods_list" id="good">
+      <li data-goodsid="1115589" class="link"> 
+         <a href="{:U('/Mobile/Goods/goodsInfo',array('id'=>$good['goods_id']))}"> 
+           <img alt="{$good.goods_name}" src="{$good.goods_id|goods_thum_images=80,80}" class="img100">
+        <div class="info">
+          <p class="name gray3">{$good.goods_name}</p>
+          <p class="sku gray9">{$good.spec_key_name}</p>
+        </div>
+        <div class="price">
+          <p class="">¥{$good['member_goods_price']}</p>
+          <p>x{$good['goods_num']}</p>
+        </div>
+        </a> 
+        </li>
+ 	 </volist>        
+    </ul>
+    <div class="pay">    
+      <span class="freight gray9">应付金额：</span>
+      <span class="payprice orange">¥{$list['order_amount']}</span>
+    </div>
+    <div class="buttons"> 
+    <if condition="$list.cancel_btn eq 1"><a onClick="cancel_order({$list.order_id})" class="m_button js_cancle">取消订单</a></if>
+    <if condition="$list.pay_btn eq 1"><a href="{:U('Mobile/Cart/cart4',array('order_id'=>$list['order_id']))}" class="m_button m_button_orange">立即付款</a></if>
+    <if condition="$list.receive_btn eq 1"><a href="{:U('Mobile/User/order_confirm',array('id'=>$list['order_id']))}" class="m_button m_button_orange">收货确认</a></if>    
+    <if condition="$list.comment_btn eq 1"><a href="{:U('/Mobile/User/order_detail',array('id'=>$list['order_id']))}" class="m_button m_button_orange">评价</a></if>
+    <if condition="$list.shipping_btn eq 1"><a href="http://www.kuaidi100.com/" target="_blank"  class="m_button m_button_orange">查看物流</a></if>        
+    <if condition="$list.return_btn eq 1"><a href="{:U('Mobile/Article/article',array('article_id'=>'22'))}" target="_blank" class="m_button js_cancle">联系客服</a></if>    
+    </div>
+  </div>
+  
+  <div class="placeholder"></div>
+  <div class="placeholder"></div>	   
+</volist>

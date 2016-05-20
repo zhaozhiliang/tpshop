@@ -1,0 +1,375 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>永鑫超市移动版</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+<meta name="format-detection" content="email=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no" />
+<meta name="applicable-device" content="mobile">
+<meta name="apple-itunes-app" content="app-id=921839681">
+<link rel="stylesheet" type="text/css" href="__STATIC__/css/fn_index.css" />
+<link rel="stylesheet" type="text/css" href="__STATIC__/css/fn_common.css" />
+<script src="__STATIC__/js/zepto.min.js"></script>
+<script src="__STATIC__/js/swiper.min.js"></script>
+<style type="text/css">
+.pagination {
+  position: absolute;
+  z-index: 20;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+.swiper-pagination-switch {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  background: #F31E1E;
+  margin: 0 5px;
+  opacity: 0.8;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+.swiper-active-switch {
+  background: #fff;
+}
+</style>
+</head>
+<body>
+<div class="mbox"> 
+  <!-- 顶部 -->
+  <div class="ind_top">
+    <p class="ind_logo"> <a href=""> <img alt="" src="__STATIC__/images/logo_white2.png" /> </a> </p>
+    <div class="search_top"> 
+    <form class="set_ip"name="sourch_form" id="sourch_form" method="post" action="{:U("/Mobile/Goods/search")}">
+      <a class="search_top_box J_search_top" href="javascript:void(0);">
+      <button class="iconfont"><img src="__STATIC__/images/ss-chick.png"></button>
+      <input type="text" class="J_keyword"  name="q" id="q" value="<?php echo I('q'); ?>" placeholder="搜索关键字"/>
+      </a> 
+     </form>  
+     </div>
+    <p class="ind_city J_city"><a href="">&nbsp;&nbsp;</a></p>
+  </div>
+  <div class="ind_context"> 
+    <!-- 首页Banner图片 -->
+    <div id="slider" class="swiper-container bannerSwiper swiper-container-horizontal">
+      <div class="swiper-wrapper">
+	      <adv pid="2" limit="5" item="v">
+	        <div class="swiper-slide">
+	          <div class="">
+	            <div> <a href="{$v.ad_link}"> <img src="{$v[ad_code]}" title="{$v[title]}" /> </a> </div>
+	          </div>
+	        </div>
+	      </adv>            
+      </div>
+      <div class="swiper-pagination pagination small banner-swiper-pagination"></div>
+    </div>
+    <div class="ind_box no_blank"> 
+      <!-- 导航 -->
+      <div class="main_menu_img">
+        <div class="swiper-container J_icon_swiper icon_swiper" data-id="0">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <ul class="clearfix" id="mainMenu">
+                <li> <a style="color:#666666"  href="{:U('Mobile/Index/categoryList')}" class="J_iconMaidian"  > <img class="m_img_0"   src="/Template/mobile/soubao/Static2/images/201602171721461455700906_kk-1.png"><br/>分类 </a> </li>
+                <li> <a style="color:#666666"  href="{:U('/Mobile/Cart/cart')}" class="J_iconMaidian" > <img class="m_img_1" src="/Template/mobile/soubao/Static2/images/201602141554571455436497_kk-1.png"><br/>购物车 </a> </li>
+                <li> <a style="color:#666666"  href="{:U('/Mobile/User/order_list')}" class="J_iconMaidian" > <img class="m_img_2"  src="/Template/mobile/soubao/Static2/images/201602141554521455436492_kk-1.png"><br/>我的订单 </a> </li>
+                <li> <a style="color:#666666"  href="{:U('/Mobile/User')}" class="J_iconMaidian"  > <img class="m_img_3"  src="/Template/mobile/soubao/Static2/images/201602141555121455436512_kk-1.png"><br/>个人中心 </a> </li>                
+              </ul>
+            </div>            
+          </div>
+          <div class="swiper-pagination pagination small banner-swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+    <!-- 首页秒杀 S -->
+    <div class="ind_box J_seckill"> 
+      <!-- 首页秒杀go -->
+      <div class="ms_bk_ty01">
+        <div class="ms_title">
+          <h3>畅销产品</h3>
+          <div class="ms_time"> <b> </b> <i class="iconfont"></i>
+            <div class="time_span" id="J_time" data-countdown="-18402"> </div>
+          </div>
+          <div class="one_rush">
+            <p style="background-color:#db384c;color:#ffffff;">一周畅销></p>
+          </div>
+        </div>
+        <div class="ms_list_info">
+          <div  class="swiper-container J_seckillList J_ms_swiper" data-id="1" data-act_seq="4147">
+            <div class="swiper-wrapper">
+            <tpshop sql="select * from `__PREFIX__goods` where  is_promote  eq 1  limit 4" key="key" item='val'>
+              <div class="swiper-slide J_seckill_item" style="width:24%;"> 
+               <a href="{:U('Goods/goodsInfo',array('id'=>$val[goods_id]))}">
+                <div class="ms_li_img"> <img style="width: 100%" src="{$val.goods_id|goods_thum_images=300,300}"  title="{$val.goods_name}"> </div>
+                <div class="ms_info">
+                  <div class="ms_price_info">
+                    <div class="ms_li_p01">￥{$val.shop_price}</div>
+                  </div>
+                </div>
+                </a> 
+              </div>
+            </tpshop>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 首页秒杀end --> 
+    </div>
+    <!-- 首页秒杀 E --> 
+    <!-- 1*1 - 1*4 S -->
+    <div class="ind_box  new">
+      <div class="banner_title J_banner_title" data-href="">
+        <div class="head">
+          <div class="left"> 
+            <!-- 方便SEO -->
+            <h2> 主题馆 </h2>
+          </div>
+          <div class="right">
+            <div class="arrow-right hide_it"></div>
+          </div>
+        </div>
+      </div>
+      <div class="ind_flex clo_1 ">
+        <div class="">
+          <div> <a href=""><img src="/Template/mobile/soubao/Static2/images/201602291842061456742526_kk-1.jpg" title="" alt=""> </a>
+            <div class="line "></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 1*1 - 1*4 E --> 
+    
+    <!-- 新主题馆 S -->
+    <div class="ind_box no_blank new pavilions">
+      <div class="ind_theme">
+        <div class="ind_flex clo_3">
+         <foreach name="thems" item="vo" key="k">
+         <if condition="$k lt 3">
+	          <div>
+	            <div class="top needTitle">
+	              <div class="title J_title" data-href="" data-order="1" data-title="个护美妆" data-type="18"  data-param ="">
+	                <h3>{$vo.mobile_name}</h3>
+	                <p class="red"></p>
+	              </div>
+	              <div>
+	              	<a href="{:U('Mobile/Channel/index',array('id'=>$vo[id]))}" class="J_custom" data-order="1" data-title="个护美妆" data-type="18"  data-param =""> 
+	              		<img src="/Template/mobile/soubao/Static2/images/201602221534551456126495_kk-1.jpg" title="{$vo.name}" alt="个护美妆"> </a>
+	                <div class="line "></div>
+	              </div>
+	            </div>
+	          </div>
+          </if>
+          </foreach>
+        </div>
+        <div class="ind_flex clo_3">
+        <foreach name="thems" item="vo" key="k">
+         <if condition="($k gt 2) && ($k lt 6)">
+          <div>
+            <div class="top needTitle">
+              <div class="title J_title" data-href="" data-order="1" data-title="户外运动" data-type="21"  data-param ="">
+                <h3>{$vo.mobile_name}</h3>
+                <p class="red">低至59元起</p>
+              </div>
+              <div> <a href="{:U('Mobile/Channel/index',array('id'=>$vo[id]))}" class="J_custom" data-order="1" data-title="户外运动" data-type="21"  data-param =""> <img src="{$vo.image}" title="{$vo.name}" alt="户外运动"> </a>
+                <div class="line "></div>
+              </div>
+            </div>
+          </div>
+          </if>
+          </foreach>
+        </div>
+        
+         <div class="ind_flex clo_3">
+         <foreach name="thems" item="vo" key="k">
+         <if condition="$k gt 5">
+           <div>
+            <div class="top needTitle">
+              <div class="title J_title" data-href="" data-order="1" data-title="个护美妆" data-type="18"  data-param ="">
+                <h3>{$vo.mobile_name}</h3>
+                <p class="red"></p>
+              </div>
+              <div> <a href="{:U('Mobile/Channel/index',array('id'=>$vo[id]))}" class="J_custom" data-order="1" data-title="个护美妆" data-type="18"  data-param =""><img src="{$vo.image}" title="{$vo.name}" alt="个护美妆"> </a>
+                <div class="line "></div>
+              </div>
+            </div>
+          </div>
+          </if>
+          </foreach>
+        </div>
+      </div>
+    </div>
+    <!-- 新主题馆 E -->   
+    <!-- 腰部banner S -->
+    <div class="ind_box  new relative">
+      <div>
+        <div class='swiper-container yaobu-swiper-container J_yaobu_swiper_container' data-id="8">
+          <div class='swiper-wrapper'>
+            <div class="swiper-slide">
+              <div class="">
+                <div> <a href="" class="" data-order="1" data-title="20" data-type="21"  data-param =""> <img src="/Template/mobile/soubao/Static2/images/201602291843031456742583_kk-1.jpg" title="20" alt="20"> </a> </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="">
+                <div> <a href="" class="" data-order="2" data-title="20" data-type="21"  data-param =""> <img src="/Template/mobile/soubao/Static2/images/201602291843491456742629_kk-1.jpg" title="20" alt="20"> </a> </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination border-gray small fill pagination J_yaobu_pagination" data-id='8' data-count="2"> </div>
+        </div>
+      </div>
+    </div>
+    <!-- 腰部banner E --> 
+    <!-- (1大2小 居中)6、(1大2小 偏左)7 新 S -->
+    <div class="ind_box over_hide  new">
+      <div class="banner_title J_banner_title" data-href="">
+        <div class="head">
+          <div class="left"> 
+            <!-- 方便SEO -->
+            <h2> 品牌推荐 </h2>
+          </div>
+          <div class="right">
+            <div class="arrow-right hide_it"></div>
+          </div>
+        </div>
+      </div>
+      <div class="ind_flex clo_3 left margin_bottom_big">
+        <div>
+          <div class="">
+            <div> <a href="" class="" data-order="1" data-title="" data-type="21"  data-param =""> <img src="/Template/mobile/soubao/Static2/images/201602291844461456742686_kk-1.jpg" title="" alt=""> </a>
+              <div class="line "></div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="">
+            <div> <a href="" class="" data-order="2" data-title="" data-type="21"  data-param =""> <img src="/Template/mobile/soubao/Static2/images/201602291845201456742720_kk-1.jpg" title="" alt=""> </a>
+              <div class="line "></div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="">
+            <div> <a href="" class="" data-order="3" data-title="" data-type="21"  data-param =""> <img src="/Template/mobile/soubao/Static2/images/201603010931041456795864_kk-1.jpg" title="" alt=""> </a>
+              <div class="line "></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- (1大2小 居中)6、(1大2小 偏左)7 E --> 
+    <!-- 1*1 - 1*4 S -->
+    <div class="ind_box  new">
+      <div class="ind_flex clo_1 ">
+        <div class="">
+          <div> <a href="" class="" data-order="1" data-title="" data-type="21"  data-param =""> <img src="/Template/mobile/soubao/Static2/images/201602291846131456742773_kk-1.jpg" title="" alt=""> </a>
+            <div class="line "></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 1*1 - 1*4 E --> 
+    
+    <!-- 首页弹窗 S -->
+    <div class="popup J_popup hide_it">
+      <div class="pop_bd">
+        <div class="content">
+          <div class="">
+            <div> <a href="" class="" data-order="1" data-title="20" data-type="21"  data-param =""> <img src="/Template/mobile/soubao/Static2/images/201603041709461457082586_kk-1.jpg" title="20" alt="20"> </a>
+              <div class="line "></div>
+            </div>
+          </div>
+          <a class="close J_close_popup" href=""><i class="iconfont">&#xe615;</i></a> </div>
+      </div>
+    </div>
+    <!-- 首页弹窗 E --> 
+   
+    <!-- 推荐 E -->
+    <div class="recommend J_recommend">
+      <div class="rd_tilte">
+        <h2>猜你喜欢</h2>
+      </div>
+      <ul class="rd_ul">
+      <foreach name="favourite_goods" item="v" key="k">
+        <li>
+          <a href="{:U('Mobile/Goods/goodsInfo',array('id'=>$v[goods_id]))}">
+	          <div class="rl_img">
+	          	<img src="{$v.goods_id|goods_thum_images=400,400}" data-imgsrc="" alt="" title="" class="J_item" data-type="5" data-param="201410CM310000396">
+	          </div>
+	          <div class="rl_adc">
+	            <div class="rc_name">{$v.goods_name}</div>
+	            <div class="rc_price">
+	              <p>¥{$v.shop_price}</p><s>¥{$v.market_price}</s></div>
+	          </div>
+          </a>
+        </li>
+        </foreach>
+      </ul>
+      <div class="rd_bottom hide_it J_hint">商品随您兴趣更新，常回来看看喔~</div>
+    </div>
+    
+    <!-- 推荐 S  -->
+    <div class="recommend hide_it J_recommend">
+      <div class="rd_tilte">
+        <h2>猜你喜欢</h2>
+      </div>
+      <ul class="rd_ul"></ul>
+      <div class="rd_bottom hide_it J_hint">商品随您兴趣更新，常回来看看喔~</div>
+    </div>
+  </div>
+  
+  <!-- 底部搜索 -->
+  <div class="search_btm" id="btmSearchBox">
+    <p class="search_btm_box J_search_btm">
+      <input type="text" value="" id="btmSearch" placeholder="搜索商品"/>
+    </p>
+  </div>
+</div>
+<div class="hide_it" id="J_cityCode" data-city='CS000016'></div>
+<!-- app下载 -->
+<div class="pop_appdown J_popAppdown" id="popAppdown" style='display: none;'>
+  <div class="mbox outbox">
+    <p class="appdown_logo"> <img src="/Template/mobile/soubao/Static2/images/app_logo.png" /> </p>
+    <p class="appdown_dsc J_appDown"> <img src="/Template/mobile/soubao/Static2/images/download.png" /> </p>
+    <p class="appdown_close"><a id="closeAppdown" class="J_appDownClose" href="">
+      <span> <img src="/Template/mobile/soubao/Static2/images/closen.png" /></span>
+      </a></p>
+  </div>
+</div>
+<!-- safari提示 --> 
+<!--safari 提示-->
+<div class="iosdesk J_safariPrompt" id="iosDesk" style="display: none;">
+  <span class="ioscolse J_safariPromptHide"> <em class="ioscolse_icon iosdesk_icon"></em> </span>
+  <p class="iosdesk_txt">
+    <span class="va">您可以将此应用程式安装在您的iPhone上。请按</span>
+    <i class="iosdesk_icon va"></i>
+    <span class="va">然后点选<b>添加到主屏幕。</b></span>
+  </p>
+  <b class="sanj"></b> </div>
+<!-- 底部导航 -->
+<noscript>
+<p><img src="/Template/mobile/soubao/Static2/images/d3ad720ce18f483bb829c3ca53b7f39d.gif" style="border:0" alt="" /></p>
+</noscript>
+<!-- End uniclickTracking Code --> 
+<!-- 页面底部 --> 
+<!-- 页面底部 -->
+<div class="outbox footer_box J_footer">
+  <p class="vpage">备案号:{$tpshop_config['shop_info_record_no']}</p>
+  <p class="copyright"> Copyright © 2016-2025  {$tpshop_config['shop_info_store_name']}<br>
+  </p>
+</div>
+<script>
+var mySwiper = new Swiper('.bannerSwiper',{
+    mode:'horizontal',
+    loop: true,
+	autoplay:2000,
+	pagination: '.pagination'
+});  
+</script> 
+</body>
+</html>

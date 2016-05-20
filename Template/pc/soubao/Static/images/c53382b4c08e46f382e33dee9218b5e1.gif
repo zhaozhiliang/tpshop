@@ -1,0 +1,233 @@
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>登录飞牛网</title>
+<link rel="stylesheet" type="text/css" href="https://s2.feiniu.com/css/common.css?v=1457074273817">
+<link rel="stylesheet" type="text/css" href="https://s2.feiniu.com/css/member/login.css?v=1457074273817">
+
+<script>
+try{
+	top.location.hostname;
+	if (top.location.hostname != window.location.hostname) {
+		top.location.href = window.location.href;
+	}
+}catch(e){
+	top.location.href = window.location.href;
+}
+</script>
+</head>
+<body>
+    <div class="header area">
+    	<a href="http://www.feiniu.com/" class="logo" title="回飞牛网首页"></a>
+    </div>
+    <div class="m-login" style="background-color: #e9e9e9;" id="divMLogin">
+          <div class="login-wrap">
+            <div class="banner">
+                <a href="#" id="aBanner"><img src=""></a>
+            </div>
+            <div class="login-form">
+                <div class="title oh">
+                    <h1 class="fl">登录飞牛网</h1>
+                    <div class="regist-link fr">
+                        <a href="https://reg.feiniu.com/gateway/register">免费注册</a>
+                    </div>
+                </div>
+                <div class="u-msg-wrap">
+                    <div class="msg msg-warn" style="display:none;">
+                        <i></i>
+                        <span>公共场所不建议自动登录，以防帐号丢失</span>                        
+                    </div>
+                    <div class="msg msg-err" style="display:none;">
+                        <i></i>
+                        <span class="J-errorMsg"></span>    
+                    </div>
+                </div>
+                <form id="login-form">
+                    <div class="u-input mb20">
+                        <label class="u-label u-name"></label>
+                        <input type="text" class="u-txt J-input-txt" value="" placeholder="邮箱/用户名/手机号" name="username" autocomplete="off">
+                    </div>
+                    <input type="hidden">
+                    <div class="u-input mb15">
+                        <label class="u-label u-pwd"></label>
+                        <input type="password" class="u-txt J-input-txt" placeholder="密码" name="password" autocomplete="off">
+                    </div>
+                    <div class="u-safe">
+                        <span class="auto">
+                            <label><input type="checkbox" class="u-ckb J-auto-rmb"  name="chkRememberMe">自动登录</label>
+                        </span>
+                        <span class="forget"><a href="https://i.feiniu.com/lostPwd/fillname">忘记密码？</a></span>
+                    </div>
+                    <div class="u-input u-authcode mt10" id="logincaptcha" style="display: none" >
+                        <input type="text" class="u-txt mr10 J-input-auth u-txt-err" placeholder="验证码" name="authcode" maxlength="4">
+                        <img id="vcode" src="" class="code-img mr10">
+                        <a href="#" class="cpcchang">看不清换一张</a>
+                    </div>
+                    <div class="u-btn mb20 mt20">
+                        <a href="javascript:;" class="J-login-submit" name="sbtbutton">登&nbsp;&nbsp;&nbsp;&nbsp;录</a>
+                    </div>
+                </form>
+                <dl class="account">
+                    <dt class="mr20">使用合作网站帐号登录飞牛:</dt>
+                    <dd><a href="https://passport.feiniu.com/thirdLogin/configNew?type=qq&referer=aHR0cHM6Ly9zaG9wLmZlaW5pdS5jb20vb3JkZXIvaW5kZXg/Y2FydF90eXBlPTA=" class="qq" title="QQ"></a></dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <script>
+       var basePath = 'https://passport.feiniu.com/';
+       var bannerUrl = 'https://member.feiniu.com/getaway/loginBanner';
+       var referer = 'aHR0cHM6Ly9zaG9wLmZlaW5pdS5jb20vb3JkZXIvaW5kZXg/Y2FydF90eXBlPTA=';
+       var csrfToken = '29c0c6db-51d8-4aab-bae6-2de4ff66b6d4';
+       var siteDomain = '.feiniu.com';
+	   </script>
+    <link rel='stylesheet' type='text/css' href='https://s1.feiniu.com/product/css_build/common.css'><div class="m-g-footer mt20">
+    <div class="footer-map ma oh">
+        <ul class="fixed">
+                        <li class="map">
+                <img class="footer-icon" src="https://img.feiniu.com/C/web/layout/kk/20160229/201602291523551456730635_kk-0.png">
+                <strong class="tit">正品低价</strong>
+                <br/>
+                <span class="desc">正品行货 品质保障</span>
+            </li>
+                            <li class="line"></li>
+                                    <li class="map">
+                <img class="footer-icon" src="https://img.feiniu.com/C/web/layout/kk/20160229/201602291524011456730641_kk-0.png">
+                <strong class="tit">品类齐全</strong>
+                <br/>
+                <span class="desc">品类齐全 选择丰富</span>
+            </li>
+                            <li class="line"></li>
+                                    <li class="map">
+                <img class="footer-icon" src="https://img.feiniu.com/C/web/layout/kk/20160229/201602291524111456730651_kk-0.png">
+                <strong class="tit">快速配送</strong>
+                <br/>
+                <span class="desc">多仓直发 极速配送</span>
+            </li>
+                            <li class="line"></li>
+                                    <li class="map">
+                <img class="footer-icon" src="https://img.feiniu.com/C/web/layout/kk/20160229/201602291524141456730654_kk-0.png">
+                <strong class="tit">售后无忧</strong>
+                <br/>
+                <span class="desc">7天无理由退货</span>
+            </li>
+                                </ul>
+    </div>
+    <div class="server-list">
+        <ul class="fixed">
+                        <li>
+                <i class="list-icon icon1"></i>
+                <dl class="list-item">
+                    <dt><a href="javascript:void(0)">购物指南</a></dt>
+                                            <dd><a target="_blank" href="http://sale.feiniu.com/help_center/hc-1.html" rel="nofollow">新用户注册</a></dd>
+                                            <dd><a target="_blank" href="http://sale.feiniu.com/help_center/hc-3.html" rel="nofollow">购物流程</a></dd>
+                                    </dl>
+            </li>
+                        <li>
+                <i class="list-icon icon2"></i>
+                <dl class="list-item">
+                    <dt><a href="javascript:void(0)">支付方式</a></dt>
+                                            <dd><a target="_blank" href="http://sale.feiniu.com/help_center/hc-4.html" rel="nofollow">货到付款</a></dd>
+                                            <dd><a target="_blank" href="http://sale.feiniu.com/help_center/hc-4.html" rel="nofollow">银联卡支付</a></dd>
+                                            <dd><a target="_blank" href="http://sale.feiniu.com/help_center/hc-4.html" rel="nofollow">支付宝</a></dd>
+                                            <dd><a target="_blank" href="http://sale.feiniu.com/help_center/hc-4.html" rel="nofollow">财付通</a></dd>
+                                            <dd><a target="_blank" href="http://sale.feiniu.com/help_center/hc-5.html" rel="nofollow">优惠卡券</a></dd>
+                                    </dl>
+            </li>
+                        <li>
+                <i class="list-icon icon3"></i>
+                <dl class="list-item">
+                    <dt><a href="javascript:void(0)">配送服务</a></dt>
+                                            <dd><a target="_blank" href="http://sale.feiniu.com/help_center/hc-7.html#1" rel="nofollow">配送方式</a></dd>
+                                            <dd><a target="_blank" href="http://sale.feiniu.com/help_center/hc-7.html#1" rel="nofollow">配送查询</a></dd>
+                                            <dd><a target="_blank" href="http://sale.feiniu.com/help_center/hc-8.html" rel="nofollow">便利店自提</a></dd>
+                                    </dl>
+            </li>
+                        <li>
+                <i class="list-icon icon4"></i>
+                <dl class="list-item">
+                    <dt><a href="javascript:void(0)">售后服务</a></dt>
+                                            <dd><a target="_blank" href="http://sale.feiniu.com/help_center/hc-9.html" rel="nofollow">退货说明</a></dd>
+                                            <dd><a target="_blank" href="http://sale.feiniu.com/help_center/hc-9.html#2" rel="nofollow">退款说明</a></dd>
+                                    </dl>
+            </li>
+                        <li>
+                <i class="list-icon icon5"></i>
+                <dl class="list-item">
+                    <dt><a href="javascript:void(0)">常见问题</a></dt>
+                                            <dd><a target="_blank" href="http://sale.feiniu.com/help_center/hc-10.html#1" rel="nofollow">账户问题</a></dd>
+                                            <dd><a target="_blank" href="http://sale.feiniu.com/help_center/hc-10.html#4" rel="nofollow">发票问题</a></dd>
+                                            <dd><a target="_blank" href="http://sale.feiniu.com/help_center/hc-10.html#9" rel="nofollow">订单问题</a></dd>
+                                            <dd><a target="_blank" href="http://fnonline.feiniu.com/live800/chatClient/chatbox.jsp?companyID=8934&configID=121&enterurl=http%3A%2F%2Fwww.feiniu.com%2Fhelp_center%2Fproblem%236&pagereferrer=%E5%B8%AE%E5%8A%A9%E4%B8%AD%E5%BF%83&k=1&info=userId%3D1419307128%26loginname%3D%26name%3D%E5%B8%AE%E5%8A%A9%E4%B8%AD%E5%BF%83%26timestamp%3D1419307128825" rel="nofollow">在线客服</a></dd>
+                                    </dl>
+            </li>
+                                    <li class="app-item">
+                <p>飞牛网客户端</p>
+                <a target="_blank" href="javascript:;" style="cursor:default;text-decoration:none;" rel="nofollow"><img src="https://img.feiniu.com/C/web/layout/kk/20160229/201602291617531456733873_kk-0.jpg" width="90" height="90" alt="飞牛网客户端"></a>
+            </li>
+                        <li class="wechat-item">
+                <p>飞牛网微信</p>
+                <a target="_blank" href="javascript:;" style="cursor:default;text-decoration:none;" rel="nofollow"><img src="https://img.feiniu.com/C/web/layout/kk/20160229/201602291617551456733875_kk-0.jpg" width="90" height="90" alt="飞牛网微信"></a>
+            </li>
+                    </ul>
+    </div>
+    <div class="site-info">
+        <div class="foot-nav">
+                        <a  rel="nofollow"  href="http://sale.feiniu.com/about/about-1.html"  target="_blank">公司介绍</a>|                        <a  rel="nofollow"  href="http://sale.feiniu.com/about/about-6.html"  target="_blank">媒体报道</a>|                        <a  href="http://www.feiniu.com/hotkey"  target="_blank">热搜索词</a>|                        <a  href="http://www.feiniu.com/link"  target="_blank">友情链接</a>|                        <a  rel="nofollow"  href="http://sale.feiniu.com/activity-99733615622538.html"  target="_blank">商家入驻</a>|                        <a  rel="nofollow"  href="http://zhaoshang.feiniu.com/applyCompanyInfo/standard.do"  target="_blank">招商标准</a>|                        <a  rel="nofollow"  href="http://api.feiniu.com/"  target="_blank">开放平台</a>|                        <a  rel="nofollow"  href="javascript:;" style="cursor:default;text-decoration:none;" target="_blank">企业团购 021-36695538</a>|                        <a  rel="nofollow"  href="javascript:;" style="cursor:default;text-decoration:none;" target="_blank">客服热线 400-920-6565</a>                    </div>
+        <div class="link">
+                            <p>
+                                            沪ICP备14034590号　|　食品流通许可证编号：sp3100001310001023　|　酒类商品零售许可证 沪闸酒专字 第0811030108000822                                                            </p>
+                            <p>
+                                            出版物经营许可证编号新出发（沪）零字第Z6216号　|　快递业务经营许可证编号：沪邮20131324B　|　营业执照                                                            </p>
+                            <p>
+                                            Copyright © 2013-2016 飞牛网, All Rights Reserved.                                                            </p>
+                    </div>
+        <div class="inline-box logowall">
+                        <a href="http://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&entyId=20140227112434963" class="item" target="_blank" rel="nofollow">
+                <img src="https://img.feiniu.com/C/web/layout/kk/20160229/201602291526181456730778_kk-0.png">
+            </a>
+                        <a href="http://www.zx110.org/" class="item" target="_blank" rel="nofollow">
+                <img src="https://img.feiniu.com/C/web/layout/kk/20160229/201602291612371456733557_kk-0.jpg">
+            </a>
+                        <a href="https://search.szfw.org/cert/l/CX20140320003626003667" class="item" target="_blank" rel="nofollow">
+                <img src="https://img.feiniu.com/C/web/layout/kk/20160229/201602291612471456733567_kk-0.jpg">
+            </a>
+                        <a href="https://ss.knet.cn/verifyseal.dll?sn=e14042231010848227ph1s000000&ct=df&a=1&pa=0.49437505193054676" class="item" target="_blank" rel="nofollow">
+                <img src="https://img.feiniu.com/C/web/layout/kk/20160229/201602291612561456733576_kk-0.jpg">
+            </a>
+                        <a href="http://v.pinpaibao.com.cn/authenticate/cert/?site=www.feiniu.com&at=business" class="item" target="_blank" rel="nofollow">
+                <img src="https://img.feiniu.com/C/web/layout/kk/20160229/201602291613031456733583_kk-0.jpg">
+            </a>
+                    </div>
+    </div>
+</div>
+    <style type="text/css">
+    	a, body{color : #3c3c3c;}
+    	.m-g-footer .server-list .list-item a{color : #3c3c3c;}
+    	.m-g-footer .server-list{color : #3c3c3c;border-top: 0px;background : 0 0;}
+    	.m-g-footer .server-list ul{background : 0;}
+    	.m-g-footer{background: 0 0;}
+    	.m-g-footer .footer-map{background: 0 0;}
+    	.m-g-footer .site-info .foot-nav{background: 0 0;}
+    	.m-g-footer .site-info .link{background: 0 0;}
+    	.m-g-footer .site-info .logowall{background: 0 0;}
+    	.m-g-footer{height:100%;border: 0; border: none;} 
+    	.m-g-footer .footer-map{display:none;}  
+    	.m-g-footer .server-list{display:none;}
+    	.m-login{margin: 0;}
+    </style>
+    <script src="https://s2.feiniu.com/js/lib/jquery/1.11.1/jquery-1.11.1.min.js"></script>
+    <script src="https://s2.feiniu.com/js/controller/member/login.js?v=1457074273817"></script>
+    
+	<script src="https://s2.feiniu.com/js/lib/upLogger.js?v=1457074273817"></script>
+	<script src="https://s2.feiniu.com/js/lib/idigger.js?v=1457074273817"></script>
+	<script>
+        $(function() {
+        	upLogger.acceptLinkParams('1', '7026', '7');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>购物车</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta charset="utf-8" />
+    <link rel="icon" href="__STATIC__/images/favicon.ico" type="image/x-icon" />
+    <link rel="bookmark" href="__STATIC__/images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="__STATIC__/images/favicon.ico" type="image/x-icon" />
+    <meta http-equiv="X-UA-Compatible" content="edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telphone=no, email=no" />
+    <meta name="renderer" content="webkit" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="x5-orientation" content="portrait" />
+    <meta name="full-screen" content="yes" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="browsermode" content="application" />
+    <meta name="x5-page-mode" content="app" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" />
+    <link rel="stylesheet" href="__STATIC__/css/zip.touch.cart2_0._all_.v39013.css" type="text/css" />
+    <script type="text/javascript" src="__STATIC__/js/zepto.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="__STATIC__/css/com1-3.css" />
+    <script src="__STATIC__/js/jquery.js"></script>
+    <style type="text/css">
+        .m_header,
+        .body{max-width: 640px;}
+        .m_header{left:50%;margin-left: -320px;}
+    .com-title .home_menu {display: inline-block;vertical-align: middle;right: 2%;top:0;width: 10%;}
+    .m_bg{background-image: url(__STATIC__/images/base.png);background-size: 345px 350px;}
+    .holdspace{ height:50px;}
+    .com-title{ position:fixed; height:45px; left:0; z-index:3; top:0; width:100%; font-family:微软雅黑 !important;}
+    .com-title .home_menu span:after,
+    .com-title .home_menu span:before,
+    .com-title .home_menu span{display: inline-block;vertical-align: middle;width: 6px;height: 6px;border-radius: 3px;background: #ffffff;position: relative;}
+    .com-title .home_menu span:after{content: ' ';position: absolute;right:-10px;top:0;}
+    .com-title .home_menu span:before{content: ' ';position: absolute;left:-10px;top:0;}
+    .rotate45{ -webkit-transform:rotate(45deg) scale(1.00,1.00) translate(0px,0px) skew(0deg,0deg);transform:rotate(45deg) scale(1.00,1.00) translate(0px,0px) skew(0deg,0deg);}
+    .m_menu{z-index: 20;position: fixed;top:45px;right:5px;margin-left: -320px;}
+    .m_menu>div{margin-left:340px;width: 160px;background: #292c33;border-radius: 6px;}
+    .m_menu>div>i{width: 26px;height: 26px;position: absolute;right:15px;top:-12px;background: #292c33;}
+    .m_menu>div>a{color: #949599;text-decoration: none;display: block;height: 50px;line-height: 50px;border-bottom:2px solid #1f2126;padding-left:65px;position: relative;}
+    .m_menu>div>a:last-child{border-bottom:0;line-height: 50px;}
+    .m_menu>div>a>span{position: absolute;top:14px;left:24px;}
+    .m_menu>div>a>span>i{width: 23px;height: 21px;display: inline-block;vertical-align: middle;}
+    .m_menu>div>a:nth-child(2)>span>i{background-position: 0 -251px;}
+    .m_menu>div>a:nth-child(3)>span>i{background-position: -25px -251px;}
+    .m_menu>div>a:nth-child(4)>span>i{background-position: -52px -251px;}
+    .m_menu>div>a:nth-child(5)>span>i{background-position: -78px -251px;}
+    .spaceholder{ height:45px;}
+    .hidden{ display:none;}
+    .mask{ background: #FFF; opacity: 0.01;z-index: 19; width: 100%;height: 100%; position: absolute;top: 0;left: 0;}
+    .reas_tab{ border-collapse:collapse; border:1px solid #dedede; font-size:14px}
+    .reas_tab tr{ height:50px}
+    .reas_tab tr td:nth-child(2){padding-left:5px;}
+    .reas_tab tr td:nth-child(1){padding-right:5px;}
+	.pxui-button, input[type=button], input[type=submit], input[type=reset]{ margin:0}
+	.freight{line-height:0px}
+    </style>
+    <script type="text/javascript">function remReSize(){var w = $(window).width();try{w = $(parent.window).width();}catch(ex){};if(w>640){w = 640;};$('html').css('font-size',100/640*w+'px');$('#js_style_for_pc').remove();$('body').append('<style id="__STATIC__/js_style_for_pc">.m_header{margin-left: -'+w/2+'px;}.m_menu{margin-left: -'+w/2+'px;}</style>');};remReSize();$(window).resize(remReSize);$(document).ready(function() {remReSize();});for(var i=0;i<3;i++){setTimeout(remReSize, 100*i);};</script>
+    
+</head>
+<body>
+<div class="body">
+    <div class="mask hidden"></div>
+	<!--头部开始-->
+	 <assign name="title" value="购物车" />
+	 <include file="Public/menu" />
+	<!--头部结束-->         
+ 
+	
+    <div class="lib_content" id="js_lib_content">
+        <!--购物车有商品-->
+        <div class="car_opera">
+            <label class="m_radio m_order_checkbox">
+                <!--<input class="js_select_all" type="checkbox" />-->
+                <input type="checkbox" name="select_all" class="js_select_all" id="select_all" <if condition="$select_all eq 1" >checked="checked"</if> onchange="check_all();" value="1"/>
+            </label>
+            <label for="select_all" class="gray6">全选</label>
+            <i onclick="del_cart_more();" class="m_icon m_icon_delete_gray right" id="__STATIC__/js-delcar"></i>
+        </div>
+        <form id="cart_form" action="{:U('Mobile/Cart/ajaxCartList')}" method="post">
+            <div id="ajax_return"><!--  ajax renturn --></div>
+        </form>
+    </div>     
+    <div style="display:none;">
+    </div>
+    <div class="placeholder"></div>
+</div>
+<!--<script type="text/javascript" src="__STATIC__/js/zip.touch.cart2_0._all_.v3624.js"></script>-->
+<script type="text/javascript" src="__STATIC__/js/jweixin-1.0.0.js"></script>
+<script>
+    $(document).ready(function(){
+
+        ajax_cart_list(); // ajax 请求获取购物车列表
+    });
+
+
+
+    // ajax 提交购物车
+    function ajax_cart_list(){
+
+        $.ajax({
+            type : "POST",
+            url:"{:U('Mobile/Cart/ajaxCartList')}",//+tab,
+            data : $('#cart_form').serialize(),// 你的formid
+            success: function(data){
+                $("#ajax_return").html('');
+                $("#ajax_return").append(data);
+            }
+        });
+    }
+
+    /**
+     * 购买商品数量加加减减
+     * 购买数量 , 购物车id , 库存数量
+     */
+    function switch_num(num,cart_id,store_count)
+    {
+        var num2 = parseInt($("input[name='goods_num["+cart_id+"]']").val());
+        num2 += num;
+        if(num2 < 1) num2 = 1; // 保证购买数量不能少于 1
+        if(num2 > store_count)
+        {   alert("库存只有 "+store_count+" 件, 你只能买 "+store_count+" 件");
+            num2 = store_count; // 保证购买数量不能多余库存数量
+        }
+
+        $("input[name='goods_num["+cart_id+"]']").val(num2);
+
+        ajax_cart_list(); // ajax 更新商品价格 和数量
+    }
+
+
+    /**  全选 反选 **/
+    function check_all()
+    {
+        var vt = $("#select_all").is(':checked');
+        $("input[name^='cart_select']").prop('checked',vt);
+        if(vt){
+            $("input[name^='cart_select']").parent().addClass('m_checked');
+            $("#select_all").parent().addClass('m_checked');
+        }else{
+            $("input[name^='cart_select']").parent().removeClass('m_checked');
+            $("#select_all").parent().removeClass('m_checked');
+        }
+//        m_checked
+        // var checked = !$('#select_all').attr('checked');
+        // $("input[name^='cart_select']").attr("checked",!checked);
+        ajax_cart_list(); // ajax 更新商品价格 和数量
+    }
+
+
+    // ajax 删除购物车的商品
+    function ajax_del_cart(ids)
+    {
+        $.ajax({
+            type : "POST",
+            url:"{:U('Mobile/Cart/ajaxDelCart')}",//+tab,
+            data:{ids:ids}, //
+            dataType:'json',
+            success: function(data){
+                // alert(data.msg);
+                if(data.status == 1)
+                    ajax_cart_list(); // ajax 请求获取购物车列表
+            }
+        });
+    }
+
+    // 批量删除购物车的商品
+    function del_cart_more()
+    {
+        if(!confirm('确定要删除吗?'))
+            return false;
+        // 循环获取复选框选中的值
+        var chk_value = [];
+        $('input[name^="cart_select"]:checked').each(function(){
+            var s_name = $(this).attr('name');
+            var id = s_name.replace('cart_select[','').replace(']','');
+            chk_value.push(id);
+        });
+        // ajax  调用删除
+        if(chk_value.length > 0)
+            ajax_del_cart(chk_value.join(','));
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<html>
+<head>
+    <title>{$goods.goods_name}</title>
+    <meta charset="utf-8" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="bookmark" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <meta content=" width = device-width , initial-scale = 1.0 , maximum-scale = 1.0 , user-scalable = no " id="viewport" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <link type="text/css" rel="stylesheet" href="__STATIC__/css/index.2.0.css" />
+    <link type="text/css" rel="stylesheet" href="__STATIC__/css/com1-3.css" />
+    <link type="text/css" rel="stylesheet" href="__STATIC__/css/com1-4.css" />
+    <script src="__STATIC__/js/jquery.js"></script>
+    <script src="__STATIC__/js/com.js"></script> 
+</head>
+<style type="text/css">
+    .com-title .home_menu {display: inline-block;vertical-align: middle;right: 2%;top: 40%;width: 10%;}
+    .m_bg{background-image: url(__STATIC__/images/base.png);background-size: 345px 350px;}
+    .holdspace{ height:50px;}
+    .com-title{ position:fixed; height:45px; left:0; z-index:3; top:0; width:100%; font-family:微软雅黑 !important;}
+    .com-title .home_menu span:after,
+    .com-title .home_menu span:before,
+    .com-title .home_menu span{display: inline-block;vertical-align: middle;width: 6px;height: 6px;border-radius: 3px;background: #ffffff;position: relative;}
+    .com-title .home_menu span:after{content: ' ';position: absolute;right:-10px;top:0;}
+    .com-title .home_menu span:before{content: ' ';position: absolute;left:-10px;top:0;}
+    .rotate45{ -webkit-transform:rotate(45deg) scale(1.00,1.00) translate(0px,0px) skew(0deg,0deg);transform:rotate(45deg) scale(1.00,1.00) translate(0px,0px) skew(0deg,0deg);}
+    .m_menu{z-index: 20;position: fixed;top:45px;right:5px;margin-left: -320px;}
+    .m_menu>div{margin-left:340px;width: 160px;background: #292c33;border-radius: 6px;}
+    .m_menu>div>i{width: 26px;height: 26px;position: absolute;right:15px;top:-12px;background: #292c33;}
+    .m_menu>div>a{color: #949599;text-decoration: none;display: block;height: 50px;line-height: 50px;border-bottom:2px solid #1f2126;padding-left:65px;position: relative;}
+    .m_menu>div>a:last-child{border-bottom:0;line-height: 50px;}
+    .m_menu>div>a>span{position: absolute;top:14px;left:24px;}
+    .m_menu>div>a>span>i{width: 23px;height: 21px;display: inline-block;vertical-align: middle;}
+    .m_menu>div>a:nth-child(2)>span>i{background-position: 0 -251px;}
+    .m_menu>div>a:nth-child(3)>span>i{background-position: -25px -251px;}
+    .m_menu>div>a:nth-child(4)>span>i{background-position: -52px -251px;}
+    .m_menu>div>a:nth-child(5)>span>i{background-position: -78px -251px;}
+    .spaceholder{ height:45px;}
+    .hidden{ display:none;}
+    .mask{ background: #FFF; opacity: 0.01;z-index: 19; width: 100%;height: 100%; position: absolute;top: 0;left: 0;}
+    .reas_tab{ border-collapse:collapse; border:1px solid #dedede; font-size:14px}
+    .reas_tab tr{ height:50px}
+    .reas_tab tr td:nth-child(2){padding-left:5px;}
+    .reas_tab tr td:nth-child(1){padding-right:5px;}
+</style>
+<body>
+<div class="com-content" style="background-color:#FFF;">
+    <div class="com-content-area" style="background-color:#FFF;">
+        <div class="mask hidden"></div>
+<!--头部开始-->
+ <assign name="title" value="商品属性" />
+ <include file="Public/menu" />
+<!--头部结束-->
+        <div class="holdspace" style="height:50px"></div>
+        <div class="an-reaso">
+            <table class="reas_tab" width="100%" border="1" cellspacing="0" cellpadding="0">
+                <foreach name="goods_attr_list" item="v" key="k" >
+                    <tr>
+                        <td >{$goods_attribute[$v[attr_id]]}</td>
+                        <td>{$v[attr_value]}</td>
+                    </tr>
+                </foreach>
+            </table>
+        </div>
+    </div>
+    <div class="com-footer-area" id="/Template/mobile/default/Static/js-com-footer-area">
+        <span class="top"></span>
+        <div class="footer">
+            
+            <div class="copy">
+               <include file="Public/copy" /> 
+            </div>
+        </div>
+    </div>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>购物车 - 订单结算</title>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="搜豹网,搜豹网官方网站,搜豹网商城" />
+    <meta name="description" content="" />
+    <link rel="icon" href="__STATIC__/images/favicon.ico" type="image/x-icon" />
+    <link rel="bookmark" href="__STATIC__/images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="__STATIC__/images/favicon.ico" type="image/x-icon" />
+    <meta content=" width = device-width , initial-scale = 1.0 , maximum-scale = 1.0 , user-scalable = no " id="viewport" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+</head>
+<body>
+<!--改版后 com1-3.css可以去掉-->
+<link type="text/css" rel="stylesheet" href="__STATIC__/css/com1-3.css?2015091516" />
+<!--新改的-->
+<link type="text/css" rel="stylesheet" href="__STATIC__/css/com1-4.css?2015091516" />
+<link type="text/css" rel="stylesheet" href="__STATIC__/css/download.css?2015091516" />
+<link type="text/css" rel="stylesheet" href="__STATIC__/css/public-adaptation1-1.css?2015091516" />
+<script src="__STATIC__/js/jquery.js?2015091516"></script>
+<script src="__STATIC__/js/com.js?2015091516"></script>
+<script src="__STATIC__/js/px-verify.js?2015091516"></script>
+<script src="__STATIC__/js/template.js?2015091516"></script>
+ 
+<div class="com-content">
+ 
+    <div class="clearboth"></div>
+    <div class="com-content-area" id="js-com-content-area">
+        <div class="mask hidden"></div>
+        <!--content-->
+        <style type="text/css">
+			.com-content{ background-color:#FFF}
+            .m_bg{background-image: url(__STATIC__/images/base.png);background-size: 345px 350px;}
+            .holdspace{ height:50px;}
+            .com-title{ position:fixed; height:45px; left:0; z-index:3; top:0; width:100%; font-family:微软雅黑 !important;}
+            .com-title .home_menu{display: inline-block;vertical-align: middle; right:2%; top:-4%; width:10%;}
+            .com-title .home_menu span:after,
+            .com-title .home_menu span:before,
+            .com-title .home_menu span{display: inline-block;vertical-align: middle;width: 6px;height: 6px;border-radius: 3px;background: #ffffff;position: relative;}
+            .com-title .home_menu span:after{content: ' ';position: absolute;right:-10px;top:0;}
+            .com-title .home_menu span:before{content: ' ';position: absolute;left:-10px;top:0;}
+            .rotate45{  -webkit-transform:rotate(45deg) scale(1.00,1.00) translate(0px,0px) skew(0deg,0deg);transform:rotate(45deg) scale(1.00,1.00) translate(0px,0px) skew(0deg,0deg);}
+            .m_menu{z-index: 20;position: fixed;top:45px;right:5px;margin-left: -320px;}
+            .m_menu>div{margin-left:340px;width: 160px;background: #292c33;border-radius: 6px;}
+            .m_menu>div>i{width: 26px;height: 26px;position: absolute;right:15px;top:-12px;background: #292c33;}
+            .m_menu>div>a{color: #949599;text-decoration: none;display: block;height: 50px;line-height: 50px;border-bottom:2px solid #1f2126;padding-left:65px;position: relative;}
+            .m_menu>div>a:last-child{border-bottom:0;line-height: 50px;}
+            .m_menu>div>a>span{position: absolute;top:0;left:24px;}
+            .m_menu>div>a>span>i{width: 23px;height: 21px;display: inline-block;vertical-align: middle;}
+            .m_menu>div>a:nth-child(2)>span>i{background-position: 0 -251px;}
+            .m_menu>div>a:nth-child(3)>span>i{background-position: -25px -251px;}
+            .m_menu>div>a:nth-child(4)>span>i{background-position: -52px -251px;}
+            .m_menu>div>a:nth-child(5)>span>i{background-position: -78px -251px;}
+            .spaceholder{ height:45px;}
+            .hidden{ display:none;}
+            .mask{ background: #FFF; opacity: 0.01;z-index: 19; width: 100%;height: 100%; position: absolute;top: 0;left: 0;}
+			input[type=button]{margin:0}
+			.img_di_sta img{ width:1.8rem; height:1.8rem}
+			.link{ clear:both;overflow: hidden;border-bottom: 1px solid #dedede;padding-bottom: 0.1rem;padding-top: 0.2rem;}
+			.link:last-child{ border-bottom:0px}			
+
+        </style>
+     
+        <div class="page-role cart-page cart-trolly-page" id="js-cart-trolly-page">
+            <link type="text/css" rel="stylesheet" href="__STATIC__/css/checkout.css" />
+            <script src="__STATIC__/js/consignee.js"></script>
+ 
+            <!--头部开始-->
+             <assign name="title" value="购物车结算" />
+             <include file="Public/menu" />
+            <!--头部结束-->
+            <div class="spaceholder"></div>
+  
+
+                <form name="cart2_form" id="cart2_form" method="post">
+                <div class="pxui-area" id="js-trolly" style="display:block">
+                    <h1>选择收货地址</h1>
+                    <div class="address">
+                        <!--<a id="js-other-use-address-2" style="display:none">您还未添加任何地址，请先添加地址！</a>-->
+                        <div id="ajax_address"><!--ajax 返回收货地址--></div>
+
+                        <a class="a" href="{:U('User/add_address',array('is_back'=>1))}" style="display:block;" id="js-other-use-address"><b>+</b> 使用其他收货地址</a>
+                    </div>
+
+                    <h1>物流信息</h1>
+                    <div class="goodlist" id="js-item-list">
+                        <foreach name="shippingList" item="v"  key="k">
+                                <div class="invoice-main">
+                                    <input id="{$v.code}" type="radio" style="-webkit-appearance:radio" name="shipping_code" value="{$v.code}" onClick="ajax_order_price();" <if condition="$k eq 0"> checked="checked" </if> />
+                                    <label for="gr">{$v.name}</label>
+                                    <em>({$v.desc})</em>
+                                </div>
+                        </foreach>
+                    </div>
+                    <h1>商品信息</h1>
+                    <div class="m_order" id="order_2015091516111878298">
+
+                        <ul class="m_list m_list_top_line bg_white m_order_list">
+                            <foreach name="cartList" item="v"  key="k">
+                                <!--循环勾选的商品 开始-->
+                                <li data-goodsid="1115589" class="link">
+                                    <!--<img src="http://www.how80.com/upload/small201512071109471.jpg">-->
+                                    <div class="img_di_sta" style="float:left"><img src="{$v.goods_id|goods_thum_images=300,300}"/></div>
+                                    <div class="info" style="float:left; width:68%">
+                                        <p class="sku gray9" style="-webkit-line-clamp: 2;-webkit-box-orient: vertical;display: -webkit-box;overflow: hidden; padding-left:0.2rem">{$v.goods_name}</p>
+                                        <p class="sku gray9" style="padding-left:0.2rem; margin-top:0.2rem; color:red">¥{$v.member_goods_price}x{$v.goods_num} </p>
+                                    </div>
+                                </li>
+                                <!--循环勾选的商品 结束-->
+                            </foreach>
+
+
+                        </ul>
+                    </div>
+                    <h1>发票抬头</h1>
+                    <div class="message">
+                        <input class="officdw" type="text" name="invoice_title" placeholder="XXX单位 或 XX个人" />
+                    </div>
+ 
+                    <h1>优惠</h1>
+                    <div class="offer alloffer" id="js-all-offers">
+                        <input style="-webkit-appearance:radio" type="radio" class="radio vam ma-ri-10" name="couponTypeSelect" checked value="1"  onClick="ajax_order_price();" />
+                        <select id="coupon_id" name="coupon_id" class="vam ou-no" onChange="ajax_order_price();">
+                            <option value="0">选择优惠券</option>
+                            <foreach name="couponList" item="v"  key="k">
+                                <option value="{$v['id']}">{$v['name']}</option>
+                            </foreach>
+                        </select><br/>
+                        <input style="-webkit-appearance:radio" type="radio" class="radio vam ma-ri-10" name="couponTypeSelect" value="2"  onClick="ajax_order_price();" />
+                        <input type="text" name="couponCode" class="texter vam span-150 ma-ri-10 he18 li-he-18" placeholder="请输入优惠券代码" />
+                        <input type="button" class="button-style-disabled-4 button-action-use-disabled te-al ou-no vam" value="使用" onClick="ajax_order_price();" />
+                       <br> <label class="fo-fa-ta" for="order-chick">积分支付:</label>
+                        <input type="text" id="pay_points" name="pay_points" class="texter vam span-150 ma-ri-10 he18 li-he-18" placeholder="请输入使用积分" />
+                        <input type="button" class="button-style-disabled-4 button-action-use-disabled te-al ou-no vam" value="使用" onClick="ajax_order_price();" /><br/>
+                        <?php echo tpCache('shopping.point_rate');?> 积分抵 1元 &nbsp;&nbsp;   您的可用积分 {$user['pay_points']} 分
+                       <br> <label class="fo-fa-ta" for="order-chick">余额支付:</label>
+                        <input type="text" id="user_money" name="user_money" class="texter vam span-150 ma-ri-10 he18 li-he-18" placeholder="请输入使用余额" />
+                        <input type="button" class="button-style-disabled-4 button-action-use-disabled te-al ou-no vam" value="使用" onClick="ajax_order_price();" /> <br/>
+                        您的可用余额 ¥ {$user['user_money']}
+                    </div>
+                    <h1>结算明细</h1>
+                    <div class="total">
+                        <ul>
+                            <!--<li>商品数量：<b class="pxui-color-red" id="js-goodnums-text">0</b></li>-->
+                            <li>商品金额：<b class="pxui-color-red" id="order-cost-area">￥{$total_price.total_fee}</b></li>
+                            <li>运费：<b class="pxui-color-red" id="postFee">￥{$total_price.total_fee}</b></li>
+                            <li>使用优惠券：<b class="pxui-color-red" id="couponFee">￥{$total_price.total_fee}</b></li>
+                            <li>使用积分：<b class="pxui-color-red" id="pointsFee">￥{$total_price.total_fee}</b></li>
+                            <li>使用余额：<b class="pxui-color-red" id="balance">￥{$total_price.total_fee}</b></li>
+
+                        </ul>
+                        <!--<p style="text-align: right;"> 可获得<b id="js-get-pxgold"></b>个搜豹币 </p>-->
+                        <p> <b>应付总额：<strong class="pxui-color-red" id="payables"></strong></b> </p>
+                    </div>
+                    <div class="total">
+                        <input type="button" id="js-submit-order" onClick="submit_order();" class="pxui-light-button" value="提交订单" />
+                    </div>
+                </div>
+            </form>
+        </div>
+ 
+        <!--content-end-->
+    </div>
+    <div class="com-footer-area" id="js-com-footer-area">
+        <span class="top"></span>
+        <div class="footer">
+ 
+            <div class="copy">
+                <include file="Public/copy" />
+            </div>
+        </div>
+ 
+    </div>
+</div>
+<script>
+    $(document).ready(function(){
+        ajax_address(); // 获取用户收货地址列表
+    });
+
+
+
+    /**
+     * 新增修改收货地址
+     * id 为零 则为新增, 否则是修改
+     *  使用 公共的 layer 弹窗插件  参考官方手册 http://layer.layui.com/
+     */
+    function add_edit_address(id)
+    {
+        if(id > 0)
+            var url = "/index.php?m=Home&c=User&a=edit_address&scene=1&call_back=call_back_fun&id="+id; // 修改地址  '{:U('Home/User/add_address',array('scene'=>'1','call_back'=>'call_back_fun','id'=>id))}' //iframe的url /index.php/Home/User/add_address
+        else
+            var url = "/index.php?m=Home&c=User&a=add_address&scene=1&call_back=call_back_fun";	// 新增地址
+        layer.open({
+            type: 2,
+            title: '添加收货地址',
+            shadeClose: true,
+            shade: 0.8,
+            area: ['880px', '580px'],
+            content: url,
+        });
+    }
+    // 添加修改收货地址回调函数
+    function call_back_fun(v){
+        layer.closeAll(); // 关闭窗口
+        ajax_address(); // 刷新收货地址
+    }
+
+    // 删除收货地址
+    function del_address(id)
+    {
+        if(!confirm("确定要删除吗?"))
+            return false;
+
+        $.ajax({
+            url:"/index.php?m=Home&c=User&a=del_address&id="+id,
+            success: function(data){
+                ajax_address(); // 刷新收货地址
+            }
+        });
+    }
+
+    /*
+     * ajax 获取当前用户的收货地址列表
+     */
+    function ajax_address(){
+        $.ajax({
+            url:"{:U('Mobile/Cart/ajaxAddress')}",//+tab,
+            success: function(data){
+                $("#ajax_address").html('');
+                $("#ajax_address").append(data);
+                if(data != '') // 有收货地址列表 再计算价钱
+                    ajax_order_price(); // 计算订单价钱
+            }
+        });
+    }
+
+    // 切换收货地址
+    function swidth_address(obj)
+    {
+        $(".order-address-list").removeClass('address_current');
+        $(obj).parent().parent().parent().parent().parent().addClass('address_current');
+        ajax_order_price(); // 计算订单价格
+    }
+
+
+    // 获取订单价格
+    function ajax_order_price()
+    {
+
+        $.ajax({
+            type : "POST",
+            url:"{:U('Mobile/Cart/cart3')}",//+tab,
+            data : $('#cart2_form').serialize()+"&act=order_price",// 你的formid
+            dataType: "json",
+            success: function(data){
+
+                if(data.status != 1)
+                {
+                    alert(data.msg);
+
+                    // 登录超时
+                    if(data.status == -100)
+                        location.href ="{:U('Mobile/User/login')}";
+
+                    return false;
+                }
+                // console.log(data);
+                $("#postFee").text(data.result.postFee); // 物流费
+                $("#couponFee").text(data.result.couponFee);// 优惠券
+                $("#balance").text(data.result.balance);// 余额
+                $("#pointsFee").text(data.result.pointsFee);// 积分支付
+                $("#payables").text(data.result.payables);// 应付
+            }
+        });
+    }
+
+    // 提交订单
+    function submit_order()
+    {
+        $.ajax({
+            type : "POST",
+            url:"{:U('Mobile/Cart/cart3')}",//+tab,
+            data : $('#cart2_form').serialize()+"&act=submit_order",// 你的formid
+            dataType: "json",
+            success: function(data){
+
+                if(data.status != '1')
+                {
+                    alert(data.msg); //执行有误
+                    // 登录超时
+                    if(data.status == -100)
+                        location.href ="{:U('Mobile/User/login')}";
+
+                    return false;
+                }
+                // console.log(data);
+                $("#postFee").text(data.result.postFee); // 物流费
+                $("#couponFee").text(data.result.couponFee);// 优惠券
+                $("#balance").text(data.result.balance);// 余额
+                $("#pointsFee").text(data.result.pointsFee);// 积分支付
+                $("#payables").text(data.result.payables);// 应付
+                alert('订单提交成功，跳转支付页面!');
+                location.href = "/index.php?m=Mobile&c=Cart&a=cart4&order_id="+data.result;
+            }
+        });
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<if condition="empty($goods_list)">
+    <div class="blank J_blank hide" id="m_loading" style="display:block;"> 
+        <img src="__STATIC__/images/search.png" height="242" width="200" class="blank_img"/>
+        <p class="blank_txt">很抱歉，没有找到您搜索的相关商品信息！</p>
+        <a href="/index.php?m=Mobile" class="blank_btn">去逛逛</a> 
+    </div>
+    <script>
+	$(document).ready(function(){
+		alert('aaa');
+	 // 初始化 就调用一下搜索
+	   alert($("#show_more").html());
+	});
+	
+	</script>
+<else/>  
+
+<foreach name="goods_list" item="v" key="k">
+    <li class="J_goDetail">
+          <div class="d_img"><a href="{:U('/Mobile/Goods/GoodsInfo',array('id'=>$v[goods_id]))}"><img src="{$v.goods_id|goods_thum_images=400,400}" class="J_lazy"> </a> </div>
+          <div class="d_adc Btop"> 
+           <a href="{:U('/Mobile/Goods/GoodsInfo',array('id'=>$v[goods_id]))}">
+            <div class="d_title prefix">
+              <p>{$v[goods_name]}</p>
+            </div>
+            </a> 
+            <!-- 其他一些杂项 S -->
+            <div class="d_mix">
+              <div class="dm_1">
+                <div class="tg"> 
+                  <!-- 至多显示2个标签 --> 
+                </div>
+                <!-- 价格 S -->
+                <div class="d_price">¥{$v[shop_price]}
+                  <s>¥{$v[market_price]}</s>                   
+                </div>
+              </div>
+              <!-- 购物车情况 S -->
+              <div class="cart_case">
+                <a class="iconfont J_buyTo"><img src="__STATIC__/images/gwcc.png" class="gwccimg"></a> 
+              </div>
+            </div>
+            <!-- 店铺信息 -->
+            <p></p>
+            <!-- 配送提示语 -->
+            <p class="J_delivery"></p>
+          </div>
+    </li>
+</foreach>
+
+
+</if>

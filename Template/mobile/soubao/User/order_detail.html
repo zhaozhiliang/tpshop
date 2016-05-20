@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <title>会员中心 - 订单详情</title> 
+  <meta name="keywords" content="" /> 
+  <meta name="description" content="" /> 
+  <meta charset="utf-8" /> 
+ 
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" /> 
+  <link rel="bookmark" href="images/favicon.ico" type="image/x-icon" /> 
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" /> 
+  <meta http-equiv="X-UA-Compatible" content="edge" /> 
+  <meta name="apple-mobile-web-app-capable" content="yes" /> 
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" /> 
+  <meta name="format-detection" content="telphone=no, email=no" /> 
+  <meta name="renderer" content="webkit" /> 
+  <meta name="HandheldFriendly" content="true" /> 
+  <meta name="MobileOptimized" content="320" /> 
+  <meta name="screen-orientation" content="portrait" /> 
+  <meta name="x5-orientation" content="portrait" /> 
+  <meta name="full-screen" content="yes" /> 
+  <meta name="x5-fullscreen" content="true" /> 
+  <meta name="browsermode" content="application" /> 
+  <meta name="x5-page-mode" content="app" /> 
+  <meta name="msapplication-tap-highlight" content="no" /> 
+  <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" />
+  <link rel="stylesheet" href="__STATIC__/css/zip.touch.member2_0.orderdetail.v3907.css" type="text/css" />
+  <script type="text/javascript" src="__STATIC__/js/zepto.min.js"></script>    
+  
+  <style type="text/css">
+.m_header,
+.body{max-width: 640px;}
+.m_header{left:50%;margin-left: -320px;}
+</style> 
+  <script type="text/javascript">function remReSize(){var w = $(window).width();try{w = $(parent.window).width();}catch(ex){};if(w>640){w = 640;};$('html').css('font-size',100/640*w+'px');$('#js_style_for_pc').remove();$('body').append('<style id="js_style_for_pc">.m_header{margin-left: -'+w/2+'px;}.m_menu{margin-left: -'+w/2+'px;}</style>');};remReSize();$(window).resize(remReSize);$(document).ready(function() {remReSize();});for(var i=0;i<3;i++){setTimeout(remReSize, 100*i);};</script> 
+ </head> 
+ <body> 
+  <div class="body"> 
+   <!--导入菜单-->
+   <assign name="title" value="订单详情" />
+   <include file="menu" />
+   <!--end导入菜单-->     
+   <div class="lib_content" id="js_lib_content"> 
+    <ul class="m_list bg_white order_detail"> 
+     <li> 
+	    <i class="m_icon m_icon_orderstatic"></i> 
+	    <span class="f28 gray3">订单状态：</span> 
+		<span class="f28 orange">{$order_info.order_status_desc}</span> <br /> 
+	    <span class="f24 gray9">应付金额（含运费）：&yen; {$order_info.total_fee}</span> <br /> 
+		<span class="f24 gray9">
+			运费:&yen;{$order_info.shipping_price}
+			优惠券:&yen;{$order_info.coupon_price}
+			积分:&yen;{$order_info.integral_money}		
+			余额:&yen;{$order_info.user_money}				
+		</span> 
+
+	 </li> 
+     <li> 
+		 <i class="m_icon m_icon_receiver"></i> 
+		 <span class="f28 gray3">收货人:{$order_info.consignee}</span> 
+		 <span class="f28 gray3 fr">{$order_info.mobile}</span> <br /> 
+		 <span class="f24 gray9">
+		 	收货地址：{$region_list[$order_info['province']]['name']},{$region_list[$order_info['city']]['name']},{$region_list[$order_info['district']]['name']},{$order_info.address}
+		 </span> <br /> 
+		 <span class="f24 gray9">配送方式:{$order_info.shipping_name}</span> <br /> 		 
+		 <span class="f24 gray9">快递单号:{$order_info.invoice_no} <a href='http://www.kuaidi100.com/' target="_blank">查看物流</a></span> <br />
+		 <span class="f24 gray9">发票信息:{$order_info.invoice_title}</span> <br /> 		 		 
+     </li> 
+    </ul> 
+    <div class="placeholder"></div> 
+    <div class="placeholder"></div> 
+		
+	<!--商品列表-->	
+    <volist name="order_info.goods_list" id="good">
+	<!--
+    <ul class="m_list m_list_top_line bg_white"> 
+     <li class="link"> 
+	  <a href="#" class="gray3"> <i class="m_icon m_icon_shop"></i>{$good.goods_name} 
+       <div class="right"> 
+        <span class="m_arrow"> <i class="rotate45"></i> <i class="rotate135"></i> </span> 
+       </div> 
+	   </a> 
+	  </li> 
+    </ul> 
+	-->
+    <ul class="m_list bg_white m_order_list"> 
+     <li> 	 
+	   <a href="{:U('/Mobile/Goods/goodsInfo',array('id'=>$good['goods_id']))}">
+	   	<img class="img100" src="{$good.goods_id|goods_thum_images=100,100}" />
+	   </a>
+       <div class="info"> 
+        <p class="name gray3">{$good.goods_name}</p> 
+        <p class="sku gray9">{$good.spec_key_name}</p> 
+       </div> 
+       <div class="price"> 
+        <p class="gray3">&yen;{$good['member_goods_price']}</p> 
+        <p class="gray9">x{$good['goods_num']}</p>
+	    <if condition="$order_info.comment_btn eq 1">
+		
+		    <if condition="$good['is_comment'] eq 1">
+				<a href="{:U('/Mobile/Goods/goodsInfo',array('id'=>$good['goods_id']))}">查看评价</a>		
+			<else />
+				<a href="{:U('/Mobile/User/comment',array('rec_id'=>$good['rec_id']))}">评价商品</a>
+			</if>
+			
+		</if>
+       </div> 
+	  </li> 
+    </ul>
+	</volist>
+	<!-- end 商品列表-->
+		
+    <div class="detail_price"> 
+     <p><span class="gray9 text-left">积分：</span><span class="gray3 text-right">&yen;-{$order_info.integral_money}</span></p> 	
+     <p><span class="gray9 text-left">余额：</span><span class="gray3 text-right">&yen;-{$order_info.user_money}</span></p> 	
+     <p><span class="gray9 text-left">优惠券：</span><span class="gray3 text-right">&yen;-{$order_info.coupon_price}</span></p> 
+     <p><span class="gray9 text-left">商品总额：</span><span class="gray3 text-right">&yen;{$order_info.order_amount}</span></p> 	 
+     <p><span class="gray9 text-left">运费：</span><span class="gray3 f28 text-right">￥{$order_info.shipping_price}</span></p> 
+     <p><span class="gray9 text-left">应付款（含运费）：</span><span class="orange f28 text-right">&yen;{$order_info.total_fee}</span></p> 
+    </div> 
+    <div class="detail_text gray9 f24">发票抬头：{$order_info.invoice_title}</div> 
+    <div class="placeholder"></div> 
+    <div class="placeholder"></div> 
+    <div class="detail_text gray9 f24">
+      订单号：{$order_info.order_sn} 
+     <br /> 生成时间：{$order_info.add_time|date="Y-m-d H:i",###}
+    </div> 
+    <div class="placeholder"></div> 
+    <div class="placeholder"></div> 
+    <div class="m_order_bottom"> 
+
+    <if condition="$order_info.cancel_btn eq 1"><a onClick="cancel_order({$order_info.order_id})" class="m_button js_cancle">取消订单</a></if>
+    <if condition="$order_info.pay_btn eq 1"><a href="{:U('Mobile/Cart/cart4',array('order_id'=>$order_info['order_id']))}" class="m_button m_button_orange">立即付款</a></if>
+    <if condition="$order_info.receive_btn eq 1"><a href="{:U('Mobile/User/order_confirm',array('id'=>$order_info['order_id']))}" class="m_button m_button_orange">收获确认</a></if>    
+    <if condition="$order_info.shipping_btn eq 1"><a href="http://www.kuaidi100.com/" target="_blank" class="m_button m_button_orange">查看物流</a></if>        
+    <if condition="$order_info.return_btn eq 1"><a href="{:U('Mobile/Article/article',array('article_id'=>'22'))}" target="_blank" class="m_button js_cancle">联系客服</a></if>	 
+	 
+    </div> 
+   </div> 
+   <div class="m_footer clear"> 
+	    <a class="m_icon m_icon_gotop hidden" href="javascript:void(0);"></a>      
+        <div class="copyright gray9"> 
+        	 <include file="Public/copy" />
+        </div>
+   </div>     
+   <div class="placeholder"></div>
+   <div class="placeholder"></div>
+   <div class="placeholder"></div>
+   <div class="placeholder"></div>
+   <div class="placeholder"></div> 
+   <div class="placeholder"></div>
+   <div class="placeholder"></div>
+   <div class="placeholder"></div>
+   <div class="placeholder"></div>
+   <div class="placeholder"></div> 
+   <div class="placeholder"></div>
+   <div class="placeholder"></div> 
+  </div>    
+ </body>
+</html>
+
+<script> 
+    //取消订单
+    function cancel_order(id){
+        if(!confirm("确定取消订单?"))
+            return false;
+        location.href = "/index.php?m=Mobile&c=User&a=cancel_order&id="+id;
+    }
+</script>

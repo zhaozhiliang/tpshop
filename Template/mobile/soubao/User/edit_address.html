@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+<title>会员中心-收货地址</title>
+<meta name="keywords" content=""/>
+<meta name="description" content=""/>
+<meta charset="utf-8"/>
+ 
+<link rel="icon" href="/favicon.ico" type="image/x-icon"/>
+<link rel="bookmark" href="/favicon.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+<meta http-equiv="X-UA-Compatible" content="edge"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<meta name="format-detection" content="telphone=no, email=no"/>
+<meta name="renderer" content="webkit"/>
+<meta name="HandheldFriendly" content="true"/>
+<meta name="MobileOptimized" content="320"/>
+<meta name="screen-orientation" content="portrait"/>
+<meta name="x5-orientation" content="portrait"/>
+<meta name="full-screen" content="yes"/>
+<meta name="x5-fullscreen" content="true"/>
+<meta name="browsermode" content="application"/>
+<meta name="x5-page-mode" content="app"/>
+<meta name="msapplication-tap-highlight" content="no"/>
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"/>
+<link rel="stylesheet" href="__STATIC__/css/zip.touch.member2_0.addressinfo.v3902.css" type="text/css" />
+<script type="text/javascript" src="__STATIC__/js/zepto.min.js"></script>
+<style type="text/css">
+.m_header, .body {
+	max-width: 640px;
+}
+.m_header {
+	left:50%;
+	margin-left: -320px;
+}
+</style>
+<script type="text/javascript">function remReSize(){var w = $(window).width();try{w = $(parent.window).width();}catch(ex){};if(w>640){w = 640;};$('html').css('font-size',100/640*w+'px');$('#js_style_for_pc').remove();$('body').append('<style id="js_style_for_pc">.m_header{margin-left: -'+w/2+'px;}.m_menu{margin-left: -'+w/2+'px;}</style>');};remReSize();$(window).resize(remReSize);$(document).ready(function() {remReSize();});for(var i=0;i<3;i++){setTimeout(remReSize, 100*i);};</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<div class="body">
+  <div class="m_header">
+    <p> <a class="bt_prev"href="{:U('/Mobile/User/address_list')}"> <span class="prev rotate45"></span> <span class="prev rotate135"></span> </a> </p>
+    <h1 class="ellipsis bt_title"> 新建收货地址 </h1>
+    <p> <a class="bt_rtext" onClick="$('#add_address_form').submit();">保存</a> </p>
+  </div>
+  <form action="" method="post" id="add_address_form">
+  <div id="js_lib_content" class="lib_content" style="min-height: 485px;">
+    <ul class="m_list m_list_form bg_white">
+      <li>
+        <label> 收货人姓名 </label>
+		<input class="wi80-BFB" name="consignee" type="text" value="{$address.consignee}" />
+        <div class="right text-v"> <a class="m_icon m_icon_del" style="display: none;"> <dfn class="rotate45"></dfn> <dfn class="rotate135"></dfn> </a> </div>
+      </li>
+      <li>
+        <label> 手机号码 </label>
+        <input class="wi40-BFB" type="text" name="mobile" value="{$address.mobile}"/>
+        <div class="right text-v"> <a class="m_icon m_icon_del" style="display: none;"> <dfn class="rotate45"></dfn> <dfn class="rotate135"></dfn> </a> </div>
+      </li>
+      <li id="js_province_box">
+        <label> 省份 </label>
+        <div class="m_select">
+		  <span class="ellipsis gray">请选择...</span>
+		<select  name="province" id="province" onChange="get_city(this)">
+			<option value="0">选择省份</option>
+			<volist name="province" id="p">
+				<option <if condition="$address['province'] eq $p['id']">selected</if>  value="{$p.id}">{$p.name}</option>
+			</volist>
+		</select>		  		  
+          <span class="m_arrow rotate90 "><i class="rotate45"></i><i class="rotate135"></i></span></div>
+      </li>
+      <li id="js_city_box">
+        <label> 城市 </label>
+        <div class="m_select">
+			<span class="ellipsis gray">请选择...</span>
+			<select name="city" id="city" onChange="get_area(this)">
+				<option  value="0">选择城市</option>
+				<volist name="city" id="p">
+					<option <if condition="$address['city'] eq $p['id']">selected</if>  value="{$p.id}">{$p.name}</option>
+				</volist>
+			</select>
+		</div>
+      </li>
+      <li id="js_area_box">
+        <label> 区域 </label>
+        <div class="m_select">
+ 		    <span class="ellipsis gray">请选择...</span>		
+			<select name="district" id="district">
+				<option value="0">选择区域</option>
+				<volist name="district" id="p">
+					<option <if condition="$address['district'] eq $p['id']">selected</if>  value="{$p.id}">{$p.name}</option>
+				</volist>
+			</select>
+		</div>
+      </li>
+      <li>
+        <label> 详细地址 </label>
+        <input type="text" value="{$address.address}" name="address" id="address" placeholder="详细地址" />
+        <div class="right text-v"> <a class="m_icon m_icon_del" style="display: none;"> <dfn class="rotate45"></dfn> <dfn class="rotate135"></dfn> </a> </div>
+      </li>
+      <li>
+        <label> 邮政编码 </label>
+        <input type="text" maxlength="6"  name="zipcode" value="{$address.zipcode}">
+        <div class="right text-v"> <a class="m_icon m_icon_del" style="display: none;"> <dfn class="rotate45"></dfn> <dfn class="rotate135"></dfn> </a> </div>
+      </li>
+    </ul>
+    <div class="placeholder"></div>
+    <div class="placeholder"></div>
+    <div class="placeholder"></div>
+    <div class="placeholder"></div>
+    <div class="placeholder"></div>
+    <div class="placeholder"></div>
+    <div class="placeholder"></div>
+    <div class="placeholder"></div>
+    <div class="bottom-act text-c hidden"> <a class="m_button m_button_orange_line m_button_radius" id="js_del">删除收货地址</a> </div>
+  </div>
+          <input type="hidden" value="{$address.address_id}" name="id" id="address_id" />
+ </form>
+  <div class="m_footer clear"> <a class="m_icon m_icon_gotop hidden" href="javascript:void(0);"></a>
+        <div class="copyright gray9"> 
+        	<include file="Public/copy" />
+        </div>
+
+  </div>
+</div>
+<script src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>

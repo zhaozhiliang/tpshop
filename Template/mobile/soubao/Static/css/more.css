@@ -1,0 +1,95 @@
+﻿@charset "utf-8";
+.btn {
+	font-size: .28rem;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	min-width: 1.67rem;
+	height: .54rem;
+	color: #333;
+	border: .02rem solid #d5d5d5;
+	-webkit-border-radius: .04rem;
+	border-radius: .04rem;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-moz-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center
+}
+.btn_de, .btn_red {
+	color: #fff;
+	border: none
+}
+.btn_lg {
+	font-size: .36rem;
+	min-width: 1.8rem;
+	height: .84rem
+}
+.mymore, body, html {
+	height: 100%
+}
+.btn_red {
+	background: #db384c
+}
+.btn_de {
+	background: #888
+}
+.my_menu li:not(:last-child), .pbox ul:first-child {
+	border-bottom: 1px solid #d5d5d5
+}
+.main_content {
+	min-height: 85%
+}
+.mymore {
+	display: block;
+	position: absolute;
+	right: .3rem;
+	top: 0;
+	width: .5rem;
+	background: url(../images/more.png) center center no-repeat;
+	background-size: auto .1rem
+}
+.my_menu {
+	background-color: #fff
+}
+.my_menu li {
+	height: .86rem;
+	line-height: .86rem;
+	position: relative;
+	color: #333;
+	margin-left: .25rem;
+	padding-right: .25rem
+}
+.my_menu a {
+	width: 100%;
+	display: inline-block
+}
+.my_menu i {
+	font-size: .3rem;
+	right: .3rem;
+	color: #888;
+	float: right;
+	background-image: url(../images/rig.png);
+    background-repeat: no-repeat;
+    background-position: 0rem 0.26rem;
+    height: 0.85rem;
+    display: block;
+    width: 0.3rem;
+    background-size: 0.2rem;
+}
+.go_to {
+	padding: .2rem 0 .3rem
+}
+.go_to .btn {
+	margin: 0 .24rem;
+	font-size: .32rem;
+	height: .8rem;
+	line-height: .8rem
+}

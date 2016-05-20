@@ -1,0 +1,1485 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>飞牛网移动版-来自大润发的网上商城</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>    <meta name="keywords" content="飞牛网,飞牛网官网,网上商城,大润发网上商城,大润发超市"/><meta name="description" content="飞牛网-来自大润发的网上商城。在线销售生鲜、食品、家电、百货、母婴、服饰、进口、美护等优质商品。正品低价，购物首选，值得信赖！"/>    <meta name="format-detection" content="email=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="applicable-device" content="mobile">
+    <meta name="apple-itunes-app" content="app-id=921839681">
+    <link rel="Shortcut Icon" type="images/x-icon" href="http://static01.m.fn-mart.com/static/img/favicon.ico?v=2016022917">
+    <link href="http://static01.m.fn-mart.com/static/img/icon114x114.png?v=2016022917" rel="apple-touch-icon-precomposed">
+    <link rel="stylesheet" type="text/css" href="http://static01.m.fn-mart.com/static/css-build/v2/index.css?v=2016022917" /><link rel="stylesheet" type="text/css" href="http://static01.m.fn-mart.com/static/css-build/v2/common.css?v=2016022917" />
+    <link rel="canonical" href="http://www.feiniu.com">
+
+
+    <script>
+
+	    //清除之前域名为.m.feiniu.com下的cookie
+		(function (){
+	        var keys = document.cookie.match(/[^ =;]+(?=\=)/g);
+	        if (keys){
+	            var path = "/";
+	            var domain = "m.feiniu.com";
+	            for(var i = keys.length; i--;){
+	           		//document.cookie = keys[i]+'=0;expires=' + new Date(0).toUTCString();
+	            	document.cookie = keys[i] + "=;path=" + path + ";" + (domain ? ("domain=" + domain + ";") : '') + "expires="+ new Date(0).toUTCString();
+	            }
+	        }
+	    })();
+	    
+        if (/MSIE (6.0|7.0|8.0)/.test(navigator.userAgent)) {
+            location.href = location.protocol + "//" + location.hostname + '/nonsupport.html';
+        }
+
+    </script>
+
+        <script type="text/javascript" src="http://m.feiniu.com/Fetch/front?v=2016022917"></script>
+
+</head>
+
+
+<body>
+<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script id="wechatShare" src="http://static01.m.fn-mart.com/static/js-build/wechatShare/wechatShare.js?v=2016022917"></script>
+<p class="loading_pop all J_loading hide_it" style="background-color:rgba(0, 0, 0, 0)!important;"><b></b></p>
+<div class="mbox">
+    <!-- 顶部 -->
+    <div class="ind_top">
+        <p class="ind_logo">
+            <a href="http://m.feiniu.com/">
+                <img alt="飞牛网触屏版" src="http://static01.m.fn-mart.com/static/img/logo_white.png?v=2016022917" />
+            </a>
+        </p>
+        <div class="search_top">
+            <a class="search_top_box J_search_top" href="http://m.feiniu.com/search/">
+                <button class="iconfont">&#xe60f;</button>
+                <input type="text" class="J_keyword" data-word='["\u725b\u5976","\u98df\u7528\u6cb9","\u5976\u7c89","\u5927\u7c73","\u6d17\u53d1\u6c34","\u6d17\u8863\u6db2","\u7259\u818f","\u624b\u673a","\u751f\u6d3b\u7528\u7eb8","\u6d17\u8863\u673a"]' value="" placeholder="" />
+            </a>
+        </div>
+        <p class="ind_city J_city"><a href="http://m.feiniu.com/city.html"></a></p>
+    </div>
+    
+            <div class="ind_context">
+        <!-- 首页Banner图片 -->
+                    <div id='slider' class='swiper-container bannerSwiper'>
+                <div class='swiper-wrapper' data-count="9">
+                                            <div class="swiper-slide">
+                                    <div class="">
+                        <div>
+                <a href="http://sale.feiniu.com/m-31755/touch/CS000016" class="" data-order="1" data-title="1" data-type="21"  data-param ="http://sale.feiniu.com/m-31755/touch/CS000016">
+                    <img src="http://img01.fn-mart.com/C/web/layout/kk/20160229/201602291847041456742824_kk-1.jpg" title="1" alt="1">
+                </a>
+                            </div>
+        </div>
+                            </div>
+                                            <div class="swiper-slide">
+                                    <div class="">
+                        <div>
+                <a href="http://sale.feiniu.com/m-31994/touch/CS000016" class="" data-order="2" data-title="3" data-type="21"  data-param ="http://sale.feiniu.com/m-31994/touch/CS000016">
+                    <img src="http://img01.fn-mart.com/C/web/layout/kk/20160229/201602291758501456739930_kk-1.jpg" title="3" alt="3">
+                </a>
+                            </div>
+        </div>
+                            </div>
+                                            <div class="swiper-slide">
+                                    <div class="">
+                        <div>
+                <a href="http://sale.feiniu.com/m-31135/touch/CS000016" class="" data-order="3" data-title="4" data-type="21"  data-param ="http://sale.feiniu.com/m-31135/touch/CS000016">
+                    <img src="http://img01.fn-mart.com/C/web/layout/kk/20160229/201602291759321456739972_kk-1.jpg" title="4" alt="4">
+                </a>
+                            </div>
+        </div>
+                            </div>
+                                            <div class="swiper-slide">
+                                    <div class="">
+                        <div>
+                <a href="http://sale.feiniu.com/m-32052/touch/CS000016" class="" data-order="4" data-title="5" data-type="21"  data-param ="http://sale.feiniu.com/m-32052/touch/CS000016">
+                    <img src="http://img01.fn-mart.com/C/web/layout/kk/20160303/201603031201151456977675_kk-1.jpg" title="5" alt="5">
+                </a>
+                            </div>
+        </div>
+                            </div>
+                                            <div class="swiper-slide">
+                                    <div class="">
+                        <div>
+                <a href="http://sale.feiniu.com/m-31774/touch/CS000016" class="" data-order="5" data-title="6" data-type="21"  data-param ="http://sale.feiniu.com/m-31774/touch/CS000016">
+                    <img src="http://img01.fn-mart.com/C/web/layout/kk/20160301/201603011016041456798564_kk-1.jpg" title="6" alt="6">
+                </a>
+                            </div>
+        </div>
+                            </div>
+                                            <div class="swiper-slide">
+                                    <div class="">
+                        <div>
+                <a href="http://sale.feiniu.com/m-31630/touch/CS000016" class="" data-order="6" data-title="7" data-type="21"  data-param ="http://sale.feiniu.com/m-31630/touch/CS000016">
+                    <img src="http://img01.fn-mart.com/C/web/layout/kk/20160229/201602291800191456740019_kk-1.jpg" title="7" alt="7">
+                </a>
+                            </div>
+        </div>
+                            </div>
+                                            <div class="swiper-slide">
+                                    <div class="">
+                        <div>
+                <a href="http://sale.feiniu.com/m-31478/touch/CS000016" class="" data-order="7" data-title="8" data-type="21"  data-param ="http://sale.feiniu.com/m-31478/touch/CS000016">
+                    <img src="http://img01.fn-mart.com/C/web/layout/kk/20160229/201602291802261456740146_kk-1.jpg" title="8" alt="8">
+                </a>
+                            </div>
+        </div>
+                            </div>
+                                            <div class="swiper-slide">
+                                    <div class="">
+                        <div>
+                <a href="http://sale.feiniu.com/m-31655/touch/CS000016" class="" data-order="8" data-title="9" data-type="21"  data-param ="http://sale.feiniu.com/m-31655/touch/CS000016">
+                    <img src="http://img01.fn-mart.com/C/web/layout/kk/20160303/201603031008381456970918_kk-1.jpg" title="9" alt="9">
+                </a>
+                            </div>
+        </div>
+                            </div>
+                                            <div class="swiper-slide">
+                                    <div class="">
+                        <div>
+                <a href="http://sale.feiniu.com/m-30769/touch/CS000016" class="" data-order="9" data-title="10" data-type="21"  data-param ="http://sale.feiniu.com/m-30769/touch/CS000016">
+                    <img src="http://img01.fn-mart.com/C/web/layout/kk/20160229/201602291803041456740184_kk-1.jpg" title="10" alt="10">
+                </a>
+                            </div>
+        </div>
+                            </div>
+                                    </div>
+                <div class="swiper-pagination pagination small banner-swiper-pagination" data-count="9"></div>
+            </div>
+        
+                                                        <div class="ind_box no_blank">
+                        <!-- 导航 -->
+                        <div class="main_menu_img">
+                            <div class="swiper-container J_icon_swiper icon_swiper" data-id="0">
+                                <div class="swiper-wrapper">
+                                                                            <div class="swiper-slide">
+                                            <ul class="clearfix" id="mainMenu">
+                                                                                                    <li>
+                                                        <a style="color:#666666" data-href="http://sale.feiniu.com/m-14691/touch/CS000016" href="http://sale.feiniu.com/m-14691/touch/CS000016" class="J_iconMaidian" data-order='1' data-type='21'  data-param = 'http://sale.feiniu.com/m-14691/touch/CS000016'>
+                                                            <img class="m_img_0" alt='环球购' title='环球购' src="http://img01.fn-mart.com/C/web/layout/kk/20160214/201602141553231455436403_kk-1.png"><br/>环球购                                                        </a>
+                                                    </li>
+                                                                                                    <li>
+                                                        <a style="color:#666666" data-href="http://m.feiniu.com/channel/index?channelId=78&cityCode=CS000016" href="http://m.feiniu.com/channel/index?channelId=78&cityCode=CS000016" class="J_iconMaidian" data-order='2' data-type='18'  data-param = 'http://m.feiniu.com/channel/index?channelId=78&cityCode=CS000016'>
+                                                            <img class="m_img_1" alt='飞牛商城' title='飞牛商城' src="http://img01.fn-mart.com/C/web/layout/kk/20160214/201602141553311455436411_kk-1.png"><br/>飞牛商城                                                        </a>
+                                                    </li>
+                                                                                                    <li>
+                                                        <a style="color:#666666" data-href="http://sale.feiniu.com/m-21319/touch/CS000016" href="http://sale.feiniu.com/m-21319/touch/CS000016" class="J_iconMaidian" data-order='3' data-type='21'  data-param = 'http://sale.feiniu.com/m-21319/touch/CS000016'>
+                                                            <img class="m_img_2" alt='生鲜' title='生鲜' src="http://img01.fn-mart.com/C/web/layout/kk/20160214/201602141553361455436416_kk-1.png"><br/>生鲜                                                        </a>
+                                                    </li>
+                                                                                                    <li>
+                                                        <a style="color:#666666" data-href="http://sale.feiniu.com/m-19537/touch/CS000016" href="http://sale.feiniu.com/m-19537/touch/CS000016" class="J_iconMaidian" data-order='4' data-type='21'  data-param = 'http://sale.feiniu.com/m-19537/touch/CS000016'>
+                                                            <img class="m_img_3" alt='母婴' title='母婴' src="http://img01.fn-mart.com/C/web/layout/kk/20160214/201602141553411455436421_kk-1.png"><br/>母婴                                                        </a>
+                                                    </li>
+                                                                                                    <li>
+                                                        <a style="color:#666666" data-href="http://sale.feiniu.com/m-13743/touch/CS000016" href="http://sale.feiniu.com/m-13743/touch/CS000016" class="J_iconMaidian" data-order='5' data-type='21'  data-param = 'http://sale.feiniu.com/m-13743/touch/CS000016'>
+                                                            <img class="m_img_4" alt='0元领' title='0元领' src="http://img01.fn-mart.com/C/web/layout/kk/20160214/201602141553471455436427_kk-1.png"><br/>0元领                                                        </a>
+                                                    </li>
+                                                                                                    <li>
+                                                        <a style="color:#666666" data-href="http://m.feiniu.com/login/index.html?gotourl=http%3A%2F%2Fm.feiniu.com%2Fmy%2Frecharge%2Findex.html%3Fnav%3D1" href="http://m.feiniu.com/login/index.html?gotourl=http%3A%2F%2Fm.feiniu.com%2Fmy%2Frecharge%2Findex.html%3Fnav%3D1" class="J_iconMaidian" data-order='6' data-type='12'  data-param = 'http://m.feiniu.com/login/index.html?gotourl=http%3A%2F%2Fm.feiniu.com%2Fmy%2Frecharge%2Findex.html%3Fnav%3D1'>
+                                                            <img class="m_img_5" alt='卡券充值' title='卡券充值' src="http://img01.fn-mart.com/C/web/layout/kk/20160214/201602141553521455436432_kk-1.png"><br/>卡券充值                                                        </a>
+                                                    </li>
+                                                                                                    <li>
+                                                        <a style="color:#666666" data-href="http://m.feiniu.com/login/index.html?gotourl=http%3A%2F%2Fm.feiniu.com%2Fsignin" href="http://m.feiniu.com/login/index.html?gotourl=http%3A%2F%2Fm.feiniu.com%2Fsignin" class="J_iconMaidian" data-order='7' data-type='19'  data-param = 'http://m.feiniu.com/login/index.html?gotourl=http%3A%2F%2Fm.feiniu.com%2Fsignin'>
+                                                            <img class="m_img_6" alt='签到送积分' title='签到送积分' src="http://img01.fn-mart.com/C/web/layout/kk/20160214/201602141554161455436456_kk-1.png"><br/>签到送积分                                                        </a>
+                                                    </li>
+                                                                                                    <li>
+                                                        <a style="color:#666666" data-href="http://m.feiniu.com/login/index.html?gotourl=http%3A%2F%2Fm.feiniu.com%2Fmy%2FbuyAgain%2Findex.html" href="http://m.feiniu.com/login/index.html?gotourl=http%3A%2F%2Fm.feiniu.com%2Fmy%2FbuyAgain%2Findex.html" class="J_iconMaidian" data-order='8' data-type='14'  data-param = 'http://m.feiniu.com/login/index.html?gotourl=http%3A%2F%2Fm.feiniu.com%2Fmy%2FbuyAgain%2Findex.html'>
+                                                            <img class="m_img_7" alt='曾经购买' title='曾经购买' src="http://img01.fn-mart.com/C/web/layout/kk/20160214/201602141554241455436464_kk-1.png"><br/>曾经购买                                                        </a>
+                                                    </li>
+                                                                                            </ul>
+                                        </div>
+                                                                            <div class="swiper-slide">
+                                            <ul class="clearfix" id="mainMenu">
+                                                                                                    <li>
+                                                        <a style="color:#666666" data-href="http://sale.feiniu.com/m-32354/touch/CS000016" href="http://sale.feiniu.com/m-32354/touch/CS000016" class="J_iconMaidian" data-order='1' data-type='21'  data-param = 'http://sale.feiniu.com/m-32354/touch/CS000016'>
+                                                            <img class="m_img_0" alt='名品特卖' title='名品特卖' src="http://img01.fn-mart.com/C/web/layout/kk/20160214/201602141554301455436470_kk-1.png"><br/>名品特卖                                                        </a>
+                                                    </li>
+                                                                                                    <li>
+                                                        <a style="color:#666666" data-href="http://m.feiniu.com/tuan/index" href="http://m.feiniu.com/tuan/index" class="J_iconMaidian" data-order='2' data-type='17'  data-param = 'http://m.feiniu.com/tuan/index'>
+                                                            <img class="m_img_1" alt='团购' title='团购' src="http://img01.fn-mart.com/C/web/layout/kk/20160214/201602141554351455436475_kk-1.png"><br/>团购                                                        </a>
+                                                    </li>
+                                                                                                    <li>
+                                                        <a style="color:#666666" data-href="http://m.feiniu.com/seckill/index.html" href="http://m.feiniu.com/seckill/index.html" class="J_iconMaidian" data-order='3' data-type='13'  data-param = 'http://m.feiniu.com/seckill/index.html'>
+                                                            <img class="m_img_2" alt='秒杀' title='秒杀' src="http://img01.fn-mart.com/C/web/layout/kk/20160214/201602141554411455436481_kk-1.png"><br/>秒杀                                                        </a>
+                                                    </li>
+                                                                                                    <li>
+                                                        <a style="color:#666666" data-href="http://m.feiniu.com/category/all.html" href="http://m.feiniu.com/category/all.html" class="J_iconMaidian" data-order='4' data-type='2'  data-param = 'http://m.feiniu.com/category/all.html'>
+                                                            <img class="m_img_3" alt='商品分类' title='商品分类' src="http://img01.fn-mart.com/C/web/layout/kk/20160217/201602171721461455700906_kk-1.png"><br/>商品分类                                                        </a>
+                                                    </li>
+                                                                                                    <li>
+                                                        <a style="color:#666666" data-href="http://m.feiniu.com/login/index.html?gotourl=http%3A%2F%2Fm.feiniu.com%2Fmy%2Forder%2Findex.html" href="http://m.feiniu.com/login/index.html?gotourl=http%3A%2F%2Fm.feiniu.com%2Fmy%2Forder%2Findex.html" class="J_iconMaidian" data-order='5' data-type='11'  data-param = 'http://m.feiniu.com/login/index.html?gotourl=http%3A%2F%2Fm.feiniu.com%2Fmy%2Forder%2Findex.html'>
+                                                            <img class="m_img_4" alt='查订单' title='查订单' src="http://img01.fn-mart.com/C/web/layout/kk/20160214/201602141554521455436492_kk-1.png"><br/>查订单                                                        </a>
+                                                    </li>
+                                                                                                    <li>
+                                                        <a style="color:#666666" data-href="http://m.feiniu.com/cart" href="http://m.feiniu.com/cart" class="J_iconMaidian" data-order='6' data-type='3'  data-param = 'http://m.feiniu.com/cart'>
+                                                            <img class="m_img_5" alt='购物车' title='购物车' src="http://img01.fn-mart.com/C/web/layout/kk/20160214/201602141554571455436497_kk-1.png"><br/>购物车                                                        </a>
+                                                    </li>
+                                                                                                    <li>
+                                                        <a style="color:#666666" data-href="http://m.feiniu.com/login/index.html?gotourl=http%3A%2F%2Fm.feiniu.com%2Fmy%2Ffavorites%2Findex.html" href="http://m.feiniu.com/login/index.html?gotourl=http%3A%2F%2Fm.feiniu.com%2Fmy%2Ffavorites%2Findex.html" class="J_iconMaidian" data-order='7' data-type='15'  data-param = 'http://m.feiniu.com/login/index.html?gotourl=http%3A%2F%2Fm.feiniu.com%2Fmy%2Ffavorites%2Findex.html'>
+                                                            <img class="m_img_6" alt='我的收藏' title='我的收藏' src="http://img01.fn-mart.com/C/web/layout/kk/20160214/201602141555061455436506_kk-1.png"><br/>我的收藏                                                        </a>
+                                                    </li>
+                                                                                                    <li>
+                                                        <a style="color:#666666" data-href="http://m.feiniu.com/my" href="http://m.feiniu.com/my" class="J_iconMaidian" data-order='8' data-type='4'  data-param = 'http://m.feiniu.com/my'>
+                                                            <img class="m_img_7" alt='我的飞牛' title='我的飞牛' src="http://img01.fn-mart.com/C/web/layout/kk/20160214/201602141555121455436512_kk-1.png"><br/>我的飞牛                                                        </a>
+                                                    </li>
+                                                                                            </ul>
+                                        </div>
+                                                                    </div>
+                                <div class="swiper-pagination border-gray small fill static pagination J_icon_pagination" data-id="0" data-count="2">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                
+                
+                
+                                
+                
+                
+                
+                
+                
+                                            
+                
+                                    <!-- 首页秒杀 S -->
+                    <div class="ind_box J_seckill">
+                        <!-- 首页秒杀go -->
+                        <div class="ms_bk_ty01">
+                            <div class="ms_title">
+                                <h3>飞牛秒杀</h3>
+                                <div class="ms_time">
+                                    <b>还剩</b>
+                                    <i class="iconfont">&#xe601;</i>
+                                    <div class="time_span" id="J_time" data-countdown="-18401">
+                                    </div>
+                                </div>
+                                                                        <div class="one_rush">
+                                            <p style="background-color:#db384c;color:#ffffff;">限时限量></p>
+                                        </div>
+                                                                    </div>
+                            <div class="ms_list_info">
+                                <div  class="swiper-container J_seckillList J_ms_swiper" data-id="1" data-act_seq="4147">
+                                    <div class="swiper-wrapper">
+                                                                                    <div class="swiper-slide J_seckill_item" data-number="1" data-href="http://m.feiniu.com/seckill/index.html"  data-param="201511CM180002140">
+                                                <a href="javascript:void(0)">
+                                                    <div class="ms_li_img">
+                                                        <img style="width: 100%" src="http://img05.fn-mart.com/C/item/2015/1118/201511C180001552/_338893390_400x400.jpg" alt="多芬深层营润滋养美肤沐浴乳 900g/瓶" title="多芬深层营润滋养美肤沐浴乳 900g/瓶">
+                                                    </div>
+                                                    <div class="ms_info">
+                                                        <div class="ms_price_info">
+                                                            <div class="ms_li_p01">
+                                                                <em>￥</em>28.80                                                            </div>
+                                                                                                                    </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                                                                    <div class="swiper-slide J_seckill_item" data-number="2" data-href="http://m.feiniu.com/seckill/index.html"  data-param="201404CM110000294">
+                                                <a href="javascript:void(0)">
+                                                    <div class="ms_li_img">
+                                                        <img style="width: 100%" src="http://img02.fn-mart.com/C/item/2014/0411/201404C110000168/_950481228_400x400.jpg" alt="金龙鱼 AE纯香营养菜籽油 5L/桶" title="金龙鱼 AE纯香营养菜籽油 5L/桶">
+                                                    </div>
+                                                    <div class="ms_info">
+                                                        <div class="ms_price_info">
+                                                            <div class="ms_li_p01">
+                                                                <em>￥</em>51.80                                                            </div>
+                                                                                                                    </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                                                                    <div class="swiper-slide J_seckill_item" data-number="3" data-href="http://m.feiniu.com/seckill/index.html"  data-param="100791825">
+                                                <a href="javascript:void(0)">
+                                                    <div class="ms_li_img">
+                                                        <img style="width: 100%" src="http://img11.fn-mart.com/pic/c54a133a20342779ac95/kzqnTT72vnCghMZlV2/1YeamaoacYXRma/CsmRrlaofMmAER5WAAQhbjp8IOk205_400x400.jpg" alt="四川浦江不知火丑柑 5斤装单果210g" title="四川浦江不知火丑柑 5斤装单果210g">
+                                                    </div>
+                                                    <div class="ms_info">
+                                                        <div class="ms_price_info">
+                                                            <div class="ms_li_p01">
+                                                                <em>￥</em>29.90                                                            </div>
+                                                                                                                    </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                                                                    <div class="swiper-slide J_seckill_item" data-number="4" data-href="http://m.feiniu.com/seckill/index.html"  data-param="201412CM080000943">
+                                                <a href="javascript:void(0)">
+                                                    <div class="ms_li_img">
+                                                        <img style="width: 100%" src="http://img04.fn-mart.com/C/item/2014/1208/201412C080000876/_654308564_400x400.gif" alt="苏食澳洲牛腩1kg/包" title="苏食澳洲牛腩1kg/包">
+                                                    </div>
+                                                    <div class="ms_info">
+                                                        <div class="ms_price_info">
+                                                            <div class="ms_li_p01">
+                                                                <em>￥</em>78.00                                                            </div>
+                                                                                                                    </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                                                                    <div class="swiper-slide J_seckill_item" data-number="5" data-href="http://m.feiniu.com/seckill/index.html"  data-param="201310CM290004812">
+                                                <a href="javascript:void(0)">
+                                                    <div class="ms_li_img">
+                                                        <img style="width: 100%" src="http://img04.fn-mart.com/C/item/2013/1029/201310C290003508/_306160436_400x400.jpg" alt="清风 马蹄莲系列无芯卷纸 3层*60g*10卷（小规格）" title="清风 马蹄莲系列无芯卷纸 3层*60g*10卷（小规格）">
+                                                    </div>
+                                                    <div class="ms_info">
+                                                        <div class="ms_price_info">
+                                                            <div class="ms_li_p01">
+                                                                <em>￥</em>7.90                                                            </div>
+                                                                                                                    </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                                                                    <div class="swiper-slide J_seckill_item" data-number="6" data-href="http://m.feiniu.com/seckill/index.html"  data-param="201503CM200002136">
+                                                <a href="javascript:void(0)">
+                                                    <div class="ms_li_img">
+                                                        <img style="width: 100%" src="http://img01.fn-mart.com/C/item/2015/0320/201503C200001930/_936365473_400x400.jpg" alt="宝优妮厨房微波炉架子置物架 厨具烤箱架单层收纳挂架不锈钢锅架 DQ-0826-C" title="宝优妮厨房微波炉架子置物架 厨具烤箱架单层收纳挂架不锈钢锅架 DQ-0826-C">
+                                                    </div>
+                                                    <div class="ms_info">
+                                                        <div class="ms_price_info">
+                                                            <div class="ms_li_p01">
+                                                                <em>￥</em>59.00                                                            </div>
+                                                                                                                    </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                                                                    <div class="swiper-slide J_seckill_item" data-number="7" data-href="http://m.feiniu.com/seckill/index.html"  data-param="201505CM130000893">
+                                                <a href="javascript:void(0)">
+                                                    <div class="ms_li_img">
+                                                        <img style="width: 100%" src="http://img01.fn-mart.com/C/item/2015/0513/201505C130000380/_050760461_400x400.jpg" alt="云蕾 旋转拖把（耐用型）" title="云蕾 旋转拖把（耐用型）">
+                                                    </div>
+                                                    <div class="ms_info">
+                                                        <div class="ms_price_info">
+                                                            <div class="ms_li_p01">
+                                                                <em>￥</em>99.00                                                            </div>
+                                                                                                                    </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                                                                    <div class="swiper-slide J_seckill_item" data-number="8" data-href="http://m.feiniu.com/seckill/index.html"  data-param="100466654">
+                                                <a href="javascript:void(0)">
+                                                    <div class="ms_li_img">
+                                                        <img style="width: 100%" src="http://img15.fn-mart.com/group1/M00/C6/4E/CsnBPlYq5X-AYR-pAAJGpeN0y9E050_400x400.jpg" alt="Bear/小熊DDQ-A01G1 电动打蛋器家用搅拌机迷你手持式打奶油烘焙" title="Bear/小熊DDQ-A01G1 电动打蛋器家用搅拌机迷你手持式打奶油烘焙">
+                                                    </div>
+                                                    <div class="ms_info">
+                                                        <div class="ms_price_info">
+                                                            <div class="ms_li_p01">
+                                                                <em>￥</em>49.00                                                            </div>
+                                                                                                                    </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                                                                    <div class="swiper-slide J_seckill_item" data-number="9" data-href="http://m.feiniu.com/seckill/index.html"  data-param="201409CM150000835">
+                                                <a href="javascript:void(0)">
+                                                    <div class="ms_li_img">
+                                                        <img style="width: 100%" src="http://img04.fn-mart.com/C/item/2014/0915/201409C150000267/_809013162_400x400.jpg" alt="德芙 香浓黑颗粒巧克力 72g/袋" title="德芙 香浓黑颗粒巧克力 72g/袋">
+                                                    </div>
+                                                    <div class="ms_info">
+                                                        <div class="ms_price_info">
+                                                            <div class="ms_li_p01">
+                                                                <em>￥</em>11.50                                                            </div>
+                                                                                                                    </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                                                                    <div class="swiper-slide J_seckill_item" data-number="10" data-href="http://m.feiniu.com/seckill/index.html"  data-param="201511CM180002720">
+                                                <a href="javascript:void(0)">
+                                                    <div class="ms_li_img">
+                                                        <img style="width: 100%" src="http://img06.fn-mart.com/C/item/2015/1118/201511C180001690/_336206818_400x400.jpg" alt="五粮液 52度五星级豪华 500ml/瓶" title="五粮液 52度五星级豪华 500ml/瓶">
+                                                    </div>
+                                                    <div class="ms_info">
+                                                        <div class="ms_price_info">
+                                                            <div class="ms_li_p01">
+                                                                <em>￥</em>138.00                                                            </div>
+                                                                                                                    </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                                                                    <div class="swiper-slide J_seckill_item" data-number="11" data-href="http://m.feiniu.com/seckill/index.html"  data-param="201310CM280002859">
+                                                <a href="javascript:void(0)">
+                                                    <div class="ms_li_img">
+                                                        <img style="width: 100%" src="http://img06.fn-mart.com/C/item/2013/1028/201310C280002049/_439263917_400x400.jpg" alt="妮维雅水呵护润唇膏•薰衣草 2.4g/支" title="妮维雅水呵护润唇膏•薰衣草 2.4g/支">
+                                                    </div>
+                                                    <div class="ms_info">
+                                                        <div class="ms_price_info">
+                                                            <div class="ms_li_p01">
+                                                                <em>￥</em>22.50                                                            </div>
+                                                                                                                    </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                                                                    <div class="swiper-slide J_seckill_item" data-number="12" data-href="http://m.feiniu.com/seckill/index.html"  data-param="100696702">
+                                                <a href="javascript:void(0)">
+                                                    <div class="ms_li_img">
+                                                        <img style="width: 100%" src="http://img10.fn-mart.com/pic/24631337bb9125f3a468/kzHzzz52_2tgKduMCn/5xSGeamRcGPxLY/CsmRsFZ89h2AW3_SAAFC9o-5piI799_400x400.jpg" alt="英国 雀巢 能得利杂果软糖 (三条装) 52.5g*3/条 环球购" title="英国 雀巢 能得利杂果软糖 (三条装) 52.5g*3/条 环球购">
+                                                    </div>
+                                                    <div class="ms_info">
+                                                        <div class="ms_price_info">
+                                                            <div class="ms_li_p01">
+                                                                <em>￥</em>12.90                                                            </div>
+                                                                                                                    </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                                                                    <div class="swiper-slide J_seckill_item" data-number="13" data-href="http://m.feiniu.com/seckill/index.html"  data-param="201411CM060000190">
+                                                <a href="javascript:void(0)">
+                                                    <div class="ms_li_img">
+                                                        <img style="width: 100%" src="http://img04.fn-mart.com/C/item/2014/1106/201411C060000113/_500233719_400x400.jpg" alt="法国进口 漫滋 松露巧克力 黑色传统 1000g/盒" title="法国进口 漫滋 松露巧克力 黑色传统 1000g/盒">
+                                                    </div>
+                                                    <div class="ms_info">
+                                                        <div class="ms_price_info">
+                                                            <div class="ms_li_p01">
+                                                                <em>￥</em>45.60                                                            </div>
+                                                                                                                    </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                                                                    <div class="swiper-slide J_seckill_item" data-number="14" data-href="http://m.feiniu.com/seckill/index.html"  data-param="201512CM210000915">
+                                                <a href="javascript:void(0)">
+                                                    <div class="ms_li_img">
+                                                        <img style="width: 100%" src="http://img06.fn-mart.com/C/item/2015/1221/201512C210000254/_708557899_400x400.jpg" alt="爱时乐香草牛奶味威化卷心酥150g/罐" title="爱时乐香草牛奶味威化卷心酥150g/罐">
+                                                    </div>
+                                                    <div class="ms_info">
+                                                        <div class="ms_price_info">
+                                                            <div class="ms_li_p01">
+                                                                <em>￥</em>12.80                                                            </div>
+                                                                                                                    </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                                                                    <div class="swiper-slide J_seckill_item" data-number="15" data-href="http://m.feiniu.com/seckill/index.html"  data-param="100217631">
+                                                <a href="javascript:void(0)">
+                                                    <div class="ms_li_img">
+                                                        <img style="width: 100%" src="http://img15.fn-mart.com/group1/M00/4A/5B/CsnBPlXIDIiAeffCAADOoUVt1l4786_400x400.jpg" alt="【楼兰蜜语_四色葡萄干900g】新疆特产 吐鲁番零食提子葡萄干" title="【楼兰蜜语_四色葡萄干900g】新疆特产 吐鲁番零食提子葡萄干">
+                                                    </div>
+                                                    <div class="ms_info">
+                                                        <div class="ms_price_info">
+                                                            <div class="ms_li_p01">
+                                                                <em>￥</em>29.90                                                            </div>
+                                                                                                                    </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                                                                    <div class="swiper-slide J_seckill_item" data-number="16" data-href="http://m.feiniu.com/seckill/index.html"  data-param="100792984">
+                                                <a href="javascript:void(0)">
+                                                    <div class="ms_li_img">
+                                                        <img style="width: 100%" src="http://img16.fn-mart.com/pic/e2fe133a203c1b66da23/B2Hzzz5TvnfdBdZdVn/5YSGeGCRcYkYuY/CsmRrVaoN_2AWhzuAAOZteI-zRU510_400x400.jpg" alt="HAIR CORNER去屑调节无硅油洗发乳 洗发水 轻柔润发素 护发素造型发泥洗护套装915ml" title="HAIR CORNER去屑调节无硅油洗发乳 洗发水 轻柔润发素 护发素造型发泥洗护套装915ml">
+                                                    </div>
+                                                    <div class="ms_info">
+                                                        <div class="ms_price_info">
+                                                            <div class="ms_li_p01">
+                                                                <em>￥</em>108.00                                                            </div>
+                                                                                                                    </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                                                                    <div class="swiper-slide J_seckill_item" data-number="17" data-href="http://m.feiniu.com/seckill/index.html"  data-param="201503CM200002231">
+                                                <a href="javascript:void(0)">
+                                                    <div class="ms_li_img">
+                                                        <img style="width: 100%" src="http://img03.fn-mart.com/C/item/2015/0320/201503C200001977/201503C200000257_219437472_400x400.jpg" alt="浪莎 6双装防脱丝 比基尼 露趾 T字裆 开裆 特大宽体系列连裤袜" title="浪莎 6双装防脱丝 比基尼 露趾 T字裆 开裆 特大宽体系列连裤袜">
+                                                    </div>
+                                                    <div class="ms_info">
+                                                        <div class="ms_price_info">
+                                                            <div class="ms_li_p01">
+                                                                <em>￥</em>49.00                                                            </div>
+                                                                                                                    </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                                                                    <div class="swiper-slide J_seckill_item" data-number="18" data-href="http://m.feiniu.com/seckill/index.html"  data-param="201508CM140002773">
+                                                <a href="javascript:void(0)">
+                                                    <div class="ms_li_img">
+                                                        <img style="width: 100%" src="http://img01.fn-mart.com/C/item/2015/0814/201508C140000370/201508C140000656_261713564_400x400.jpg" alt="轩品媛 休闲裤铅笔裤小脚裤女 弹力长裤子 8001270" title="轩品媛 休闲裤铅笔裤小脚裤女 弹力长裤子 8001270">
+                                                    </div>
+                                                    <div class="ms_info">
+                                                        <div class="ms_price_info">
+                                                            <div class="ms_li_p01">
+                                                                <em>￥</em>89.00                                                            </div>
+                                                                                                                    </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                                                                    <div class="swiper-slide J_seckill_item" data-number="19" data-href="http://m.feiniu.com/seckill/index.html"  data-param="100763648">
+                                                <a href="javascript:void(0)">
+                                                    <div class="ms_li_img">
+                                                        <img style="width: 100%" src="http://img17.fn-mart.com/pic/131e133a1f8daa700223/BTqn225nv2LgBMUMu2/1iSGSaeaC92yoa/CsmRrlaZHe-AXb-sAASq2d8ZHn8738_400x400.jpg" alt="韩吉美尔2016春秋装新款短外套小香风女士夹克衫休闲长袖开衫棒球服LL9901" title="韩吉美尔2016春秋装新款短外套小香风女士夹克衫休闲长袖开衫棒球服LL9901">
+                                                    </div>
+                                                    <div class="ms_info">
+                                                        <div class="ms_price_info">
+                                                            <div class="ms_li_p01">
+                                                                <em>￥</em>59.00                                                            </div>
+                                                                                                                    </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                                                                    <div class="swiper-slide J_seckill_item" data-number="20" data-href="http://m.feiniu.com/seckill/index.html"  data-param="100829808">
+                                                <a href="javascript:void(0)">
+                                                    <div class="ms_li_img">
+                                                        <img style="width: 100%" src="http://img16.fn-mart.com/pic/2635133a5e052337fcd7/K2HT221TD2tdkdUlCT/5xeRmapalGBYda/CsmRsFbCxO-AHVk1AAKg_U_NmwY109_400x400.jpg" alt="视贝seebest 全自动家用智能拖地 扫地机器人 UV杀菌除螨防撞防跌 吸尘器 C561" title="视贝seebest 全自动家用智能拖地 扫地机器人 UV杀菌除螨防撞防跌 吸尘器 C561">
+                                                    </div>
+                                                    <div class="ms_info">
+                                                        <div class="ms_price_info">
+                                                            <div class="ms_li_p01">
+                                                                <em>￥</em>1380.00                                                            </div>
+                                                                                                                    </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                                                                <div class="ms_more J_ms_more hide_it">查看更多</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 首页秒杀end -->
+                    </div>
+                    <!-- 首页秒杀 E -->
+                
+                                
+                
+                
+                
+                
+                
+                                            
+                
+                
+                                
+                
+                
+                
+                                    <!-- 大促四色 S -->
+                    <div class="ind_box  new relative">
+                                                <div class="background_img">
+                                    <div class="">
+                        <div>
+                <a href="http://sale.feiniu.com/m-31755/touch/CS000016" class="" data-order="1" data-title="20" data-type="21"  data-param ="http://sale.feiniu.com/m-31755/touch/CS000016">
+                    <img src="http://img01.fn-mart.com/C/web/layout/kk/20160229/201602291850361456743036_kk-1.jpg" title="20" alt="20">
+                </a>
+                            </div>
+        </div>
+                            </div>
+                        <div class="ind_flex clo_4 background_around">
+                                                                    <div class="">
+                        <div>
+                <a href="http://sale.feiniu.com/m-31755/touch/CS000016" class="" data-order="2" data-title="20" data-type="21"  data-param ="http://sale.feiniu.com/m-31755/touch/CS000016">
+                    <img src="http://img01.fn-mart.com/C/web/layout/kk/20160229/201602291851201456743080_kk-1.jpg" title="20" alt="20">
+                </a>
+                                    <div class="line "></div>
+                            </div>
+        </div>
+                                                                        <div class="">
+                        <div>
+                <a href="http://sale.feiniu.com/m-31572/touch/CS000016" class="" data-order="3" data-title="20" data-type="21"  data-param ="http://sale.feiniu.com/m-31572/touch/CS000016">
+                    <img src="http://img01.fn-mart.com/C/web/layout/kk/20160229/201602291851551456743115_kk-1.jpg" title="20" alt="20">
+                </a>
+                                    <div class="line "></div>
+                            </div>
+        </div>
+                                                                        <div class="">
+                        <div>
+                <a href="http://sale.feiniu.com/m-31677/touch/CS000016" class="" data-order="4" data-title="20" data-type="21"  data-param ="http://sale.feiniu.com/m-31677/touch/CS000016">
+                    <img src="http://img01.fn-mart.com/C/web/layout/kk/20160229/201602291852171456743137_kk-1.jpg" title="20" alt="20">
+                </a>
+                                    <div class="line "></div>
+                            </div>
+        </div>
+                                                                        <div class="">
+                        <div>
+                <a href="http://sale.feiniu.com/m-31605/touch/CS000016" class="" data-order="5" data-title="20" data-type="21"  data-param ="http://sale.feiniu.com/m-31605/touch/CS000016">
+                    <img src="http://img01.fn-mart.com/C/web/layout/kk/20160229/201602291852341456743154_kk-1.jpg" title="20" alt="20">
+                </a>
+                                    <div class="line "></div>
+                            </div>
+        </div>
+                                                        </div>
+                    </div>
+                    <!-- 大促四色 E -->
+                
+                
+                                                                                        <!-- (1+2 偏左) 新 S -->
+                        <div class="ind_box  new over_hide">
+                                        <div class="banner_title J_banner_title" data-href="">
+                <div class="head">
+                    <div class="left">
+                        <!-- 方便SEO -->
+                        <h2>
+                            特色频道                        </h2>
+                    </div>
+                    <div class="right">
+                                                <div class="arrow-right hide_it"></div>
+                    </div>
+                </div>
+            </div>
+                                        <div class="ind_flex clo_2 left margin_bottom_big">
+                                <div class="four">
+                                            <div class="">
+                        <div>
+                <a href="http://m.feiniu.com/tuan/index" class="" data-order="1" data-title="" data-type="17"  data-param ="http://m.feiniu.com/tuan/index">
+                    <img src="http://img01.fn-mart.com/C/web/layout/kk/20160224/201602241434541456295694_kk-1.jpg" title="" alt="">
+                </a>
+                                    <div class="line "></div>
+                            </div>
+        </div>
+                                    </div>
+                                <div>
+                                    <div class="relative">
+                                                <div class="">
+                        <div>
+                <a href="http://sale.feiniu.com/m-32354/touch/CS000016" class="" data-order="2" data-title="" data-type="21"  data-param ="http://sale.feiniu.com/m-32354/touch/CS000016">
+                    <img src="http://img01.fn-mart.com/C/web/layout/kk/20160304/201603040950201457056220_kk-1.jpg" title="" alt="">
+                </a>
+                                    <div class="line bottom"></div>
+                            </div>
+        </div>
+                                        </div>
+                                    <div class="relative">
+                                                <div class="">
+                        <div>
+                <a href="http://sale.feiniu.com/m-13743/touch/CS000016" class="" data-order="3" data-title="" data-type="21"  data-param ="http://sale.feiniu.com/m-13743/touch/CS000016">
+                    <img src="http://img01.fn-mart.com/C/web/layout/kk/20160222/201602221358291456120709_kk-1.jpg" title="" alt="">
+                </a>
+                                    <div class="line bottom"></div>
+                            </div>
+        </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- (1+3 偏左) 新 E -->
+                    
+                
+                
+                
+                                
+                
+                
+                
+                
+                
+                                                                                        <!-- 1+1 S -->
+                        <div class="ind_box no_blank over_hide new">
+                                                        <div class="ind_flex clo_2 margin_bottom left">
+                                                                    <div>
+                                                <div class="">
+                        <div>
+                <a href="http://sale.feiniu.com/m-31357/touch/CS000016" class="" data-order="1" data-title="" data-type="21"  data-param ="http://sale.feiniu.com/m-31357/touch/CS000016">
+                    <img src="http://img01.fn-mart.com/C/web/layout/kk/20160301/201603011714101456823650_kk-1.jpg" title="" alt="">
+                </a>
+                                    <div class="line "></div>
+                            </div>
+        </div>
+                                        </div>
+                                                                    <div>
+                                                <div class="">
+                        <div>
+                <a href="http://sale.feiniu.com/m-30769/touch/CS000016" class="" data-order="2" data-title="" data-type="21"  data-param ="http://sale.feiniu.com/m-30769/touch/CS000016">
+                    <img src="http://img01.fn-mart.com/C/web/layout/kk/20160229/201602291839061456742346_kk-1.jpg" title="" alt="">
+                </a>
+                                    <div class="line "></div>
+                            </div>
+        </div>
+                                        </div>
+                                                            </div>
+                        </div>
+                        <!-- 1+1 E -->
+                    
+                
+                
+                
+                                
+                
+                
+                
+                
+                
+                                            
+                
+                
+                                
+                
+                
+                                    <!-- 腰部banner S -->
+                    <div class="ind_box  new relative">
+                                                <div>
+                            <div class='swiper-container yaobu-swiper-container J_yaobu_swiper_container' data-id="5">
+                                <div class='swiper-wrapper'>
+                                                                            <div class="swiper-slide">
+                                                    <div class="">
+                        <div>
+                <a href="http://sale.feiniu.com/m-31132/touch/CS000016" class="" data-order="1" data-title="20" data-type="21"  data-param ="http://sale.feiniu.com/m-31132/touch/CS000016">
+                    <img src="http://img01.fn-mart.com/C/web/layout/kk/20160301/201603010919221456795162_kk-1.jpg" title="20" alt="20">
+                </a>
+                            </div>
+        </div>
+                                            </div>
+                                                                            <div class="swiper-slide">
+                                                    <div class="">
+                        <div>
+                <a href="http://sale.feiniu.com/m-26366/touch/CS000016" class="" data-order="2" data-title="20" data-type="21"  data-param ="http://sale.feiniu.com/m-26366/touch/CS000016">
+                    <img src="http://img01.fn-mart.com/C/web/layout/kk/20160229/201602291840551456742455_kk-1.jpg" title="20" alt="20">
+                </a>
+                            </div>
+        </div>
+                                            </div>
+                                                                    </div>
+                                <div class="swiper-pagination border-gray small fill pagination J_yaobu_pagination" data-id='5' data-count="2">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 腰部banner E -->
+                
+                
+                
+                                                                                        <!-- 1*1 - 1*4 S -->
+                        <div class="ind_box  new">
+                                        <div class="banner_title J_banner_title" data-href="">
+                <div class="head">
+                    <div class="left">
+                        <!-- 方便SEO -->
+                        <h2>
+                            主题馆                        </h2>
+                    </div>
+                    <div class="right">
+                                                <div class="arrow-right hide_it"></div>
+                    </div>
+                </div>
+            </div>
+                                        <div class="ind_flex clo_1 ">
+                                        <div class="">
+                        <div>
+                <a href="http://sale.feiniu.com/m-31399/touch/CS000016" class="" data-order="1" data-title="" data-type="21"  data-param ="http://sale.feiniu.com/m-31399/touch/CS000016">
+                    <img src="http://img01.fn-mart.com/C/web/layout/kk/20160229/201602291842061456742526_kk-1.jpg" title="" alt="">
+                </a>
+                                    <div class="line "></div>
+                            </div>
+        </div>
+                                </div>
+                        </div>
+                        <!-- 1*1 - 1*4 E -->
+                    
+                
+                
+                
+                                
+                
+                
+                
+                
+                
+                                            
+                
+                
+                                    <!-- 新主题馆 S -->
+                    <div class="ind_box no_blank new pavilions">
+                                                <div class="ind_theme">
+                                                            <div class="ind_flex clo_2">
+                                                                            <div>
+                                                    <div class="left needTitle">
+                            <div class="title J_title" data-href="http://sale.feiniu.com/m-21319/touch/CS000016" data-order="1" data-title="生鲜" data-type="21"  data-param ="http://sale.feiniu.com/m-21319/touch/CS000016">
+                    <h3>生鲜</h3>
+                    <p class="red">满就送</p>
+                </div>
+                        <div>
+                <a href="http://sale.feiniu.com/m-21319/touch/CS000016" class="J_custom" data-order="1" data-title="生鲜" data-type="21"  data-param ="http://sale.feiniu.com/m-21319/touch/CS000016">
+                    <img src="http://img01.fn-mart.com/C/web/layout/kk/20160222/201602221533401456126420_kk-1.jpg" title="生鲜" alt="生鲜">
+                </a>
+                                    <div class="line "></div>
+                            </div>
+        </div>
+                                            </div>
+                                                                            <div>
+                                                    <div class="left needTitle">
+                            <div class="title J_title" data-href="http://m.feiniu.com/channel/index?channelId=140&cityCode=CS000016" data-order="2" data-title="食品饮料" data-type="18"  data-param ="http://m.feiniu.com/channel/index?channelId=140&cityCode=CS000016">
+                    <h3>食品饮料</h3>
+                    <p class="red">美食钜惠</p>
+                </div>
+                        <div>
+                <a href="http://m.feiniu.com/channel/index?channelId=140&cityCode=CS000016" class="J_custom" data-order="2" data-title="食品饮料" data-type="18"  data-param ="http://m.feiniu.com/channel/index?channelId=140&cityCode=CS000016">
+                    <img src="http://img01.fn-mart.com/C/web/layout/kk/20160222/201602221534091456126449_kk-1.jpg" title="食品饮料" alt="食品饮料">
+                </a>
+                                    <div class="line "></div>
+                            </div>
+        </div>
+                                            </div>
+                                                                    </div>
+                                                                <div class="ind_flex clo_3">
+                                                                            <div>
+                                                    <div class="top needTitle">
+                            <div class="title J_title" data-href="http://sale.feiniu.com/m-20153/touch/CS000016" data-order="1" data-title="家清日百" data-type="21"  data-param ="http://sale.feiniu.com/m-20153/touch/CS000016">
+                    <h3>家清日百</h3>
+                    <p class="red">家清1元起</p>
+                </div>
+                        <div>
+                <a href="http://sale.feiniu.com/m-20153/touch/CS000016" class="J_custom" data-order="1" data-title="家清日百" data-type="21"  data-param ="http://sale.feiniu.com/m-20153/touch/CS000016">
+                    <img src="http://img01.fn-mart.com/C/web/layout/kk/20160222/201602221505071456124707_kk-1.jpg" title="家清日百" alt="家清日百">
+                </a>
+                                    <div class="line "></div>
+                            </div>
+        </div>
+                                            </div>
+                                                                            <div>
+                                                    <div class="top needTitle">
+                            <div class="title J_title" data-href="http://m.feiniu.com/channel/index?channelId=13&cityCode=CS000016" data-order="2" data-title="母婴用品" data-type="18"  data-param ="http://m.feiniu.com/channel/index?channelId=13&cityCode=CS000016">
+                    <h3>母婴用品</h3>
+                    <p class="red">全场1元起</p>
+                </div>
+                        <div>
+                <a href="http://m.feiniu.com/channel/index?channelId=13&cityCode=CS000016" class="J_custom" data-order="2" data-title="母婴用品" data-type="18"  data-param ="http://m.feiniu.com/channel/index?channelId=13&cityCode=CS000016">
+                    <img src="http://img01.fn-mart.com/C/web/layout/kk/20160222/201602221506061456124766_kk-1.jpg" title="母婴用品" alt="母婴用品">
+                </a>
+                                    <div class="line "></div>
+                            </div>
+        </div>
+                                            </div>
+                                                                            <div>
+                                                    <div class="top needTitle">
+                            <div class="title J_title" data-href="http://m.feiniu.com/channel/index?channelId=11&cityCode=CS000016" data-order="3" data-title="电器城" data-type="18"  data-param ="http://m.feiniu.com/channel/index?channelId=11&cityCode=CS000016">
+                    <h3>电器城</h3>
+                    <p class="red">新器象</p>
+                </div>
+                        <div>
+                <a href="http://m.feiniu.com/channel/index?channelId=11&cityCode=CS000016" class="J_custom" data-order="3" data-title="电器城" data-type="18"  data-param ="http://m.feiniu.com/channel/index?channelId=11&cityCode=CS000016">
+                    <img src="http://img01.fn-mart.com/C/web/layout/kk/20160222/201602221506591456124819_kk-1.jpg" title="电器城" alt="电器城">
+                </a>
+                                    <div class="line "></div>
+                            </div>
+        </div>
+                                            </div>
+                                                                    </div>
+                                                                <div class="ind_flex clo_3">
+                                                                            <div>
+                                                    <div class="top needTitle">
+                            <div class="title J_title" data-href="http://m.feiniu.com/channel/index?channelId=68&cityCode=CS000016" data-order="1" data-title="个护美妆" data-type="18"  data-param ="http://m.feiniu.com/channel/index?channelId=68&cityCode=CS000016">
+                    <h3>个护美妆</h3>
+                    <p class="red">裸价狂欢</p>
+                </div>
+                        <div>
+                <a href="http://m.feiniu.com/channel/index?channelId=68&cityCode=CS000016" class="J_custom" data-order="1" data-title="个护美妆" data-type="18"  data-param ="http://m.feiniu.com/channel/index?channelId=68&cityCode=CS000016">
+                    <img src="http://img01.fn-mart.com/C/web/layout/kk/20160222/201602221535031456126503_kk-1.jpg" title="个护美妆" alt="个护美妆">
+                </a>
+                                    <div class="line "></div>
+                            </div>
+        </div>
+                                            </div>
+                                                                            <div>
+                                                    <div class="top needTitle">
+                            <div class="title J_title" data-href="http://sale.feiniu.com/m-30619/touch/CS000016" data-order="2" data-title="服饰内衣" data-type="21"  data-param ="http://sale.feiniu.com/m-30619/touch/CS000016">
+                    <h3>服饰内衣</h3>
+                    <p class="red">大牌联促</p>
+                </div>
+                        <div>
+                <a href="http://sale.feiniu.com/m-30619/touch/CS000016" class="J_custom" data-order="2" data-title="服饰内衣" data-type="21"  data-param ="http://sale.feiniu.com/m-30619/touch/CS000016">
+                    <img src="http://img01.fn-mart.com/C/web/layout/kk/20160301/201603010959031456797543_kk-1.jpg" title="服饰内衣" alt="服饰内衣">
+                </a>
+                                    <div class="line "></div>
+                            </div>
+        </div>
+                                            </div>
+                                                                            <div>
+                                                    <div class="top needTitle">
+                            <div class="title J_title" data-href="http://sale.feiniu.com/m-29793/touch/CS000016" data-order="3" data-title="家纺家装" data-type="21"  data-param ="http://sale.feiniu.com/m-29793/touch/CS000016">
+                    <h3>家纺家装</h3>
+                    <p class="red">家装买就送</p>
+                </div>
+                        <div>
+                <a href="http://sale.feiniu.com/m-29793/touch/CS000016" class="J_custom" data-order="3" data-title="家纺家装" data-type="21"  data-param ="http://sale.feiniu.com/m-29793/touch/CS000016">
+                    <img src="http://img01.fn-mart.com/C/web/layout/kk/20160222/201602221509241456124964_kk-1.jpg" title="家纺家装" alt="家纺家装">
+                </a>
+                                    <div class="line "></div>
+                            </div>
+        </div>
+                                            </div>
+                                                                    </div>
+                                                                <div class="ind_flex clo_3">
+                                                                            <div>
+                                                    <div class="top needTitle">
+                            <div class="title J_title" data-href="http://sale.feiniu.com/m-30672/touch/CS000016" data-order="1" data-title="户外运动" data-type="21"  data-param ="http://sale.feiniu.com/m-30672/touch/CS000016">
+                    <h3>户外运动</h3>
+                    <p class="red">低至59元起</p>
+                </div>
+                        <div>
+                <a href="http://sale.feiniu.com/m-30672/touch/CS000016" class="J_custom" data-order="1" data-title="户外运动" data-type="21"  data-param ="http://sale.feiniu.com/m-30672/touch/CS000016">
+                    <img src="http://img01.fn-mart.com/C/web/layout/kk/20160301/201603010959381456797578_kk-1.jpg" title="户外运动" alt="户外运动">
+                </a>
+                                    <div class="line "></div>
+                            </div>
+        </div>
+                                            </div>
+                                                                            <div>
+                                                    <div class="top needTitle">
+                            <div class="title J_title" data-href="http://sale.feiniu.com/m-30224/touch/CS000016" data-order="2" data-title="鞋靴箱包" data-type="21"  data-param ="http://sale.feiniu.com/m-30224/touch/CS000016">
+                    <h3>鞋靴箱包</h3>
+                    <p class="red">买一送一</p>
+                </div>
+                        <div>
+                <a href="http://sale.feiniu.com/m-30224/touch/CS000016" class="J_custom" data-order="2" data-title="鞋靴箱包" data-type="21"  data-param ="http://sale.feiniu.com/m-30224/touch/CS000016">
+                    <img src="http://img01.fn-mart.com/C/web/layout/kk/20160301/201603011000191456797619_kk-1.jpg" title="鞋靴箱包" alt="鞋靴箱包">
+                </a>
+                                    <div class="line "></div>
+                            </div>
+        </div>
+                                            </div>
+                                                                            <div>
+                                                    <div class="top needTitle">
+                            <div class="title J_title" data-href="http://sale.feiniu.com/m-30016/touch/CS000016" data-order="3" data-title="图书文具" data-type="21"  data-param ="http://sale.feiniu.com/m-30016/touch/CS000016">
+                    <h3>图书文具</h3>
+                    <p class="red">阅享开门红</p>
+                </div>
+                        <div>
+                <a href="http://sale.feiniu.com/m-30016/touch/CS000016" class="J_custom" data-order="3" data-title="图书文具" data-type="21"  data-param ="http://sale.feiniu.com/m-30016/touch/CS000016">
+                    <img src="http://img01.fn-mart.com/C/web/layout/kk/20160222/201602221517111456125431_kk-1.jpg" title="图书文具" alt="图书文具">
+                </a>
+                                    <div class="line "></div>
+                            </div>
+        </div>
+                                            </div>
+                                                                    </div>
+                                                        </div>
+                    </div>
+                    <!-- 新主题馆 E -->
+                                
+                
+                
+                
+                
+                
+                                            
+                
+                
+                                
+                
+                
+                                    <!-- 腰部banner S -->
+                    <div class="ind_box  new relative">
+                                                <div>
+                            <div class='swiper-container yaobu-swiper-container J_yaobu_swiper_container' data-id="8">
+                                <div class='swiper-wrapper'>
+                                                                            <div class="swiper-slide">
+                                                    <div class="">
+                        <div>
+                <a href="http://sale.feiniu.com/m-31766/touch/CS000016" class="" data-order="1" data-title="20" data-type="21"  data-param ="http://sale.feiniu.com/m-31766/touch/CS000016">
+                    <img src="http://img01.fn-mart.com/C/web/layout/kk/20160229/201602291843031456742583_kk-1.jpg" title="20" alt="20">
+                </a>
+                            </div>
+        </div>
+                                            </div>
+                                                                            <div class="swiper-slide">
+                                                    <div class="">
+                        <div>
+                <a href="http://sale.feiniu.com/m-31604/touch/CS000016" class="" data-order="2" data-title="20" data-type="21"  data-param ="http://sale.feiniu.com/m-31604/touch/CS000016">
+                    <img src="http://img01.fn-mart.com/C/web/layout/kk/20160229/201602291843491456742629_kk-1.jpg" title="20" alt="20">
+                </a>
+                            </div>
+        </div>
+                                            </div>
+                                                                    </div>
+                                <div class="swiper-pagination border-gray small fill pagination J_yaobu_pagination" data-id='8' data-count="2">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 腰部banner E -->
+                
+                
+                
+                                                                                        <!-- (1大2小 居中)6、(1大2小 偏左)7 新 S -->
+                        <div class="ind_box over_hide  new">
+                                        <div class="banner_title J_banner_title" data-href="">
+                <div class="head">
+                    <div class="left">
+                        <!-- 方便SEO -->
+                        <h2>
+                            品牌推荐                        </h2>
+                    </div>
+                    <div class="right">
+                                                <div class="arrow-right hide_it"></div>
+                    </div>
+                </div>
+            </div>
+                                        <div class="ind_flex clo_3 left margin_bottom_big">
+                                                                    <div>
+                                                <div class="">
+                        <div>
+                <a href="http://sale.feiniu.com/m-31968/touch/CS000016" class="" data-order="1" data-title="" data-type="21"  data-param ="http://sale.feiniu.com/m-31968/touch/CS000016">
+                    <img src="http://img01.fn-mart.com/C/web/layout/kk/20160229/201602291844461456742686_kk-1.jpg" title="" alt="">
+                </a>
+                                    <div class="line "></div>
+                            </div>
+        </div>
+                                        </div>
+                                                                    <div>
+                                                <div class="">
+                        <div>
+                <a href="http://sale.feiniu.com/m-32076/touch/CS000016" class="" data-order="2" data-title="" data-type="21"  data-param ="http://sale.feiniu.com/m-32076/touch/CS000016">
+                    <img src="http://img01.fn-mart.com/C/web/layout/kk/20160229/201602291845201456742720_kk-1.jpg" title="" alt="">
+                </a>
+                                    <div class="line "></div>
+                            </div>
+        </div>
+                                        </div>
+                                                                    <div>
+                                                <div class="">
+                        <div>
+                <a href="http://sale.feiniu.com/m-26849/touch/CS000016" class="" data-order="3" data-title="" data-type="21"  data-param ="http://sale.feiniu.com/m-26849/touch/CS000016">
+                    <img src="http://img01.fn-mart.com/C/web/layout/kk/20160301/201603010931041456795864_kk-1.jpg" title="" alt="">
+                </a>
+                                    <div class="line "></div>
+                            </div>
+        </div>
+                                        </div>
+                                                            </div>
+                        </div>
+                        <!-- (1大2小 居中)6、(1大2小 偏左)7 E -->
+                    
+                
+                
+                
+                                
+                
+                
+                
+                
+                
+                                                                                        <!-- 1*1 - 1*4 S -->
+                        <div class="ind_box  new">
+                                                        <div class="ind_flex clo_1 ">
+                                        <div class="">
+                        <div>
+                <a href="http://sale.feiniu.com/m-31242/touch/CS000016" class="" data-order="1" data-title="" data-type="21"  data-param ="http://sale.feiniu.com/m-31242/touch/CS000016">
+                    <img src="http://img01.fn-mart.com/C/web/layout/kk/20160229/201602291846131456742773_kk-1.jpg" title="" alt="">
+                </a>
+                                    <div class="line "></div>
+                            </div>
+        </div>
+                                </div>
+                        </div>
+                        <!-- 1*1 - 1*4 E -->
+                    
+                
+                
+                
+                                
+                
+                
+                
+                
+                
+                                            
+                
+                
+                                
+                
+                                    <!-- 店铺推荐 S -->
+                    <div class="ind_box no_blank new">
+                                    <div class="banner_title J_banner_title" data-href="http://sale.feiniu.com/m-30670/touch/CS000016">
+                <div class="head">
+                    <div class="left">
+                        <!-- 方便SEO -->
+                        <h2>
+                            店铺推荐                        </h2>
+                    </div>
+                    <div class="right">
+                        查看更多店铺                        <div class="arrow-right "></div>
+                    </div>
+                </div>
+            </div>
+                                    <div class="store">
+                                                            <div class='swiper-container stroe-swiper-container J_stroe_swiper_container' data-id='11'>
+                                    <div class='swiper-wrapper'>
+                                                                                    <div class="swiper-slide">
+                                                <div class="context">
+                                                    <div class="left">
+                                                        <img src="http://img16.fn-mart.com/group1/M00/18/90/CsnBP1V-breAf4uVAAANkH4jJVo235.jpg">
+                                                    </div>
+                                                    <div class="right">
+                                                        <p class="p1">战地吉普旗舰店</p>
+
+                                                        <p class="p2"><span
+                                                                class="tag">HOT</span>疯狂大促                                                        </p>
+                                                    </div>
+                                                </div>
+                                                                                                    <div class="goods-list">
+                                                                                                                    <div class="goods-item">
+                                                                <a href="http://m.feiniu.com/mstore/index-200048.html">
+                                                                    <img src="http://img01.fn-mart.com/C/web/layout/kk/20160222/201602221558131456127893_kk-1.jpg">
+                                                                </a>
+                                                            </div>
+                                                                                                                    <div class="goods-item">
+                                                                <a href="http://m.feiniu.com/mstore/index-200048.html">
+                                                                    <img src="http://img01.fn-mart.com/C/web/layout/kk/20160222/201602221558071456127887_kk-11.jpg">
+                                                                </a>
+                                                            </div>
+                                                                                                                    <div class="goods-item">
+                                                                <a href="http://m.feiniu.com/mstore/index-200048.html">
+                                                                    <img src="http://img01.fn-mart.com/C/web/layout/kk/20160222/201602221557581456127878_kk-1.jpg">
+                                                                </a>
+                                                            </div>
+                                                                                                            </div>
+                                                                                            </div>
+                                                                                    <div class="swiper-slide">
+                                                <div class="context">
+                                                    <div class="left">
+                                                        <img src="http://img16.fn-mart.com/group1/M00/37/24/CsnBPlW1yDyAANi9AAAYKcC4W5I807.jpg">
+                                                    </div>
+                                                    <div class="right">
+                                                        <p class="p1">良品铺子旗舰店</p>
+
+                                                        <p class="p2"><span
+                                                                class="tag">HOT</span>女人节--吃出来的美人                                                        </p>
+                                                    </div>
+                                                </div>
+                                                                                                    <div class="goods-list">
+                                                                                                                    <div class="goods-item">
+                                                                <a href="http://m.feiniu.com/mstore/index-200388.html">
+                                                                    <img src="http://img01.fn-mart.com/C/web/layout/kk/20160222/201602221600111456128011_kk-1.jpg">
+                                                                </a>
+                                                            </div>
+                                                                                                                    <div class="goods-item">
+                                                                <a href="http://m.feiniu.com/mstore/index-200388.html">
+                                                                    <img src="http://img01.fn-mart.com/C/web/layout/kk/20160222/201602221600131456128013_kk-1.jpg">
+                                                                </a>
+                                                            </div>
+                                                                                                                    <div class="goods-item">
+                                                                <a href="http://m.feiniu.com/mstore/index-200388.html">
+                                                                    <img src="http://img01.fn-mart.com/C/web/layout/kk/20160222/201602221600151456128015_kk-1.jpg">
+                                                                </a>
+                                                            </div>
+                                                                                                            </div>
+                                                                                            </div>
+                                                                                    <div class="swiper-slide">
+                                                <div class="context">
+                                                    <div class="left">
+                                                        <img src="http://img16.fn-mart.com/group1/M00/2C/AF/CsnBPlWnEQWAPLxUAAATbhkCxD8598.jpg">
+                                                    </div>
+                                                    <div class="right">
+                                                        <p class="p1">御泥坊官方旗舰店</p>
+
+                                                        <p class="p2"><span
+                                                                class="tag">HOT</span>宠爱女人节                                                        </p>
+                                                    </div>
+                                                </div>
+                                                                                                    <div class="goods-list">
+                                                                                                                    <div class="goods-item">
+                                                                <a href="http://m.feiniu.com/mstore/index-200022.html">
+                                                                    <img src="http://img01.fn-mart.com/C/web/layout/kk/20160222/201602221600231456128023_kk-1.jpg">
+                                                                </a>
+                                                            </div>
+                                                                                                                    <div class="goods-item">
+                                                                <a href="http://m.feiniu.com/mstore/index-200022.html">
+                                                                    <img src="http://img01.fn-mart.com/C/web/layout/kk/20160222/201602221600251456128025_kk-1.jpg">
+                                                                </a>
+                                                            </div>
+                                                                                                                    <div class="goods-item">
+                                                                <a href="http://m.feiniu.com/mstore/index-200022.html">
+                                                                    <img src="http://img01.fn-mart.com/C/web/layout/kk/20160222/201602221600271456128027_kk-1.jpg">
+                                                                </a>
+                                                            </div>
+                                                                                                            </div>
+                                                                                            </div>
+                                                                                    <div class="swiper-slide">
+                                                <div class="context">
+                                                    <div class="left">
+                                                        <img src="http://img16.fn-mart.com/group1/M00/3C/DF/CsnBPlW60CiADaW6AAAW59aHEBc896.png">
+                                                    </div>
+                                                    <div class="right">
+                                                        <p class="p1">海尔海朋专卖店</p>
+
+                                                        <p class="p2"><span
+                                                                class="tag">HOT</span>低价放心购                                                        </p>
+                                                    </div>
+                                                </div>
+                                                                                                    <div class="goods-list">
+                                                                                                                    <div class="goods-item">
+                                                                <a href="http://m.feiniu.com/mstore/index-200417.html">
+                                                                    <img src="http://img01.fn-mart.com/C/web/layout/kk/20160222/201602221558221456127902_kk-1.jpg">
+                                                                </a>
+                                                            </div>
+                                                                                                                    <div class="goods-item">
+                                                                <a href="http://m.feiniu.com/mstore/index-200417.html">
+                                                                    <img src="http://img01.fn-mart.com/C/web/layout/kk/20160222/201602221558261456127906_kk-1.jpg">
+                                                                </a>
+                                                            </div>
+                                                                                                                    <div class="goods-item">
+                                                                <a href="http://m.feiniu.com/mstore/index-200417.html">
+                                                                    <img src="http://img01.fn-mart.com/C/web/layout/kk/20160222/201602221558291456127909_kk-1.jpg">
+                                                                </a>
+                                                            </div>
+                                                                                                            </div>
+                                                                                            </div>
+                                                                                    <div class="swiper-slide">
+                                                <div class="context">
+                                                    <div class="left">
+                                                        <img src="http://img16.fn-mart.com/group1/M00/42/00/CsnBP1XANzeAI6XJAAAVERPwSYI119.jpg">
+                                                    </div>
+                                                    <div class="right">
+                                                        <p class="p1">易旅旗舰店</p>
+
+                                                        <p class="p2"><span
+                                                                class="tag">HOT</span>出清                                                        </p>
+                                                    </div>
+                                                </div>
+                                                                                                    <div class="goods-list">
+                                                                                                                    <div class="goods-item">
+                                                                <a href="http://m.feiniu.com/mstore/index-200433.html">
+                                                                    <img src="http://img01.fn-mart.com/C/web/layout/kk/20160222/201602221600341456128034_kk-1.jpg">
+                                                                </a>
+                                                            </div>
+                                                                                                                    <div class="goods-item">
+                                                                <a href="http://m.feiniu.com/mstore/index-200433.html">
+                                                                    <img src="http://img01.fn-mart.com/C/web/layout/kk/20160222/201602221600361456128036_kk-1.jpg">
+                                                                </a>
+                                                            </div>
+                                                                                                                    <div class="goods-item">
+                                                                <a href="http://m.feiniu.com/mstore/index-200433.html">
+                                                                    <img src="http://img01.fn-mart.com/C/web/layout/kk/20160222/201602221600381456128038_kk-1.jpg">
+                                                                </a>
+                                                            </div>
+                                                                                                            </div>
+                                                                                            </div>
+                                                                            </div>
+                                    <div class="swiper-pagination border-gray fill small pagination static J_store_pagination" data-id='11' data-count="5">
+
+                                    </div>
+                                </div>
+                                                    </div>
+                    </div>
+                    <!-- 店铺推荐 E -->
+                
+                
+                
+                
+                                            
+                
+                
+                                
+                
+                
+                
+                
+                                    <!-- 首页弹窗 S -->
+                    <div class="popup J_popup hide_it">
+                        <div class="pop_bd">
+                            <div class="content">
+                                        <div class="">
+                        <div>
+                <a href="http://sale.feiniu.com/m-31751/touch/CS000016" class="" data-order="1" data-title="20" data-type="21"  data-param ="http://sale.feiniu.com/m-31751/touch/CS000016">
+                    <img src="http://img01.fn-mart.com/C/web/layout/kk/20160304/201603041709461457082586_kk-1.jpg" title="20" alt="20">
+                </a>
+                                    <div class="line "></div>
+                            </div>
+        </div>
+                                    <a class="close J_close_popup" href="javascript:void(0);"><i class="iconfont">&#xe615;</i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 首页弹窗 E -->
+                
+                    
+
+        <!-- 推荐 S  -->
+        <div class="recommend hide_it J_recommend">
+            <div class="rd_tilte">
+                <h2>专享推荐</h2>
+            </div>
+            <ul class="rd_ul">
+                <script id="tpl_recommendList" type="text/html" data-insert-pos="before">
+                    {{each recommendList as v i}}
+                    <li>
+                        <div class="rl_img"><img src="{{v['sm_pic']}}" data-imgsrc="http://static01.m.fn-mart.com/static/img/imgerr/err400x400.jpg?v=2016022917" alt="{{v['sm_name']}}" title="{{v['sm_name']}}" class='J_item' data-type='5' data-param='{{v["sm_seq"]}}'></div>
+                        <div class="rl_adc">
+                            <div class="rc_name">{{v['sm_name']}}</div>
+                            <div class="rc_price">
+                                <p>&yen;{{v['sm_price']}}</p>
+                                {{if +v["it_mprice"]>+v['sm_price']}}
+                                <s>&yen;{{v['it_mprice']}}</s>
+                                {{/if}}
+                            </div>
+                        </div>
+                        {{if v['icon_pic']}}
+                        <div class="jiaobiao">
+                            <img src="{{v['icon_pic']}}">
+                        </div>
+                        {{/if}}
+                    </li>
+                    {{/each}}
+                </script>
+
+            </ul>
+            <p class="loading_btm J_moreInfo_loading"><b></b><i>正在努力加载...</i></p>
+            <div class="rd_bottom hide_it J_hint">商品随您兴趣更新，常回来看看喔~</div>
+        </div>
+        <!-- 推荐 E -->
+
+    </div>
+
+    <!-- 底部搜索 -->
+    <div class="search_btm" id="btmSearchBox">
+        <p class="search_btm_box J_search_btm"><input type="text" value="" id="btmSearch" placeholder="搜索商品"/></p>
+    </div>
+
+</div>
+<div class="hide_it" id="J_cityCode" data-city='CS000016'></div>
+<!-- app下载 -->
+    <div class="pop_appdown J_popAppdown" id="popAppdown" style='display: none;'>
+    <div class="mbox outbox">
+        <p class="appdown_logo">
+            <img src="http://static01.m.fn-mart.com/static/img/v2/index/app_logo.png" />
+        </p>
+        <p class="appdown_dsc J_appDown">
+            <img src="http://static01.m.fn-mart.com/static/img/v2/index/download.png" />
+        </p>
+        <p class="appdown_close"><a id="closeAppdown" class="J_appDownClose" href="javascript:;"><span> <img src="http://static01.m.fn-mart.com/static/img/v2/index/closen.png" /></span></a></p>
+    </div>
+    </div>
+<!-- safari提示 -->
+<!--safari 提示-->
+<div class="iosdesk J_safariPrompt" id="iosDesk" style="display: none;">
+	<span class="ioscolse J_safariPromptHide">
+		<em class="ioscolse_icon iosdesk_icon"></em>
+	</span>
+    <p class="iosdesk_txt">
+        <span class="va">您可以将此应用程式安装在您的iPhone上。请按</span>
+        <i class="iosdesk_icon va"></i>
+        <span class="va">然后点选<b>添加到主屏幕。</b></span>
+    </p>
+    <b class="sanj"></b>
+</div><!-- 底部导航 -->
+<script src="http://m.feiniu.com/Fetch/footButton?v=2016022917"></script>
+<script>
+    //底部导航上报
+    var footNav = document.getElementById('footNav');
+    if( footNav ){
+        var footNavli = footNav.getElementsByTagName('li');
+        for(var i = 0; i < footNavli.length; i++){
+            var lia = footNavli[i].getElementsByTagName("a");
+            lia[0].addEventListener("click", function(){
+                var index = this.getAttribute('data-ind');
+                if(!index){
+                    return;
+                }
+                sbFootNav(index);
+            })
+        }
+    }
+    function sbFootNav(ind) {
+        var statData = {
+            'track_tag_name': '1009',
+            'result': '',
+            'page_content': ind,
+            'track_type': '2',
+            'message': ind
+        };
+        if (typeof(h5stat) == "object"){
+            h5stat.shangbao(statData);
+        }
+    }
+</script><!-- uniclickTracking埋点 -->
+<!-- uniclickTracking -->
+<script type="text/javascript">
+/*** UniclickTracking **/
+var _utaq = _utaq || [];
+_utaq.push(["trackPageView"]);
+_utaq.push(["enableLinkTracking"]);
+(function() {
+    var utu="http://sit.gentags.net/";
+    _utaq.push(["setTrackerUrl", utu+"site/unids.gif"]);
+    _utaq.push(["setSiteId", "927"]);
+    var utd=document, ut=utd.createElement("script"), s=utd.getElementsByTagName("script")[0]; ut.type="text/javascript";
+    ut.defer=true; ut.async=true; ut.src=utu+"adagent/js/uta.js"; s.parentNode.insertBefore(ut,s);
+})();
+/***End UniclickTracking Code**/
+</script>
+<noscript><p><img src="http://sit.gentags.net/site/img?site=927" style="border:0" alt="" /></p></noscript>
+<!-- End uniclickTracking Code -->
+<!-- 页面底部 -->
+<!-- 页面底部 -->
+<div class="outbox footer_box J_footer">
+    <p class="vpage"><a href="http://m.feiniu.com/" class="cur">触屏版</a><a href="javascript:;" onclick="gopc();">电脑版</a>
+    </p>
+
+    <p class="copyright">Copyright © 2013-2015 飞牛网,ALL Rights Reserved.<br/>沪ICP备13025776号 营业执照</p>
+</div>
+
+<script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?0cc0039daba323e398ba8e7b837dd702";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-46390714-1', 'auto');
+    ga('send', 'pageview');
+
+    //跳转到电脑版及埋点
+    function gopc() {
+        //如果访问PC版，种pch5_jump='pc'，防止死循环跳回触屏版
+        var date = new Date();
+        var expireDays = 1;
+        date.setTime(date.getTime() + expireDays * 24 * 3600 * 1000);
+        document.cookie = "pch5_jump=pc;path=/;domain=.feiniu.com;expires=" + date.toGMTString();
+
+        var statData = {
+            'track_tag_name': '1013',
+            'result': '',
+            'page_content': '',
+            'track_type': '2',
+            'message': '-9'
+        };
+        if (typeof(h5stat) == "object") {
+            h5stat.shangbao(statData);
+        }
+        window.location.href = "http://www.feiniu.com/?from=h5";
+    }
+</script>
+
+</body>
+</html>
+<script src="http://static01.m.fn-mart.com/static/js-build/require.js?v=2016022917"></script>
+
+
+</body>
+</html>
+
+    <script src="http://static01.m.fn-mart.com/static/js-build/require.js"></script>
+    <script>
+        require(["http://static01.m.fn-mart.com/static/js-build/config.js"], function () {
+            require(['lib/swiper.min','controller/index/index']);        });
+    </script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46390714-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?0cc0039daba323e398ba8e7b837dd702";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>

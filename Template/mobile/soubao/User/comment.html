@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <title>商品评价</title> 
+  <meta name="keywords" content="" /> 
+  <meta name="description" content="" /> 
+  <meta charset="utf-8" /> 
+ 
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" /> 
+  <link rel="bookmark" href="images/favicon.ico" type="image/x-icon" /> 
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" /> 
+  <meta http-equiv="X-UA-Compatible" content="edge" /> 
+  <meta name="apple-mobile-web-app-capable" content="yes" /> 
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" /> 
+  <meta name="format-detection" content="telphone=no, email=no" /> 
+  <meta name="renderer" content="webkit" /> 
+  <meta name="HandheldFriendly" content="true" /> 
+  <meta name="MobileOptimized" content="320" /> 
+  <meta name="screen-orientation" content="portrait" /> 
+  <meta name="x5-orientation" content="portrait" /> 
+  <meta name="full-screen" content="yes" /> 
+  <meta name="x5-fullscreen" content="true" /> 
+  <meta name="browsermode" content="application" /> 
+  <meta name="x5-page-mode" content="app" /> 
+  <meta name="msapplication-tap-highlight" content="no" /> 
+  <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" />
+  <link rel="stylesheet" href="__STATIC__/css/zip.touch.help2_0.feedback.v3907.css" type="text/css" />
+  <script type="text/javascript" src="__STATIC__/js/zepto.min.js"></script>    
+  <style type="text/css">
+.m_header,
+.body{max-width: 640px;}
+.m_header{left:50%;margin-left: -320px;}
+</style> 
+  <script type="text/javascript">function remReSize(){var w = $(window).width();try{w = $(parent.window).width();}catch(ex){};if(w>640){w = 640;};$('html').css('font-size',100/640*w+'px');$('#js_style_for_pc').remove();$('body').append('<style id="js_style_for_pc">.m_header{margin-left: -'+w/2+'px;}.m_menu{margin-left: -'+w/2+'px;}</style>');};remReSize();$(window).resize(remReSize);$(document).ready(function() {remReSize();});for(var i=0;i<3;i++){setTimeout(remReSize, 100*i);};</script> 
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head> 
+ <body> 
+  <div class="body">     
+   <!--导入菜单-->
+   <assign name="title" value="我要评价" />
+   <include file="menu" />
+   <!--end导入菜单-->
+   <form data-test="formtest" action="{:U('Mobile/User/add_comment')}" id="add_comment" method="post"  enctype="multipart/form-data">
+	   <div class="lib_content" id="js_lib_content"> 
+		<div class="placeholder"></div> 
+		<div class="placeholder"></div> 
+		<div class="w600 content"> 
+		 <textarea id="content" name="content" placeholder="对你购买的商品进行评价" required ></textarea> 
+		 <label>晒图</label>
+		 <input type="file" name="comment_img_file[]"  multiple accept="image/*"  />
+		</div> 
+		<div class="w600 f24 grayc">
+		 <!--星星-->
+			<div class="fl pa-le-30">
+				<div class="pro-user-score cu-po">
+					<span class="sf">商品与描述相符：</span>
+					<span>
+						<span class="starRating-area">
+							<img alt="" src="__STATIC__/images/start/stars4.gif" onmousemove="c(this,event)">
+							<input type="hidden" value="4" name="goods_rank" id="goods_rank">
+						</span>
+					</span>
+						</div>
+						<div class="pro-user-score cu-po">
+							<span class="sf">客服服务质量：</span>
+					<span>
+						<span class="starRating-area">
+							<img alt="" src="__STATIC__/images/start/stars3.gif" onmousemove="c(this,event)">
+							<input type="hidden" value="3" name="service_rank" id="service_rank">
+						</span>
+					</span>
+						</div>
+						<div class="pro-user-score cu-po">
+							<span class="sf">物流服务质量：</span>
+					<span>
+						<span class="starRating-area">
+						   <img alt="" src="__STATIC__/images/start/stars2.gif" onmousemove="c(this,event)">
+							<input type="hidden" value="2" name="deliver_rank" id="deliver_rank">
+						</span>
+					</span>
+				</div>
+			</div>	 
+		 <!--星星end -->
+		</div> 
+		<div class="placeholder"></div> 
+		<a id="js_submit" class="m_button m_button_orange m_button_block" style="opacity:1" onclick="checkSubmit();">发表</a> 
+		<div class="placeholder"></div> 
+		<div class="placeholder"></div> 
+	   </div>      
+	   
+		<input type="hidden" name="order_id" value="{$order_goods.order_id}">
+		<input type="hidden" name="goods_id" value="{$order_goods.goods_id}">	   
+   </form>
+   <div class="m_footer clear"> 
+    <a class="m_icon m_icon_gotop hidden" href="javascript:void(0);"></a> 
+		<div class="copyright gray9"> 
+        	<include file="Public/copy" />
+        </div>     
+   </div> 
+   <div style="display:none;"> 
+   </div> 
+  </div> 
+
+<script>
+    function checkSubmit()
+	{
+		var content = $('#content').val();
+		if($.trim(content) == '')
+		{
+			alert('请输入评价内容');		
+			return false;
+		}		
+		$('#add_comment').submit();
+    }
+
+
+    function c(obj,event){
+        //var obj = $(obj);
+        var objTop = getOffsetTop(obj);//对象x位置
+        var objLeft = getOffsetLeft(obj);//对象y位置
+
+        var mouseX = event.clientX+document.body.scrollLeft;//鼠标x位置
+        var mouseY = event.clientY+document.body.scrollTop;//鼠标y位置
+        //计算点击的相对位置
+        var objX = mouseX-objLeft;
+        var objY = mouseY-objTop;
+        clickObjPosition = objX + "," + objY;
+        if(objX < 13 && objX > 0){
+            $(obj).attr('src','__STATIC__/images/start/stars1.gif');
+            $(obj).next().val(1);
+        }
+        if(objX < 28 && objX > 13){
+            $(obj).attr('src','__STATIC__/images/start/stars2.gif');
+            $(obj).next().val(2);
+        }
+        if(objX < 43 && objX > 28){
+            $(obj).attr('src','__STATIC__/images/start/stars3.gif');
+            $(obj).next().val(3);
+        }
+        if(objX < 58 && objX > 43){
+            $(obj).attr('src','__STATIC__/images/start/stars4.gif');
+            $(obj).next().val(4);
+        }
+        if(objX < 74 && objX > 58){
+            $(obj).attr('src','__STATIC__/images/start/stars5.gif');
+            $(obj).next().val(5);
+        }
+        //alert(clickObjPosition);
+    }
+
+    function getOffsetTop(obj){
+        var tmp = obj.offsetTop;
+        var val = obj.offsetParent;
+        while(val != null){
+            tmp += val.offsetTop;
+            val = val.offsetParent;
+        }
+        return tmp;
+    }
+
+    function getOffsetLeft(obj){
+        var tmp = obj.offsetLeft;
+        var val = obj.offsetParent;
+        while(val != null){
+            tmp += val.offsetLeft;
+            val = val.offsetParent;
+        }
+        return tmp;
+    }
+</script>  
+ </body>
+</html>

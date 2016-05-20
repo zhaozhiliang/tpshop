@@ -1,0 +1,62 @@
+ <if condition="empty($cartList)">         
+     <p style="text-align:center"><a href="{:U('Mobile/Index/index')}"><img src="__STATIC__/images/null_cart3.jpg"  /></a></p>
+     <script>
+	    $(".car_opera,.fixed_price").hide();
+     </script>
+ </if> 
+
+<!-- 自营商品 start --------------------------------------->
+<foreach name="cartList" item="v" key="k" >
+    <div class="goodsbox">
+        <ul class="goodslist">
+            <li>
+                <div class="img">
+                    <label class="m_radio m_order_checkbox <if condition="$v[selected] eq 1" >m_checked</if>">
+                        <input type="checkbox" itemid="10718355540" name="cart_select[{$v.id}]" <if condition="$v[selected] eq 1" >checked="checked"</if> value="1" onclick="ajax_cart_list();" />
+                    </label>
+                    <div class="img_type">
+                        <img class="img180" src="{$v.goods_id|goods_thum_images=120,120}" style="width:1.8rem; height:1.8rem" />
+                    </div>
+                </div>
+                <div class="info">
+                    <p class="title"><a class="name gray3" href="{:U('Mobile/Goods/goodsInfo',array('id'=>$v[goods_id]))}">{$v.goods_name}</a></p>
+                    <span class="gray">{$v.spec_key_name}</span>
+                    <p class="numbox"> <a class="del noclick" onClick="switch_num(-1,{$v.id},{$v.store_count});">-</a>
+                        <input id="goods_num[{$v.id}]" class="num" type="text" name="goods_num[{$v.id}]" value="{$v.goods_num}" brandid="30" itemid="10718355540" data-maxnum="20" style="margin:0; height:.42rem; font-size:.2rem" />
+                        <a class="add" onClick="switch_num(1,{$v.id},{$v.store_count});">+</a> <i class="clear"></i> </p>
+                </div>
+                <div class="price">
+                    <!--<input type="hidden" name="business[self][items][10718355540][sizeid]" value="554" />-->
+                    <span class="oof">￥</span>
+                    <span class="js-price">{$v.goods_price}</span>
+                    <br />
+                    <del>
+                        <span class="oof">￥</span>{$v.market_price}
+                    </del>
+                    <br />
+                    <!--<span class="f10">X</span>-->
+                    <!--<span class="js-num">1</span>-->
+                </div>
+                <div class="clear"></div>
+                <!--<p class="additional gray9 text-left red">【该商品不支持货到付款】</p> -->
+            </li>
+        </ul>
+
+    </div>
+
+</foreach>
+
+<div class="placeholder"></div>
+<div class="placeholder"></div>
+<!-- 自营商品 end --------------------------------------->
+<div class="fixed_price">
+    <!--<div><i class="checkbox cok"><input type="checkbox" name=""></i>全选</div>-->
+    <div class="price_info">
+        <p class="total"> <label class="m_radio m_order_checkbox"> <input class="js_select_all" type="checkbox" /> </label> 合计：<span class="orange">￥<em>{$total_price.total_fee }</em></span> </p>
+        <p class="freight">（不含运费）</p>
+    </div>
+    <a href="{:U('Mobile/Cart/cart2')}">
+        <input class="submit" type="button"  value="去结算" />
+    </a>
+    <em class="clear"></em>
+</div>

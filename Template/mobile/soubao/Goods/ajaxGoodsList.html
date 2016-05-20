@@ -1,0 +1,15 @@
+<volist id="v" name="lists">
+    <a href="{:U('Goods/goodsInfo',array('id'=>$v['goods_id']))}" target="_self">
+        <div class="pxui-box">
+            <div class="img160">
+                <dfn></dfn>
+                <img src="{$v.goods_id|goods_thum_images=140,140}" goodsrc="{$v.goods_id|goods_thum_images=140,140}">
+            </div>
+            <span class="name">{$v.goods_name}</span>
+            <span class="price"><em>￥</em>{$v.shop_price}</span>
+            <del class="price">
+                ￥{$v.market_price}
+            </del>
+            <!--<img class="tag" style="" src="__STATIC__/images/empty.gif" goodsrc="">-->
+        </div> </a>
+</volist>

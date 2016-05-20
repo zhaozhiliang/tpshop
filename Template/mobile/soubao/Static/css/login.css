@@ -1,0 +1,189 @@
+﻿@charset "utf-8";
+.btn {
+	font-size: .28rem;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	min-width: 1.67rem;
+	height: .54rem;
+	color: #333;
+	border: .02rem solid #d5d5d5;
+	-webkit-border-radius: .04rem;
+	border-radius: .04rem;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-moz-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center
+}
+.btn_de, .btn_red {
+	color: #fff;
+	border: none
+}
+.btn_lg {
+	font-size: .36rem;
+	min-width: 1.8rem;
+	height: .84rem
+}
+.btn_red {
+	background: #db384c
+}
+.btn_de {
+	background: #888
+}
+.outbox, body, html {
+	height: 100%;
+	background-color: #eee
+}
+.top_box {
+	border-bottom: 0
+}
+.login_box .reminder {
+	border-bottom: 1px solid #d5d5d5;
+	height: .76rem;
+	line-height: .76rem;
+	font-size: .28rem;
+	padding: 0 .22rem;
+	color: #888
+}
+.login_box ul li {
+	background-color: #fff;
+	height: 1.05rem;
+	line-height: 1.05rem;
+	border-bottom: 1px solid #d5d5d5;
+	padding: 0 .24rem
+}
+.login_box ul li span {
+	float: left;
+	color: #666;
+	font-size: .28rem;
+	padding-right: .2rem
+}
+.login_box ul li span.yzm_box {
+	float: right;
+	padding-right: 0
+}
+.login_box ul li span.iconfont_box {
+	float: right
+}
+.login_box ul li .yzm_change {
+	height: .47rem;
+	width: .47rem;
+	margin-left: .2rem;
+	display: inline-block
+}
+.login_box ul li .yzm_change.rotate {
+	-webkit-animation: loading_rotate .8s linear infinite;
+	animation: loading_rotate .8s linear infinite
+}
+.login_box ul li .yzm_img {
+	height: .6rem;
+	width: 1.5rem;
+	display: inline-block
+}
+.login_box ul li input {
+	float: left;
+	border: 0;
+	width: 70%;
+	height: 100%;
+	font-size: .28rem
+}
+.login_box ul li input.text_yzm {
+	width: 32%
+}
+.login_box ul li .iconfont {
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	color: #fff;
+	height: .4rem;
+	width: .4rem;
+	line-height: .4rem;
+	text-align: center;
+	font-weight: 700;
+	background-color: #cfcfcf
+}
+.login_box .btn_box {
+	padding: 0 .24rem
+}
+.login_box .btn_box .btn {
+	height: .93rem;
+	font-size: .36rem;
+	margin-top: .58rem;
+	width: 100%
+}
+.login_box .btn_box .lr_link {
+	height: 1.3rem;
+	line-height: 1.3rem
+}
+.login_box .btn_box .lr_link .btn_register {
+	width: 50%;
+	display: inline-block;
+	float: left;
+	font-size: .32rem;
+	color: #666;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	-moz-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1
+}
+.login_box .btn_box .lr_link .btn_register:nth-child(2) {
+	text-align: right
+}
+.login_box .speed_login {
+	font-size: .32rem;
+	color: #666;
+	border-top: #ccc solid 1px;
+	text-align: center;
+	margin-top: .3rem;
+	font-weight: 700
+}
+.login_box .speed_login span {
+	background-color: #eee;
+	padding: 0 .2rem;
+	position: relative;
+	top: -.16rem
+}
+.login_box .third_box {
+	text-align: center;
+	margin-top: .2rem
+}
+.login_box .third_box .qqimg {
+	width: .71rem;
+	height: .71rem;
+	margin: 0 auto;
+	display: block;
+	background: url(../images/third_login.png) no-repeat;
+	background-size: cover;
+	-webkit-border-radius: .06rem;
+	border-radius: .06rem
+}
+.login_box .third_box .wechatimg {
+	width: .71rem;
+	height: .71rem;
+	margin: 0 auto;
+	display: block;
+	background: url(../images/third_login.png) -1rem 0 no-repeat;
+	background-size: 1.7rem auto;
+	-webkit-border-radius: .06rem;
+	border-radius: .06rem
+}
+.login_box .third_box .desc {
+	width: 100%;
+	text-align: center;
+	display: block;
+	margin-top: .1rem;
+	font-size: .24rem;
+	color: #666
+}
+.login_box .third_box a {
+	width: 1.3rem;
+	display: inline-block
+}

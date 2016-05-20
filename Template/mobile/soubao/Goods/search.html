@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>商品搜索页</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+<meta name="format-detection" content="email=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no" />
+<meta name="applicable-device" content="mobile">
+<meta name="apple-itunes-app" content="app-id=921839681">
+<link rel="stylesheet" type="text/css" href="__STATIC__/css/search.css" />
+<link rel="stylesheet" type="text/css" href="__STATIC__/css/search_index_2.2.css" />
+<script src="__STATIC__/js/jquery.js?2015091516"></script>
+<script src="__STATIC__/js/common.js"></script>
+</head>
+<body>
+<!-- 头部 -->
+<div class="outbox">
+  <div  class="head_f" id="J_topfloat">
+    <div class="top_box set">
+      <h1 style="display: none"></h1>
+      <span class="top_back J_topback" onClick="location.href='{:U("/Mobile")}'"></span>
+	  <form class="set_ip"name="sourch_form" id="sourch_form" method="post" action="{:U("/Mobile/Goods/search")}">
+        <i class="iconfont J_srch_submit"><img class="ma" src="__STATIC__/images/ss-chick.png"></i>
+        <input type="text" class="J_srch_kw"  name="q" id="q" value="<?php echo I('q'); ?>" placeholder="搜索关键字"/>
+        <a class="J_srch_input_clear" style="display: none"> <i class="iconfont"> &#xe615;</i></a>
+      </form>
+      <div id="J_sx" data-tab="sx"><a href="javascript(0);">&nbsp;&nbsp;</a></div>
+    </div>
+    <!-- 列表导航 S-->
+    <div class="list_nav ">
+      <ul class="lv_ul">
+        <li class="J_cs2 J_synthesize synthesize active"> <a href="/index.php?m=Mobile&c=Goods&a=search&q=<?php echo I('q'); ?>&sort=goods_id&sort_asc=desc">默认</a> </li>
+        <li class="J_cs2 J_get_data"> <a  href="/index.php?m=Mobile&c=Goods&a=search&q=<?php echo I('q'); ?>&sort=goods_id&sales_sum=desc">销量</a> </li>
+        <li class="J_cs2 J_get_data J_price cost"> <a  href="/index.php?m=Mobile&c=Goods&a=search&q=<?php echo I('q'); ?>&sort=shop_price&sort_asc=<?php echo ($_GET['sort_asc'] == 'asc' ? 'desc' : 'asc'); ?>">价格</a> </li>
+        <li class="J_cs2 J_sale sales_p"> <a  href="/index.php?m=Mobile&c=Goods&a=search&q=<?php echo I('q'); ?>&sort=comment_count&sort_asc=desc">评论</a> </li>
+        <li class="set_list" id="J_set_list" >
+          <div><i class="iconfont"><img src="__STATIC__/images/big.png" onClick="$('#ajax_return').toggleClass('type_2');"></i></div>
+          <div><i class="iconfont" style="display:none"><img src="__STATIC__/images/list.png"></i></div>
+        </li>
+      </ul>
+    </div>
+  </div>     
+  <!-- 列表导航 E-->
+  <ul class="list_ul " id="ajax_return">
+    <!--ajax 返回-->    
+  </ul>   
+</div>
+<div style="" id="show_more" class="pxui-show-more">
+    <img src="__STATIC__/images/loading.gif" width="24" height="24"> 
+    <a onClick="ajax_sourch_submit(++page);">显示更多 <i class="arrow2-bottom"></i></a> 
+</div> 
+<script>
+$(document).ready(function(){
+	 // 初始化 就调用一下搜索
+	page = 1;
+	ajax_sourch_submit(page);
+
+});
+ /*** ajax 提交表单 查询订单列表结果*/  
+ function ajax_sourch_submit(page)
+ {	 	 	 
+		$.ajax({
+			type : "GET",
+			url:"/index.php?m=Mobile&c=Goods&a=ajaxSearch&q=<?php echo I('q'); ?>&sort=<?php echo I('sort','goods_id'); ?>&sort_asc=<?php echo I('sort_asc','asc'); ?>&p="+page,//+tab,
+//			data : $('#filter_form').serialize(),// 你的formid 搜索表单 序列化提交
+			success: function(data)
+			{
+			    $("#ajax_return").append(data);
+			}
+		}); 
+ } 
+</script>
+</body>
+</html>

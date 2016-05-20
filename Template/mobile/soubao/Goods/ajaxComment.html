@@ -1,0 +1,24 @@
+<volist name="commentlist" id="v">
+    <li>
+        <b style="padding-left:0">{$v['username']}</b> <span></span>
+        <p><span style="float:left">发货速度：</span><i class="star"><em style="width:<?php echo ($v['deliver_rank'] / 5 * 100); ?>%"></em></i></p>
+        <p><span style="float:left">客服态度：</span><i class="star"><em style="width:<?php echo ($v['service_rank'] / 5 * 100); ?>%"></em></i></p>
+        <p><span style="float:left">商品质量：</span><i class="star"><em style="width:<?php echo ($v['goods_rank'] / 5 * 100); ?>%"></em></i></p>
+        <p></p>
+        <div>
+            {$v['content']|htmlspecialchars_decode}
+            <br/>            
+            <!--晒单-->
+            <foreach name="v['img']" item="v2" >
+                <a href="{$v2}" target="_blank"><img alt="" src="{$v2}" width="60" height="60" /></a>&nbsp;&nbsp;
+            </foreach>            
+        </div>
+        <!--<div class="answ_img">-->
+        	<!--<img src="__STATIC__/images/null_cart3.jpg" alt="">-->
+            <!--<img src="__STATIC__/images/null_cart3.jpg" alt="">-->
+            <!--<img src="__STATIC__/images/null_cart3.jpg" alt="">-->
+            <!--<img src="__STATIC__/images/null_cart3.jpg" alt="">-->
+            <!--<img src="__STATIC__/images/null_cart3.jpg" alt="">-->
+        <!--</div>-->
+    </li>
+</volist>

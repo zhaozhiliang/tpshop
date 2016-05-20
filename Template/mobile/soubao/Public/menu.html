@@ -1,0 +1,35 @@
+        <div class="com-title">
+            <a title="返回" href="javascript:history.go(-1);" class="return"></a>
+            <a title="菜单" href="javascript:void(0);" class="home_menu"> <span></span> </a>{$title}
+        </div>
+<!--导入菜单--> 
+        <div class="m_menu hidden">
+            <div>
+                <i class="rotate45"></i>
+                <a href="/index.php?m=Mobile"><span><i class="m_bg"></i></span>首页</a>
+                <a href="/index.php?m=Mobile&c=Index&a=categoryList"><span><i class="m_bg"></i></span>分类搜索</a>
+                <a href="/index.php?m=Mobile&c=Cart&a=cart"><span><i class="m_bg"></i></span>购物车</a>
+                <a href="/index.php?m=Mobile&c=User"><span><i class="m_bg"></i></span>我的商城</a>
+            </div>
+       </div>
+<!--end导入菜单-->      
+        <script type="text/javascript">
+            $(document).ready(function() {
+                var $header = $('.com-title');
+                if($header.length){
+                    $header.find('.home_menu').click(function(){
+                        // var _menu = $('.m_menu')
+                        //if(_menu.hasClass('hidden')){_menu.removeClass('hidden');}else{_menu.addClass('hidden');}
+                        var _menu = $('.m_menu').removeClass('hidden');
+                        var _mask = $('.mask').removeClass('hidden');
+                        _menu.unbind('click').click(function(){
+                            _mask.click();
+                        });
+                        _mask.click(function(){
+                            _menu.addClass('hidden');
+                            _mask.addClass('hidden');
+                        });
+                    })
+                };
+            });
+        </script>

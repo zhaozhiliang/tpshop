@@ -1,0 +1,141 @@
+<html>
+<head>
+    <title>{$goods.goods_name}</title>
+    <meta charset="utf-8" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="bookmark" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <meta content=" width = device-width , initial-scale = 1.0 , maximum-scale = 1.0 , user-scalable = no " id="viewport" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <link type="text/css" rel="stylesheet" href="css/index.2.0.css" />
+    <link type="text/css" rel="stylesheet" href="css/com1-3.css" />
+    <link type="text/css" rel="stylesheet" href="css/com1-4.css" />
+    <script src="js/jquery.js"></script>
+    <script src="js/com.js"></script>
+    
+
+    
+    
+    
+    
+    
+</head>
+<style type="text/css">
+.com-title .home_menu {display: inline-block;vertical-align: middle;right: 2%;top: 40%;width: 10%;}
+.m_bg{background-image: url(images/base.png);background-size: 345px 350px;}
+.holdspace{ height:50px;}
+.com-title{ position:fixed; height:45px; left:0; z-index:3; top:0; width:100%; font-family:微软雅黑 !important;}
+.com-title .home_menu span:after,
+.com-title .home_menu span:before,
+.com-title .home_menu span{display: inline-block;vertical-align: middle;width: 6px;height: 6px;border-radius: 3px;background: #ffffff;position: relative;}
+.com-title .home_menu span:after{content: ' ';position: absolute;right:-10px;top:0;}
+.com-title .home_menu span:before{content: ' ';position: absolute;left:-10px;top:0;}
+.rotate45{ -webkit-transform:rotate(45deg) scale(1.00,1.00) translate(0px,0px) skew(0deg,0deg);transform:rotate(45deg) scale(1.00,1.00) translate(0px,0px) skew(0deg,0deg);}
+.m_menu{z-index: 20;position: fixed;top:45px;right:5px;margin-left: -320px;}
+.m_menu>div{margin-left:340px;width: 160px;background: #292c33;border-radius: 6px;}
+.m_menu>div>i{width: 26px;height: 26px;position: absolute;right:15px;top:-12px;background: #292c33;}
+.m_menu>div>a{color: #949599;text-decoration: none;display: block;height: 50px;line-height: 50px;border-bottom:2px solid #1f2126;padding-left:65px;position: relative;}
+.m_menu>div>a:last-child{border-bottom:0;line-height: 50px;}
+.m_menu>div>a>span{position: absolute;top:14px;left:24px;}
+.m_menu>div>a>span>i{width: 23px;height: 21px;display: inline-block;vertical-align: middle;}
+.m_menu>div>a:nth-child(2)>span>i{background-position: 0 -251px;}
+.m_menu>div>a:nth-child(3)>span>i{background-position: -25px -251px;}
+.m_menu>div>a:nth-child(4)>span>i{background-position: -52px -251px;}
+.m_menu>div>a:nth-child(5)>span>i{background-position: -78px -251px;}
+.spaceholder{ height:45px;}
+.hidden{ display:none;}
+.mask{ background: #FFF; opacity: 0.01;z-index: 19; width: 100%;height: 100%; position: absolute;top: 0;left: 0;}
+.reas_tab{ border-collapse:collapse; border:1px solid #dedede; font-size:14px}
+.reas_tab tr{ height:50px}
+.reas_tab tr td:nth-child(2){padding-left:5px;}
+.reas_tab tr td:nth-child(1){padding-right:5px;}
+</style>
+<body>
+<div class="com-content" style="background-color:#FFF;">
+	<div class="com-content-area" style="background-color:#FFF;">
+    <div class="mask hidden"></div>
+    	<div class="com-title">
+            <a title="返回" href="javascript:history.go(-1);" class="return"></a>
+            <a title="菜单" href="javascript:void(0);" class="home_menu"> <span></span> </a> 商品属性
+        </div>
+<!--导入菜单--> 
+        <div class="m_menu hidden">
+                    <div> <i class="rotate45"></i> <a href="index.html">
+                        <span><i class="m_bg"></i></span>
+                        首页</a> <a href="cat.html">
+                        <span><i class="m_bg"></i></span>
+                        分类搜索</a> <a href="cart.html">
+                        <span><i class="m_bg"></i></span>
+                        购物车</a> <a href="member_index.html">
+                        <span><i class="m_bg"></i></span>
+                        我的搜豹</a>
+                    </div>
+                </div>
+<!--end导入菜单-->             
+        <div class="holdspace" style="height:50px"></div>
+        <div class="an-reaso">
+            <table class="reas_tab" width="100%" border="1" cellspacing="0" cellpadding="0">
+              <tr>
+                <td align="right">品牌：</td>
+                <td>华为</td>
+              </tr>
+              <tr>
+                <td align="right">型号：</td>
+                <td>华为 Mate 8</td>
+              </tr>
+              <tr>
+                <td align="right">支持频率/网络频率：</td>
+                <td>FDD-LTE (频段 1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 18, 19, 20, 25, 26, 27, 28, 29)</td>
+              </tr>
+              <tr>
+                <td align="right">网络制式：</td>
+                <td>移动4G(TD-LTE)/联通4G(FDD-LTE)/电信4G(FDD-LTE)</td>
+              </tr>
+              <tr>
+            </table>
+        </div>
+    </div>
+    <div class="com-footer-area" id="/Template/mobile/default/Static/js-com-footer-area">
+        <span class="top"></span>
+        <div class="footer">
+            <!--<div class="nav">-->
+                <!--<a class="ellipsis" rel="nofollow" href="http://m.paixie.net/member/" title="个人中心"><span>416148489</span></a> |-->
+                <!--<a rel="nofollow" href="http://m.paixie.netlogin.html?act=logout" title="退出">退出</a> |-->
+                <!--<a rel="nofollow" href="http://m.paixie.netfeed.html" title="用户反馈">用户反馈</a> |-->
+                <!--<a rel="nofollow" href="http://m.paixie.net/help/app.html" title="客户端">客户端</a>-->
+            <!--</div>-->
+            <div class="copy">
+                ©2007-2015
+                <a href="http://m.paixie.net/" style="color:#9ea4b1;">Paixie</a> All Rights Reserved
+                <br>闽B2-20110084
+            </div>
+        </div>
+    </div>
+    
+    
+</div>
+</body>
+<script type="text/javascript">
+            $(document).ready(function() {
+                var $header = $('.com-title');
+                if($header.length){
+                    $header.find('.home_menu').click(function(){
+                        // var _menu = $('.m_menu')
+                        //if(_menu.hasClass('hidden')){_menu.removeClass('hidden');}else{_menu.addClass('hidden');}
+                        var _menu = $('.m_menu').removeClass('hidden');
+                        var _mask = $('.mask').removeClass('hidden');
+                        _menu.unbind('click').click(function(){
+                            _mask.click();
+                        });
+                        _mask.click(function(){
+                            _menu.addClass('hidden');
+                            _mask.addClass('hidden');
+                        });
+                    })
+                };
+            });
+</script>
+
+</html>

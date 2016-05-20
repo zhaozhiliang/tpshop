@@ -1,0 +1,40 @@
+<foreach name="address_list" item="v"  key="k">
+
+    <if condition="$v[is_default] eq 1"> <!--默认选中的地址-->
+
+                <span>
+                    <input type="radio" onclick="swidth_address(this);" name="address_id" value="{$v[address_id]}" checked="checked" style="-webkit-appearance:radio;vertical-align:middle" class="js_select_all" />
+        <!--<input id="RblUserAddress_0" type="radio" name="RblUserAddress" value="45" style="color: #0000cc">-->
+        <span id="js-trolly-address-name" style="vertical-align:middle"> {$v[consignee]}</span>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <span id="js-trolly-address-phone" style="vertical-align:middle">{$v[mobile]}</span>
+        <br />
+        <span id="js-trolly-address-province">{$regionList[$v[province]]}</span>
+        <span id="js-trolly-address-city">{$regionList[$v[city]]}</span>
+        <span id="js-trolly-address-area">{$v[address]}</span>
+        <!--<span id="js-trolly-address-address">南阳路33号</span>-->
+        <!--<span id="js-trolly-address-zipcode">223200</span>-->
+        <br />
+        <div class="hx_chil" style="height:1px; background-color:#dedede; clear:both"></div>
+        </span>
+
+
+        <else />
+        <span>
+                    <input type="radio" onclick="swidth_address(this);" name="address_id" value="{$v[address_id]}" checked="checked" style="-webkit-appearance:radio;vertical-align:middle" class="js_select_all" />
+        <!--<input id="RblUserAddress_0" type="radio" name="RblUserAddress" value="45" style="color: #0000cc">-->
+        <span id="js-trolly-address-name" style="vertical-align:middle"> {$v[consignee]}</span>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <span id="js-trolly-address-phone" style="vertical-align:middle">{$v[mobile]}</span>
+        <br />
+        <span id="js-trolly-address-province">{$regionList[$v[province]]}</span>
+        <span id="js-trolly-address-city">{$regionList[$v[city]]}</span>
+        <span id="js-trolly-address-area">{$v[address]}</span>
+        <!--<span id="js-trolly-address-address">南阳路33号</span>-->
+        <!--<span id="js-trolly-address-zipcode">223200</span>-->
+        <br />
+        <div class="hx_chil" style="height:1px; background-color:#dedede; clear:both"></div>
+        </span>
+    </if>
+
+</foreach>

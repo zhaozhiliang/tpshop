@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <title>会员中心 - 首页</title> 
+  <meta name="keywords" content="" /> 
+  <meta name="description" content="" /> 
+  <meta charset="utf-8" /> 
+ 
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" /> 
+  <link rel="bookmark" href="images/favicon.ico" type="image/x-icon" /> 
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" /> 
+  <meta http-equiv="X-UA-Compatible" content="edge" /> 
+  <meta name="apple-mobile-web-app-capable" content="yes" /> 
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" /> 
+  <meta name="format-detection" content="telphone=no, email=no" /> 
+  <meta name="renderer" content="webkit" /> 
+  <meta name="HandheldFriendly" content="true" /> 
+  <meta name="MobileOptimized" content="320" /> 
+  <meta name="screen-orientation" content="portrait" /> 
+  <meta name="x5-orientation" content="portrait" /> 
+  <meta name="full-screen" content="yes" /> 
+  <meta name="x5-fullscreen" content="true" /> 
+  <meta name="browsermode" content="application" /> 
+  <meta name="x5-page-mode" content="app" /> 
+  <meta name="msapplication-tap-highlight" content="no" /> 
+  <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" /> 
+  <link rel="stylesheet" href="__STATIC__/css/zip.touch.member2_0.index.v39016.css" type="text/css" />
+  <script type="text/javascript" src="__STATIC__/js/zepto.min.js"></script>  
+  <link type="text/css" rel="stylesheet" href="__STATIC__/css/com1-3.css?2015091516" />
+  <script src="__STATIC__/js/jquery.js?2015091516"></script>
+  
+  <style type="text/css">
+.m_header,
+.body{max-width: 640px;}
+.m_header{left:50%;margin-left: -320px;}
+.com-content{ background-color:#FFF}
+            .m_bg{background-image: url(__STATIC__/images/base.png);background-size: 345px 350px;}
+            .holdspace{ height:50px;}
+            .com-title{ position:fixed; height:45px; left:0; z-index:3; top:0; width:100%; font-family:微软雅黑 !important;}
+            .com-title .home_menu{display: inline-block;vertical-align: middle; right:2%; top:-4%; width:10%;}
+            .com-title .home_menu span:after,
+            .com-title .home_menu span:before,
+            .com-title .home_menu span{display: inline-block;vertical-align: middle;width: 6px;height: 6px;border-radius: 3px;background: #ffffff;position: relative;}
+            .com-title .home_menu span:after{content: ' ';position: absolute;right:-10px;top:0;}
+            .com-title .home_menu span:before{content: ' ';position: absolute;left:-10px;top:0;}
+            .rotate45{  -webkit-transform:rotate(45deg) scale(1.00,1.00) translate(0px,0px) skew(0deg,0deg);transform:rotate(45deg) scale(1.00,1.00) translate(0px,0px) skew(0deg,0deg);}
+            .m_menu{z-index: 20;position: fixed;top:45px;right:5px;margin-left: -320px;}
+            .m_menu>div{position: absolute;right:0;width: 160px;background: #292c33;border-radius: 6px;}
+            .m_menu>div>i{width: 26px;height: 26px;position: absolute;right:15px;top:-12px;background: #292c33;}
+            .m_menu>div>a{color: #949599;text-decoration: none;display: block;height: 50px;line-height: 50px;border-bottom:2px solid #1f2126;padding-left:65px;position: relative;}
+            .m_menu>div>a:last-child{border-bottom:0;line-height: 50px;}
+            .m_menu>div>a>span{position: absolute;top:0;left:24px;}
+            .m_menu>div>a>span>i{width: 23px;height: 21px;display: inline-block;vertical-align: middle;}
+            .m_menu>div>a:nth-child(2)>span>i{background-position: 0 -251px;}
+            .m_menu>div>a:nth-child(3)>span>i{background-position: -25px -251px;}
+            .m_menu>div>a:nth-child(4)>span>i{background-position: -52px -251px;}
+            .m_menu>div>a:nth-child(5)>span>i{background-position: -78px -251px;}
+            .spaceholder{ height:45px;}
+            .hidden{ display:none;}
+            .mask{ background: #FFF; opacity: 0.01;z-index: 19; width: 100%;height: 100%; position: absolute;top: 0;left: 0;}
+			input[type=button]{margin:0}
+			.img_di_sta img{ width:1.8rem; height:1.8rem}
+			.link{ clear:both;overflow: hidden;border-bottom: 1px solid #dedede;padding-bottom: 0.1rem;padding-top: 0.2rem;}
+			.link:last-child{ border-bottom:0px}			
+</style> 
+  <script type="text/javascript">function remReSize(){var w = $(window).width();try{w = $(parent.window).width();}catch(ex){};if(w>640){w = 640;};$('html').css('font-size',100/640*w+'px');$('#js_style_for_pc').remove();$('body').append('<style id="js_style_for_pc">.m_header{margin-left: -'+w/2+'px;}.m_menu{margin-left: -'+w/2+'px;}</style>');};remReSize();$(window).resize(remReSize);$(document).ready(function() {remReSize();});for(var i=0;i<3;i++){setTimeout(remReSize, 100*i);};</script> 
+ </head> 
+ <body> 
+  <div class="body"> 
+   <div class="mask hidden"></div>
+<!--头部开始-->
+ <assign name="title" value="会员中心" />
+ <include file="Public/menu" />
+<!--头部结束-->   
+	 
+   <div class="lib_content" id="js_lib_content"> 
+    <div class="m_index_header">  
+     <div class="m_index_info"> 
+      <a class="portrait_box" href="#"> 
+	   <img class="portrait_img" src="{$user['head_pic']}" /> 
+       <div class="box_bg"></div> <i class="clear"></i> </a> 
+      <div class="portrait_name"> 
+       <span class="ellipsis">{$user['nickname']}</span> 
+       <i class="m_icon m_icon_lever m_lever1"></i> 
+      </div> 
+      <div class="portrait_info"> 
+       <a>余额：{$user['user_money']}</a>| 
+       <a>积分：{$user['pay_points']}</a> 
+      </div> 
+      <i class="clear"></i> 
+     </div> 
+     <div class="m_operate_bg"></div> 
+     <div class="m_operate">
+      <a href="{:U('/Mobile/Cart/cart')}">{$cart_total_price[anum]}<br /> <span>购物车</span> </a> 
+      <a href="{:U('/Mobile/User/goods_collect')}">{$user['collect_count']}<br /> <span>我的收藏</span> </a>
+      <a href="{:U('/Mobile/User/coupon')}">{$user['coupon_count']}<br /> <span>我的优惠券</span> </a> 
+     </div> 
+     <i class="clear"></i> 
+    </div> 
+    <div class="placeholder"></div>
+    <div class="placeholder"></div> 
+    <ul class="m_list m_list_top_line bg_white p_index_menu"> 
+     <li class="p_menu">
+	 	<a href="{:U('/Mobile/User/order_list',array('type'=>'WAITPAY'))}"> 
+		      <i class="m_icon"></i><br /> 待付款 
+			  <if condition="$user['waitPay'] gt 0">
+				  <span class="m_smalldots">{$user['waitPay']}</span> 
+			  </if>
+	    </a> 
+	 	<a href="{:U('/Mobile/User/order_list',array('type'=>'WAITSEND'))}"> 
+		      <i class="m_icon"></i><br /> 待发货 
+			  <if condition="$user['waitSend'] gt 0">
+				  <span class="m_smalldots">{$user['waitSend']}</span> 
+			  </if>	  
+		</a> 
+		<a href="{:U('/Mobile/User/order_list',array('type'=>'WAITRECEIVE'))}"> 
+		     <i class="m_icon"></i><br /> 待收货
+			  <if condition="$user['waitReceive'] gt 0">			 
+				 <span class="m_smalldots">{$user['waitReceive']}</span>
+			  </if>	 
+	    </a>		
+		<a href="{:U('mobile/user/logout')}">
+		   <i class="m_icon"></i><br />安全退出
+		</a> 
+        <i class="clear"></i> 
+     </li> 
+     <li class="link"> 
+		  <a href="{:U('/Mobile/User/order_list')}"> 
+		       <i class="m_icon m_icon_order"></i> 全部订单 
+			   <div class="right">
+				 查看全部已购商品 
+				<span class="m_arrow"> <i class="rotate45"></i> <i class="rotate135"></i> </span> 
+			   </div> 
+		   </a> 
+	   </li> 
+    </ul> 
+    <div class="placeholder"></div>
+    <div class="placeholder"></div> 
+    <ul class="m_list m_list_top_line bg_white p_index_menu">       
+     <li class="link">
+	   <a href="{:U('mobile/user/coupon')}"> <i class="m_icon m_icon_sale"></i> 我的优惠券 
+		   <div class="right">
+			 查看优惠券
+			<span class="m_arrow"> <i class="rotate45"></i> <i class="rotate135"></i> </span> 
+		   </div> 
+		 </a> 
+	   </li> 
+    </ul> 
+    <div class="placeholder"></div>
+    <div class="placeholder"></div> 
+    <ul class="m_list m_list_top_line bg_white p_index_menu"> 
+     <li class="link"> 
+	   <a href="{:U('/Mobile/User/accountManage')}"> <i class="m_icon m_icon_user"></i> 账户管理 
+       <div class="right"> 
+        <span class="m_arrow"> <i class="rotate45"></i> <i class="rotate135"></i> </span> 
+       </div> 
+	   </a> 
+	  </li> 
+    </ul> 
+    <div class="placeholder"></div>
+    <div class="placeholder"></div> 
+    <ul class="m_list m_list_top_line bg_white p_index_menu"> 
+     <li class="link"> 
+	   <a href="{:U('/Mobile/User/goods_collect')}"> <i class="m_icon m_icon_user"></i>我的收藏 
+       <div class="right"> 
+        <span class="m_arrow"> <i class="rotate45"></i> <i class="rotate135"></i> </span> 
+       </div> 
+	   </a> 
+	  </li> 
+    </ul> 
+    <div class="placeholder"></div>
+    <div class="placeholder"></div>	
+    <ul class="m_list m_list_top_line bg_white p_index_menu"> 
+     <li class="link"> 
+	   <a href="{:U('/Mobile/User/address_list')}"> <i class="m_icon m_icon_address"></i> 收货地址 
+       <div class="right"> 
+        <span class="m_arrow"> <i class="rotate45"></i> <i class="rotate135"></i> </span> 
+       </div> 
+	   </a> 
+	  </li> 
+    </ul> 
+    <div class="placeholder"></div>
+    <div class="placeholder"></div> 	
+    <ul class="m_list m_list_top_line bg_white p_index_menu"> 
+     <li class="link"> 
+	  <a href="{:U('/Mobile/Article/articleList')}"> 
+	   <i class="m_icon m_icon_help"></i> 帮助与反馈 
+       <div class="right"> 
+        <span class="m_arrow"> <i class="rotate45"></i> <i class="rotate135"></i> </span> 
+       </div> 
+	   </a> 
+	  </li> 
+    </ul> 
+    <div class="placeholder"></div>
+    <div class="placeholder"></div> 
+   </div> 
+   <div class="m_footer clear"> 
+    <a class="m_icon m_icon_gotop hidden" href="javascript:void(0);"></a>      
+        <div class="copyright gray9"> 
+        	<include file="Public/copy" />
+        </div>
+
+   <div style="display:none;"> 
+   </div> 
+  </div>   
+ </body>
+</html>

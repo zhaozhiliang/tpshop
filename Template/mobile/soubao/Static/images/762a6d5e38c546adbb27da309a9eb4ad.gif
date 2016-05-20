@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="format-detection" content="telephone=no,email=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="applicable-device" content="mobile">
+    <meta name="apple-itunes-app" content="app-id=921839681">
+    <link rel="Shortcut Icon" type="images/x-icon" href="http://static01.m.fn-mart.com/static/img/favicon.ico">
+    <link href="http://static01.m.fn-mart.com/static/img/icon114x114.png?v=2016022917" rel="apple-touch-icon-precomposed">
+    <link rel="stylesheet" href="http://static01.m.fn-mart.com/static/css-build/common.css?v=2016022917" />
+    <script>  if(/MSIE (6.0|7.0|8.0)/.test(navigator.userAgent)) { location.href = location.protocol + "//" + location.hostname + '/nonsupport.html'; }   </script>
+    <title>飞牛网-页面无法访问</title>
+    <style>
+        .icon404 { margin: 1.1rem auto 0.2rem auto; width: 1.58rem;}
+        p { text-align: center; line-height: 0.6rem;}
+        .btnout { padding: 1.2rem 1rem 0.6rem 1rem;}
+    </style>
+</head>
+<body class="bgeee">
+<!-- 头部 -->
+<header>
+    <a href="javascript:history.go(-1);" class="top_back hide">返回</a>
+    <h1>飞牛网</h1>
+</header>
+
+<div class="pbox">
+    <img src="http://static01.m.fn-mart.com/static/img/default/404_icon.png?v=2016022917" class="icon404" />
+    <p>抱歉~页面无法访问…</p>
+    <p class="f24 c9c">页面暂时不能使用，请点击去逛逛回首页吧</p>
+
+    <p class="btnout">
+        <a href="http://m.feiniu.com/" class="jbl_com jbl_oran wbd">去逛逛</a>
+    </p>
+</div>
+
+</body>
+</html>

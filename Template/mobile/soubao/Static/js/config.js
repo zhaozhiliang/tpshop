@@ -1,0 +1,1 @@
+require.config({waitSeconds:3e3,baseUrl:"http://"+window.feiniu.domain.static+window.feiniu.url.jsBase,paths:{},urlArgs:"version="+window.feiniu.staticVersion});
