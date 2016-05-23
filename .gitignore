@@ -1,1 +1,3 @@
 .idea/
+Application/Runtime/Logs
+Application/Common/Conf/db.php
