@@ -90,7 +90,7 @@ class UserController extends BaseController {
      */
     public function login(){
         if($this->user_id > 0){
-        	header("Location: ".U('Home/User/Index'));
+        	header("Location: ".U('Home/User/index'));
         }           
         $referurl = isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : U("Home/User/index");
         $this->assign('referurl',$referurl);
