@@ -13,8 +13,9 @@ class qq extends \Think\Model\RelationModel{
 //		else
 //	    $this->return_url = "http://".$_SERVER['HTTP_HOST']."/index.php?m=Home&c=LoginApi&a=callback&oauth=qq";
 			
-		$this->return_url = "http://".$_SERVER['HTTP_HOST']."/index.php/Home/LoginApi/callback/oauth/qq";	
-										
+		//$this->return_url = "http://".$_SERVER['HTTP_HOST']."/index.php/Home/LoginApi/callback/oauth/qq";
+		$this->return_url = "http://".'shop.zhaozhiliang.cn'."/index.php/Home/LoginApi/callback/oauth/qq";
+
 		$this->app_id = $config['app_id'];
 		$this->app_secret = $config['app_secret'];
 
